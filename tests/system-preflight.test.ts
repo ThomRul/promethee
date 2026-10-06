@@ -142,6 +142,51 @@ test('all compatible tools permit reuse despite missing installation recipes; ab
   assert.match(missing.reasons.join(' '), /aucune recette/u);
 });
 
+test('shipped web locks give an actionable Node reference without bypassing the version conflict', async () => {
+  const root = process.env.PROMETHEE_RESOURCE_ROOT ?? process.cwd();
+  const requirements = await getRequirements({ profile: 'web-api', git: false, options: {} }, root);
+  const node = requirements.find((item) => item.id === 'node')!;
+  for (const [version, state] of [
+    ['24.13.1', 'incompatible'],
+    ['24.15.0', 'incompatible'],
+    ['24.21.0', 'compatible'],
+    ['26.0.0', 'incompatible'],
+  ]) {
+    const [inspection] = await inspectTools([node], {
+      resolver: async () => '/node',
+      runner: async () => ({ code: 0, stdout: `v${version}`, stderr: '' }),
+    });
+    assert.equal(inspection?.state, state, version);
+    if (state === 'incompatible') {
+      assert.match(inspection!.reason, /Node\.js du projet 24\.21\.0/u);
+      assert.match(inspection!.reason, /nouveau terminal/u);
+      assert.doesNotMatch(inspection!.reason, />=26/u);
+    }
+  }
+  const plan = await planBootstrap([node], {
+    host,
+    inspectionOptions: {
+      resolver: async () => '/node',
+      runner: async () => ({ code: 0, stdout: 'v24.13.1', stderr: '' }),
+    },
+  });
+  assert.equal(plan.status, 'blocked');
+  assert.deepEqual(plan.actions, []);
+});
+
+test('an incompatible reference version is never suggested as a resolution', async () => {
+  const node = requirement('node', '^24');
+  node.additionalRanges = ['>=24.21.0'];
+  node.referenceVersion = '24.13.1';
+  const [inspection] = await inspectTools([node], {
+    resolver: async () => '/node',
+    runner: async () => ({ code: 0, stdout: 'v24.13.1', stderr: '' }),
+  });
+  assert.equal(inspection?.state, 'incompatible');
+  assert.match(inspection!.reason, />=24\.21\.0/u);
+  assert.doesNotMatch(inspection!.reason, /version de référence compatible/u);
+});
+
 test('profile requirements derive Node engines and PHP extensions from shipped lockfiles', async () => {
   const root = process.env.PROMETHEE_RESOURCE_ROOT ?? process.cwd();
   const base = { profile: { id: 'php' }, git: false, skills: [], options: { database: 'mysql' } };

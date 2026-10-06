@@ -239,12 +239,17 @@ L’archive suffit pour ouvrir Prométhée, mais vos projets ont leurs propres o
 
 Si un outil présent est incompatible, Prométhée arrête la préparation et affiche les exigences. Votre installation existante est conservée. Installez ou activez vous-même une version compatible, puis relancez l’action. Pour Node, utilisez le [site officiel](https://nodejs.org/en/download) en sélectionnant la branche 24 compatible. Une version plus récente d’une autre branche peut aussi être refusée.
 
-Les commandes suivantes permettent de vérifier les versions actives dans votre terminal :
+Par exemple, **Node 24.13.1 permet de lancer le CLI**, mais ne satisfait pas les exigences du socle JavaScript actuel. **Node 24.21.0** est la version de référence compatible de la branche 24. Prométhée ne remplace pas automatiquement votre installation et ne réduit pas les exigences des dépendances pour contourner ce conflit.
+
+Après avoir choisi de mettre à jour Node, ouvrez un nouveau terminal et vérifiez les versions actives, puis relancez Prométhée :
 
 ```text
 node --version
 npm --version
+promethee
 ```
+
+Prométhée vérifie ensuite les autres outils et les options sélectionnées avant de préparer le projet. La mise à jour de Node ne suffit pas à valider l’ensemble de ces conditions.
 
 ### Si une préparation est interrompue
 

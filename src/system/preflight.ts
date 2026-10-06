@@ -367,11 +367,16 @@ export async function inspectTools(
             const unmet = [requirement.range, ...(requirement.additionalRanges ?? [])].filter(
               (range) => !semver.satisfies(version, range),
             );
+            const reference = requirement.referenceVersion;
+            const guidance =
+              reference && satisfiesRequirement(reference, requirement)
+                ? `Pour ce projet, utilisez ${requirement.label} ${reference} (version de référence compatible).`
+                : `Exigences non respectées : ${unmet.join(' ; ')}.`;
             return {
               ...resolved,
               version,
               state: 'incompatible',
-              reason: `Version incompatible ${version} ; exigences non respectées : ${unmet.join(' ; ')}. Installez ou activez une version compatible, puis relancez Prométhée.`,
+              reason: `Version incompatible ${version}. ${guidance} Installez ou activez une version compatible, puis ouvrez un nouveau terminal et relancez Prométhée.`,
             };
           }
           const extra = await inspectExtra(requirement, executable, options);
