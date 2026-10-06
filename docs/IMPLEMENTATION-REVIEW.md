@@ -55,8 +55,29 @@ Aucune publication GitHub, aucun push et aucun démarrage automatique au démarr
 
 TypeScript, 59 tests : 58 réussis et un ignoré (création de lien fichier refusée par Windows sans élévation). Couverture : sélection, intégrité, destinations/jonctions, matrices, états/reprise, lecture CLI JSON, cache/approbation simulés, arguments CMD et lookup npm/Python, identité et exclusion Docker des services, mise à jour avec sauvegarde et preuves de vérification réutilisées. L’inspection Git refuse les index ou historiques présents sans altérer leurs métadonnées ; une source dans un dossier imbriqué nommé docs/build/dist invalide bien la preuve ; des outils incompatibles arrêtent l’installation avant modification du manifeste. Aucun installer système, service réel, compilation Android/iOS ou application Electron lancé.
 
-Le menu et le pixel art ont été ouverts dans un terminal Windows puis annulés. Le lanceur parent et les commandes aide/version fonctionnent avec le runtime privé 24.21.0. Diagnostic réel : Windows x64 reconnu, Node habituel 24.13.1 incompatible avec les locks (minimum 24.21), npm 11.8/Git 2.45/Python 3.12 compatibles. Aucun remplacement ou contournement du Node habituel.
+Le menu et le pixel art ont été ouverts dans un terminal Windows puis annulés. Le lanceur parent et les commandes aide/version fonctionnent avec le runtime privé 24.21.0. Diagnostic réel initial, avant l’adaptation de compatibilité ci-dessous : Windows x64 reconnu, Node habituel 24.13.1 incompatible avec les locks alors livrés (minimum 24.21), npm 11.8/Git 2.45/Python 3.12 compatibles. Aucun remplacement ou contournement du Node habituel.
 
 Les archives officielles Windows et Linux Node24.21 sont vérifiées par SHA256 ; leur binaire et LICENSE sont comparés byte à byte lors de l’empaquetage. L’exécution Linux/Ubuntu/WSL demeure non testée. Les archives restent nommées preview et ne représentent pas une release entièrement qualifiée.
 
 L’audit npm a signalé une vulnérabilité modérée sur Ajv 8.17.1 ; le validateur du CLI est passé à 8.20.0, avec le lockfile mis à jour. L’audit du CLI, dépendances de développement incluses, ne signale plus de vulnérabilité connue à cette date. Les tests et la vérification des schémas ont été relancés après ce changement. Cela ne constitue pas un audit des applications que l’utilisateur développera.
+
+## Adaptation de la compatibilité Node — 6 octobre 2026
+
+Le minimum uniforme Node 24.21.0 du socle est remplacé par les exigences propres aux profils et aux options sélectionnées. Node 24.21.0 reste la référence du runtime privé du CLI ; cette référence ne fixe pas à elle seule le minimum du Node utilisé par un projet. Les contrôles conservent la branche Node 24 et les exigences réelles des dépendances verrouillées.
+
+Pour les interfaces web et bureau, `jsdom` passe de 30.1.2 à 29.1.1, sous licence MIT, afin de retenir une version compatible avec Node 24.13.1. Les déclarations de versions dans les gabarits et les lockfiles sont adaptées ensemble. Les minima déclarés sont Node 24.0 pour le frontend web et le frontend PHP, 24.12 pour le bureau, 24.11 pour l’API et 24.3 pour le mobile. Le minimum bureau tient compte des dépendances optionnelles Linux ; un backend mobile nouvellement créé ajoute les exigences du socle API. La vérification de tous les contrats `engines` présents dans les locks web et bureau accepte Node 24.13.1 ; leurs audits npm ne signalent aucune vulnérabilité connue à cette date.
+
+Validation réalisée sur Windows avec le Node habituel 24.13.1 et npm 11.8.0, sans remplacement des outils :
+
+- Suite du CLI : 67 tests, 66 réussis et un ignoré pour la restriction Windows sur les liens de fichiers. Compilation TypeScript, format et intégrité des 19 skills vérifiés.
+- La sélection web montrée par l’utilisateur, avec ses dix skills et Git activé, passe le précontrôle réel : Node, npm, Git et Python compatibles, aucune installation d’outil nécessaire.
+- Web et API : installation npm stricte, typecheck, lint et build réussis dans des projets générés isolés. Deux tests React/jsdom vérifient le rendu accessible et les interactions clavier ; l’API compilée répond correctement à `/api/health`.
+- Bureau : installation npm stricte, typecheck, lint, build Electron et les deux tests d’interface réussis. L’application Electron n’a pas été ouverte.
+- Mobile Expo Go : installation npm stricte, typecheck et lint réussis. Aucun téléphone, émulateur ou build Android/iOS exécuté.
+- Assets PHP : installation npm stricte et build Vite réussis ; PHP, Composer et Laravel complet n’ont pas été exécutés.
+
+Les installations npm du CLI imposent désormais `--engine-strict`, y compris lorsqu’une option actualise le lockfile. Le précontrôle ajoute les exigences Node des métadonnées des dépendances optionnelles réellement choisies ; leur arbre transitif résolu reste soumis au contrôle npm. Les caches TypeScript `.tsbuildinfo` générés à la racine d’une cible sont exclus de l’empreinte des sources et de Git pour éviter un faux échec après compilation ; des fichiers de même nom utilisés dans un sous-dossier source continuent à invalider la preuve lorsqu’ils changent.
+
+Le test Vitest de l’API n’a pas pu être lancé dans cet environnement : le chargeur natif SWC refuse les droits ou propriétaires des caches Windows disponibles. Le contrôle HTTP a donc exécuté le JavaScript compilé avec Node 24.13.1. Les contrôles de confiance des caches n’ont pas été désactivés ; le comportement du chargeur est décrit dans le [guide officiel SWC](https://github.com/swc-project/swc/blob/main/docs/native-addon-carriers.md).
+
+Aucun contrôle ne contourne les contraintes `engines` des dépendances, et aucun remplacement automatique du Node installé n’est introduit. Les preuves détaillées restent dans les dossiers de validation locaux ; Ubuntu et les recettes natives conservent leur qualification en attente.

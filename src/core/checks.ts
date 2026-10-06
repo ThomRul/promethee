@@ -91,7 +91,10 @@ export async function verificationFingerprint(cwd: string, versions: string): Pr
     for (const item of await fs.readdir(dir, { withFileTypes: true })) {
       if (
         ignoredEverywhere.has(item.name) ||
-        (atRoot && (ignoredAtRoot.has(item.name) || item.name.endsWith('.log')))
+        (atRoot &&
+          (ignoredAtRoot.has(item.name) ||
+            item.name.endsWith('.log') ||
+            item.name.endsWith('.tsbuildinfo')))
       )
         continue;
       const full = path.join(dir, item.name);

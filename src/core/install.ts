@@ -63,9 +63,17 @@ export async function installProjectDependencies(
           target.manager === 'npm'
             ? [
                 ...(target.lockNeedsUpdate
-                  ? [['install', '--package-lock-only', '--no-audit', '--no-fund']]
+                  ? [
+                      [
+                        'install',
+                        '--package-lock-only',
+                        '--engine-strict',
+                        '--no-audit',
+                        '--no-fund',
+                      ],
+                    ]
                   : []),
-                ['ci', '--no-audit', '--no-fund'],
+                ['ci', '--engine-strict', '--no-audit', '--no-fund'],
               ]
             : [
                 ...(target.lockNeedsUpdate

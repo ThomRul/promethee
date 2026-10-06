@@ -19,7 +19,7 @@ async function fixture() {
   return { root, write, close: () => fs.rm(root, { recursive: true, force: true }) };
 }
 
-test('verification fingerprint excludes output directories and logs only at target root', async () => {
+test('verification fingerprint excludes outputs, logs and TypeScript caches only at target root', async () => {
   const f = await fixture();
   try {
     const initial = await verificationFingerprint(f.root, 'tools-v1');
@@ -28,6 +28,10 @@ test('verification fingerprint excludes output directories and logs only at targ
       assert.equal(await verificationFingerprint(f.root, 'tools-v1'), initial, directory);
     }
     await f.write('build.log');
+    assert.equal(await verificationFingerprint(f.root, 'tools-v1'), initial);
+    await f.write('tsconfig.tsbuildinfo');
+    assert.equal(await verificationFingerprint(f.root, 'tools-v1'), initial);
+    await f.write('tsconfig.tsbuildinfo', 'incremental build cache changed');
     assert.equal(await verificationFingerprint(f.root, 'tools-v1'), initial);
     assert.notEqual(await verificationFingerprint(f.root, 'tools-v2'), initial);
   } finally {
@@ -49,6 +53,10 @@ test('nested source folders named like outputs remain part of verification finge
     const before = await verificationFingerprint(f.root, 'tools-v1');
     await f.write('src/fixtures/example.log', 'fixture changed');
     assert.notEqual(await verificationFingerprint(f.root, 'tools-v1'), before);
+    await f.write('src/fixtures/tsconfig.tsbuildinfo');
+    const beforeCache = await verificationFingerprint(f.root, 'tools-v1');
+    await f.write('src/fixtures/tsconfig.tsbuildinfo', 'fixture changed');
+    assert.notEqual(await verificationFingerprint(f.root, 'tools-v1'), beforeCache);
   } finally {
     await f.close();
   }

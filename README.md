@@ -235,13 +235,15 @@ Prométhée ne démarre pas automatiquement votre application, son serveur de d�
 
 ### Si une version d’outil est incompatible
 
-L’archive suffit pour ouvrir Prométhée, mais vos projets ont leurs propres outils. Le socle JavaScript demande actuellement **Node 24, à partir de 24.21.0 et avant 25**, ainsi que npm 11. Git est requis lorsqu’il est sélectionné, Python pour certains skills, et PHP/Composer pour Laravel. Les extensions et les autres exigences sont vérifiées selon le profil.
+L’archive suffit pour ouvrir Prométhée, mais vos projets ont leurs propres outils. Le socle JavaScript utilise **Node 24 et npm 11**. Le minimum de Node dépend du profil, de ses options et des exigences déclarées par les dépendances verrouillées : la version de référence n’est pas un minimum imposé à tous les projets. Git est requis lorsqu’il est sélectionné, Python pour certains skills, et PHP/Composer pour Laravel.
 
-Si un outil présent est incompatible, Prométhée arrête la préparation et affiche les exigences. Votre installation existante est conservée. Installez ou activez vous-même une version compatible, puis relancez l’action. Pour Node, utilisez le [site officiel](https://nodejs.org/en/download) en sélectionnant la branche 24 compatible. Une version plus récente d’une autre branche peut aussi être refusée.
+Prométhée réutilise une version déjà installée si elle satisfait toutes les exigences du projet choisi. **Node 24.13.1 peut être réutilisé avec les socles adaptés**, sous réserve des autres outils et options sélectionnés. Les dépendances restent vérifiées : le CLI ne contourne pas leurs exigences de version.
 
-Par exemple, **Node 24.13.1 permet de lancer le CLI**, mais ne satisfait pas les exigences du socle JavaScript actuel. **Node 24.21.0** est la version de référence compatible de la branche 24. Prométhée ne remplace pas automatiquement votre installation et ne réduit pas les exigences des dépendances pour contourner ce conflit.
+Le runtime privé **Node 24.21.0** fourni dans l’archive sert uniquement à exécuter Prométhée. Il reste distinct du Node de vos projets et ne sert pas à rendre artificiellement compatible une installation existante.
 
-Après avoir choisi de mettre à jour Node, ouvrez un nouveau terminal et vérifiez les versions actives, puis relancez Prométhée :
+Si un outil présent est réellement incompatible, Prométhée arrête la préparation et indique les exigences. Il conserve votre installation et ne met pas automatiquement Node à jour. Installez ou activez vous-même une version compatible, puis relancez l’action. Pour Node, utilisez le [site officiel](https://nodejs.org/en/download) et choisissez une version de la branche 24 qui satisfait les besoins indiqués.
+
+Après un changement de version, ouvrez un nouveau terminal et vérifiez les outils actifs, puis relancez Prométhée :
 
 ```text
 node --version
@@ -249,7 +251,7 @@ npm --version
 promethee
 ```
 
-Prométhée vérifie ensuite les autres outils et les options sélectionnées avant de préparer le projet. La mise à jour de Node ne suffit pas à valider l’ensemble de ces conditions.
+Prométhée vérifie ensuite les autres outils et les options sélectionnées avant de préparer le projet. Une version compatible de Node ne suffit pas à valider l’ensemble de ces conditions.
 
 ### Si une préparation est interrompue
 

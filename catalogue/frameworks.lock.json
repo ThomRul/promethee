@@ -13,7 +13,8 @@
     "viteDesktop": "7.3.6 : electron-vite 5 stable accepte Vite 5/6/7, pas Vite 8.",
     "mobile": "Versions React et natives de bundledNativeModules.json pour Expo 57.0.26, pas les latest indépendants. React DOM 19.2.3 fixé également pour empêcher un peer transitif de choisir React DOM 19.3 avec React 19.2.3. Babel core 7.29.7 et babel-preset-expo 57.0.13 alignés avec Expo et Worklets, pas Babel 8 latest. test-renderer 1.2.0 utilise react-reconciler 0.33, compatible React 19.2 ; 1.3.0 exige React 19.3. Toute option actualise le lockfile de base ; une régénération totale doit être requalifiée, car npm peut ajouter des peers RSC optionnels incompatibles avec React natif.",
     "nativewind": "4.2.7 stable avec Tailwind 3.4.19 ; Tailwind 4.3.3 pour web/PHP/desktop.",
-    "typeorm": "1.1.1 avec Nest 12 et better-sqlite3 12.11.1 (peer ^12). La résolution et les migrations doivent être vérifiées."
+    "typeorm": "1.1.1 avec Nest 12 et better-sqlite3 12.11.1 (peer ^12). La résolution et les migrations doivent être vérifiées.",
+    "jsdom": "29.1.1 : dernière stable acceptant Node 24.13.1 ; jsdom 30 exige Node 24.15+. Pin et arbre verrouillé contrôlés sans ignorer engines. Minimum Node 24 déclaré par les locks : frontend web 24.0.0, desktop 24.12.0 (dépendance optionnelle Linux incluse). Le runtime 24.21.0 du CLI reste une référence distincte."
   },
   "profiles": {
     "web": {
@@ -37,7 +38,7 @@
         "@testing-library/dom": "10.4.2",
         "@testing-library/jest-dom": "7.0.1",
         "@testing-library/user-event": "14.6.7",
-        "jsdom": "30.1.2",
+        "jsdom": "29.1.1",
         "@types/react": "19.3.0",
         "@types/react-dom": "19.3.0",
         "tailwindcss": "4.3.3",
@@ -99,7 +100,7 @@
         "@testing-library/dom": "10.4.2",
         "@testing-library/jest-dom": "7.0.1",
         "@testing-library/user-event": "14.6.7",
-        "jsdom": "30.1.2",
+        "jsdom": "29.1.1",
         "@types/react": "19.3.0",
         "@types/react-dom": "19.3.0",
         "tailwindcss": "4.3.3",
@@ -465,22 +466,45 @@
     },
     {
       "name": "jsdom",
-      "version": "30.1.2",
-      "publishedAt": "2026-10-04T09:15:00.333Z",
-      "registry": "https://registry.npmjs.org/jsdom/30.1.2",
-      "integrity": "sha512-0FFE/jE1rppmVfUrJUgxqXjcwolZYIGtAgj1pTussMhNZxIxi7W/PvfWaMNroGi2B36X1IKHbexpZ9DhkoOPiQ==",
-      "tarball": "https://registry.npmjs.org/jsdom/-/jsdom-30.1.2.tgz",
+      "version": "29.1.1",
+      "publishedAt": "2026-04-30T08:52:48.353Z",
+      "registry": "https://registry.npmjs.org/jsdom/29.1.1",
+      "integrity": "sha512-ECi4Fi2f7BdJtUKTflYRTiaMxIB0O6zfR1fX0GXpUrf6flp8QIYn1UT20YQqdSOfk2dfkCwS8LAFoJDEppNK5Q==",
+      "tarball": "https://registry.npmjs.org/jsdom/-/jsdom-29.1.1.tgz",
       "license": "MIT",
       "engines": {
-        "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+        "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
       },
       "peerDependencies": {
-        "canvas": "^3.2.3"
+        "canvas": "^3.0.0"
       },
       "peerDependenciesMeta": {
         "canvas": {
           "optional": true
         }
+      },
+      "dependencies": {
+        "saxes": "^6.0.0",
+        "parse5": "^8.0.1",
+        "undici": "^7.25.0",
+        "css-tree": "^3.2.1",
+        "data-urls": "^7.0.0",
+        "lru-cache": "^11.3.5",
+        "decimal.js": "^10.6.0",
+        "whatwg-url": "^16.0.1",
+        "symbol-tree": "^3.2.4",
+        "tough-cookie": "^6.0.1",
+        "@exodus/bytes": "^1.15.0",
+        "whatwg-mimetype": "^5.0.0",
+        "w3c-xmlserializer": "^5.0.0",
+        "webidl-conversions": "^8.0.1",
+        "xml-name-validator": "^5.0.0",
+        "@bramus/specificity": "^2.4.2",
+        "@asamuzakjp/css-color": "^5.1.11",
+        "html-encoding-sniffer": "^6.0.0",
+        "@asamuzakjp/dom-selector": "^7.1.1",
+        "is-potential-custom-element-name": "^1.0.1",
+        "@csstools/css-syntax-patches-for-csstree": "^1.1.3"
       }
     },
     {

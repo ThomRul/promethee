@@ -147,8 +147,9 @@ test('shipped web locks give an actionable Node reference without bypassing the 
   const requirements = await getRequirements({ profile: 'web-api', git: false, options: {} }, root);
   const node = requirements.find((item) => item.id === 'node')!;
   for (const [version, state] of [
-    ['24.13.1', 'incompatible'],
-    ['24.15.0', 'incompatible'],
+    ['24.10.0', 'incompatible'],
+    ['24.13.1', 'compatible'],
+    ['24.15.0', 'compatible'],
     ['24.21.0', 'compatible'],
     ['26.0.0', 'incompatible'],
   ]) {
@@ -167,11 +168,30 @@ test('shipped web locks give an actionable Node reference without bypassing the 
     host,
     inspectionOptions: {
       resolver: async () => '/node',
-      runner: async () => ({ code: 0, stdout: 'v24.13.1', stderr: '' }),
+      runner: async () => ({ code: 0, stdout: 'v24.10.0', stderr: '' }),
     },
   });
   assert.equal(plan.status, 'blocked');
   assert.deepEqual(plan.actions, []);
+});
+
+test('every default profile reuses Node 24.13.1 independently of the newer reference runtime', async () => {
+  const root = process.env.PROMETHEE_RESOURCE_ROOT ?? process.cwd();
+  for (const profile of ['web-api', 'desktop', 'php', 'mobile']) {
+    const requirements = await getRequirements({ profile, git: false, options: {} }, root);
+    const node = requirements.find((item) => item.id === 'node')!;
+    const plan = await planBootstrap([node], {
+      host,
+      inspectionOptions: {
+        resolver: async () => '/usual/node',
+        runner: async () => ({ code: 0, stdout: 'v24.13.1', stderr: '' }),
+      },
+    });
+    assert.equal(plan.status, 'ready', `${profile}: ${plan.reasons.join(' ')}`);
+    assert.deepEqual(plan.actions, []);
+    assert.equal(plan.tools[0]?.executable, '/usual/node');
+    assert.equal(node.referenceVersion, '24.21.0');
+  }
 });
 
 test('an incompatible reference version is never suggested as a resolution', async () => {

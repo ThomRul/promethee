@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import semver from 'semver';
+import { nodeEngineRanges } from './node-requirements.js';
 import {
   resolveCommand,
   runCommand,
@@ -63,31 +64,6 @@ function tool(
   };
 }
 
-async function nodeEngineRanges(
-  root: string,
-  profile: string,
-  backend: unknown,
-): Promise<string[]> {
-  const zones = profile === 'web-api' ? ['web-api/frontend', 'web-api/backend'] : [profile];
-  if (profile === 'mobile' && backend === 'new') zones.push('web-api/backend');
-  const ranges = new Set<string>();
-  for (const zone of zones) {
-    const filename = path.join(root, 'templates', 'profiles', zone, 'package-lock.json');
-    const lock = JSON.parse(await readFile(filename, 'utf8')) as {
-      packages?: Record<string, { engines?: { node?: string } }>;
-    };
-    if (!lock.packages) throw new Error(`Lockfile npm sans packages : ${filename}.`);
-    for (const entry of Object.values(lock.packages)) {
-      if (entry.engines?.node) {
-        if (!semver.validRange(entry.engines.node))
-          throw new Error(`Exigence Node non interprétable : ${entry.engines.node}.`);
-        ranges.add(entry.engines.node);
-      }
-    }
-  }
-  return [...ranges].sort();
-}
-
 async function phpRequirements(root: string, database: unknown): Promise<ToolRequirement[]> {
   const lockPath = path.join(root, 'templates', 'profiles', 'php', 'composer.lock');
   const lock = JSON.parse(await readFile(lockPath, 'utf8')) as {
@@ -143,7 +119,7 @@ export async function getRequirements(
     'BOOTSTRAP.md + contrat MVP Node 24 LTS et engines des lockfiles',
     '24.21.0',
   );
-  node.additionalRanges = await nodeEngineRanges(root, profile, selection.options.backend);
+  node.additionalRanges = await nodeEngineRanges(root, profile, selection.options);
   const npm = tool(
     'npm',
     'npm',
