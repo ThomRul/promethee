@@ -6,6 +6,8 @@
 
 Prométhée est un outil en ligne de commande, ou **CLI**. Il vous guide avec un menu : choisissez le dossier de votre projet, le type d’application et les compétences à donner à votre agent IA. Prométhée prépare ensuite une structure de départ, des instructions et une carte du projet pour travailler avec **Codex**.
 
+Prométhée a été créé pour aider les personnes qui débutent, même sans connaissances en développement web, à démarrer un projet propre et bien structuré avec l’aide d’une IA. Il facilite les premiers choix techniques et fournit un cadre de bonnes pratiques pour que le projet puisse évoluer.
+
 Le terminal est la fenêtre dans laquelle vous saisissez des commandes : Command Prompt ou PowerShell sous Windows, Terminal sous Ubuntu. Vous pouvez utiliser les menus de Prométhée sans mémoriser toutes ses commandes.
 
 **Version actuelle : 0.2.0, en préversion.** Le menu, la préparation des projets et la gestion des skills sont disponibles. Certaines installations et vérifications natives restent en préparation : [voir les possibilités actuelles](#possibilités-actuelles).
