@@ -1,0 +1,539 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Manifeste de préparation Prométhée V0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "cliVersion",
+    "createdAt",
+    "updatedAt",
+    "project",
+    "catalogue",
+    "versions",
+    "skills",
+    "files",
+    "steps",
+    "toolchain",
+    "databases"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "cliVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "packageName",
+        "profile",
+        "scope",
+        "docker",
+        "git",
+        "options"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "packageName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile": {
+          "enum": [
+            "web-api",
+            "php",
+            "desktop",
+            "mobile"
+          ]
+        },
+        "scope": {
+          "enum": [
+            "defined",
+            "undefined"
+          ]
+        },
+        "docker": {
+          "enum": [
+            "undecided",
+            "none",
+            "development",
+            "deployment",
+            "both"
+          ]
+        },
+        "git": {
+          "type": "boolean"
+        },
+        "options": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "uiAnimations": {
+              "type": "boolean"
+            },
+            "editorialAnimations": {
+              "type": "boolean"
+            },
+            "database": {
+              "enum": [
+                "none",
+                "postgresql",
+                "mysql",
+                "mariadb",
+                "sqlite"
+              ]
+            },
+            "livewire": {
+              "type": "boolean"
+            },
+            "backend": {
+              "enum": [
+                "none",
+                "existing",
+                "new"
+              ]
+            },
+            "mobileMode": {
+              "enum": [
+                "android-local",
+                "expo-go"
+              ]
+            },
+            "androidTarget": {
+              "enum": [
+                "device",
+                "emulator"
+              ]
+            }
+          },
+          "required": [
+            "uiAnimations"
+          ],
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "mobileMode": {
+                    "const": "expo-go"
+                  }
+                },
+                "required": [
+                  "mobileMode"
+                ]
+              },
+              "then": {
+                "not": {
+                  "required": [
+                    "androidTarget"
+                  ]
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "mobileMode": {
+                    "const": "android-local"
+                  }
+                },
+                "required": [
+                  "mobileMode"
+                ]
+              },
+              "then": {
+                "required": [
+                  "androidTarget"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "profile": {
+                "enum": [
+                  "desktop",
+                  "mobile"
+                ]
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "then": {
+            "properties": {
+              "options": {
+                "not": {
+                  "properties": {
+                    "editorialAnimations": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "editorialAnimations"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "profile": {
+                "const": "mobile"
+              }
+            },
+            "required": [
+              "profile"
+            ]
+          },
+          "then": {
+            "properties": {
+              "options": {
+                "required": [
+                  "mobileMode",
+                  "backend",
+                  "database"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "options": {
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "mobileMode"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "androidTarget"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "backend"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "catalogue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/definitions/hash"
+        }
+      }
+    },
+    "versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/file"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "source",
+          "revision",
+          "adaptationVersion",
+          "installedTreeSha256",
+          "baselineFiles",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          },
+          "revision": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "adaptationVersion": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "installedTreeSha256": {
+            "$ref": "#/definitions/hash"
+          },
+          "baselineFiles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/file"
+            }
+          },
+          "state": {
+            "enum": [
+              "installed",
+              "preserved-custom",
+              "pending",
+              "failed"
+            ]
+          },
+          "deferredRevision": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "backupPath": {
+            "$ref": "#/definitions/path"
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "scaffold",
+              "dependencies",
+              "skills",
+              "documents",
+              "verification",
+              "git-init",
+              "initial-commit",
+              "preflight",
+              "tool-install",
+              "tool-verification",
+              "database-setup",
+              "database-verification",
+              "native-build",
+              "native-launch"
+            ]
+          },
+          "target": {
+            "$ref": "#/definitions/path"
+          },
+          "state": {
+            "enum": [
+              "planned",
+              "running",
+              "succeeded",
+              "failed",
+              "skipped"
+            ]
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "error": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          },
+          "toolId": {
+            "$ref": "#/definitions/id"
+          },
+          "databaseId": {
+            "$ref": "#/definitions/id"
+          }
+        }
+      }
+    },
+    "toolchain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "required",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "referenceVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "compatibility": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detectedVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "enum": [
+              "planned",
+              "compatible",
+              "missing",
+              "incompatible",
+              "detection-failed",
+              "installed",
+              "failed"
+            ]
+          },
+          "qualification": {
+            "enum": [
+              "qualified",
+              "pending"
+            ]
+          }
+        }
+      }
+    },
+    "databases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "engine",
+          "mode",
+          "target",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/definitions/id"
+          },
+          "engine": {
+            "enum": [
+              "postgresql",
+              "mysql",
+              "mariadb",
+              "sqlite"
+            ]
+          },
+          "mode": {
+            "enum": [
+              "native",
+              "containerized",
+              "embedded",
+              "remote",
+              "undecided"
+            ]
+          },
+          "target": {
+            "$ref": "#/definitions/path"
+          },
+          "state": {
+            "enum": [
+              "planned",
+              "configured",
+              "verified",
+              "failed"
+            ]
+          },
+          "qualification": {
+            "enum": [
+              "qualified",
+              "pending"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/definitions/path"
+        },
+        "sha256": {
+          "$ref": "#/definitions/hash"
+        }
+      }
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Adaptation Prométhée 1 — 2026-10-05
+
+Source : https://github.com/supabase/agent-skills/tree/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase-postgres-best-practices
+Révision : c9be0e931b7930f7d02126d04774d904c381e7d7
+Licence amont : MIT. Les fichiers de licence amont sont conservés.
+
+Modifications de préparation :
+- Description ciblée PostgreSQL, références pertinentes seulement.
+- Pas de compte Supabase, infrastructure RLS/extension/pooler imposée ou capacité chiffrée garantie.
+- Pool TypeORM/pg en premier ; PgBouncer seulement pour un besoin démontré.
+- Provenance et avis de modification ajoutés aux copies adaptées.
+
+Cette adaptation n'est pas une release officielle du dépôt amont.
+Aucune API payante obligatoire et aucune autorisation externe ajoutée.

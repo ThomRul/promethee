@@ -1,0 +1,1898 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-04",
+  "status": "resolved-and-partially-executed-native-qualification-pending",
+  "referenceRuntime": {
+    "node": "24.21.0",
+    "npm": "11.19.0",
+    "php": "8.4.26",
+    "composer": "2.10.3"
+  },
+  "rationale": {
+    "typescript": "5.9.3 : compatible avec typescript-eslint (<6.1), décorateurs Nest/TypeORM et Expo ; migration majeure explicite.",
+    "viteDesktop": "7.3.6 : electron-vite 5 stable accepte Vite 5/6/7, pas Vite 8.",
+    "mobile": "Versions React et natives de bundledNativeModules.json pour Expo 57.0.26, pas les latest indépendants. React DOM 19.2.3 fixé également pour empêcher un peer transitif de choisir React DOM 19.3 avec React 19.2.3. Babel core 7.29.7 et babel-preset-expo 57.0.13 alignés avec Expo et Worklets, pas Babel 8 latest. test-renderer 1.2.0 utilise react-reconciler 0.33, compatible React 19.2 ; 1.3.0 exige React 19.3. Toute option actualise le lockfile de base ; une régénération totale doit être requalifiée, car npm peut ajouter des peers RSC optionnels incompatibles avec React natif.",
+    "nativewind": "4.2.7 stable avec Tailwind 3.4.19 ; Tailwind 4.3.3 pour web/PHP/desktop.",
+    "typeorm": "1.1.1 avec Nest 12 et better-sqlite3 12.11.1 (peer ^12). La résolution et les migrations doivent être vérifiées."
+  },
+  "profiles": {
+    "web": {
+      "dependencies": {
+        "react": "19.3.0",
+        "react-dom": "19.3.0",
+        "clsx": "2.1.1",
+        "tailwind-merge": "3.7.0",
+        "class-variance-authority": "0.7.1"
+      },
+      "devDependencies": {
+        "typescript": "5.9.3",
+        "prettier": "3.9.9",
+        "@types/node": "24.19.1",
+        "eslint": "10.12.0",
+        "@eslint/js": "10.0.1",
+        "typescript-eslint": "8.71.0",
+        "eslint-config-prettier": "10.1.8",
+        "vitest": "5.0.3",
+        "@testing-library/react": "16.3.3",
+        "@testing-library/dom": "10.4.2",
+        "@testing-library/jest-dom": "7.0.1",
+        "@testing-library/user-event": "14.6.7",
+        "jsdom": "30.1.2",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
+        "tailwindcss": "4.3.3",
+        "@tailwindcss/vite": "4.3.3",
+        "eslint-plugin-react-hooks": "7.1.1",
+        "eslint-plugin-react-refresh": "0.5.7",
+        "vite": "8.3.2",
+        "@vitejs/plugin-react": "6.1.1"
+      }
+    },
+    "api": {
+      "dependencies": {
+        "@nestjs/common": "12.1.2",
+        "@nestjs/core": "12.1.2",
+        "@nestjs/platform-express": "12.1.2",
+        "@nestjs/typeorm": "12.0.2",
+        "typeorm": "1.1.1",
+        "pg": "8.23.1",
+        "reflect-metadata": "0.2.2",
+        "rxjs": "7.8.2",
+        "class-transformer": "0.5.1",
+        "class-validator": "0.15.1"
+      },
+      "devDependencies": {
+        "typescript": "5.9.3",
+        "prettier": "3.9.9",
+        "@types/node": "24.19.1",
+        "eslint": "10.12.0",
+        "@eslint/js": "10.0.1",
+        "typescript-eslint": "8.71.0",
+        "eslint-config-prettier": "10.1.8",
+        "vitest": "5.0.3",
+        "vite": "8.3.2",
+        "@nestjs/testing": "12.1.2",
+        "supertest": "7.3.1",
+        "@types/supertest": "7.2.1",
+        "unplugin-swc": "2.0.0",
+        "@swc/core": "1.16.13"
+      }
+    },
+    "desktop": {
+      "dependencies": {
+        "react": "19.3.0",
+        "react-dom": "19.3.0",
+        "clsx": "2.1.1",
+        "tailwind-merge": "3.7.0",
+        "class-variance-authority": "0.7.1"
+      },
+      "devDependencies": {
+        "typescript": "5.9.3",
+        "prettier": "3.9.9",
+        "@types/node": "24.19.1",
+        "eslint": "10.12.0",
+        "@eslint/js": "10.0.1",
+        "typescript-eslint": "8.71.0",
+        "eslint-config-prettier": "10.1.8",
+        "vitest": "5.0.3",
+        "@testing-library/react": "16.3.3",
+        "@testing-library/dom": "10.4.2",
+        "@testing-library/jest-dom": "7.0.1",
+        "@testing-library/user-event": "14.6.7",
+        "jsdom": "30.1.2",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
+        "tailwindcss": "4.3.3",
+        "@tailwindcss/vite": "4.3.3",
+        "eslint-plugin-react-hooks": "7.1.1",
+        "eslint-plugin-react-refresh": "0.5.7",
+        "electron": "44.5.1",
+        "electron-vite": "5.0.0",
+        "vite": "7.3.6",
+        "@vitejs/plugin-react": "5.2.0"
+      }
+    },
+    "phpAssets": {
+      "dependencies": {
+        "alpinejs": "3.17.4"
+      },
+      "devDependencies": {
+        "vite": "8.3.2",
+        "laravel-vite-plugin": "3.2.0",
+        "tailwindcss": "4.3.3",
+        "@tailwindcss/vite": "4.3.3",
+        "prettier": "3.9.9"
+      }
+    },
+    "mobile": {
+      "dependencies": {
+        "expo": "57.0.26",
+        "expo-router": "57.0.24",
+        "react": "19.2.3",
+        "react-native": "0.86.3",
+        "nativewind": "4.2.7",
+        "react-native-css-interop": "0.2.7",
+        "react-native-reanimated": "4.5.1",
+        "react-native-worklets": "0.10.1",
+        "react-native-safe-area-context": "5.7.0",
+        "react-native-screens": "4.26.0",
+        "expo-constants": "57.0.20",
+        "expo-linking": "57.0.11",
+        "expo-status-bar": "57.0.1",
+        "react-dom": "19.2.3"
+      },
+      "devDependencies": {
+        "typescript": "5.9.3",
+        "prettier": "3.9.9",
+        "@types/node": "24.19.1",
+        "@types/react": "19.2.18",
+        "tailwindcss": "3.4.19",
+        "eslint": "9.39.4",
+        "eslint-config-expo": "57.0.2",
+        "jest": "29.7.0",
+        "jest-expo": "57.0.5",
+        "@types/jest": "29.5.14",
+        "@testing-library/react-native": "14.0.1",
+        "babel-preset-expo": "57.0.13",
+        "@babel/core": "7.29.7",
+        "@react-native/metro-config": "0.86.3",
+        "@react-native/jest-preset": "0.86.3",
+        "test-renderer": "1.2.0",
+        "@babel/plugin-transform-react-jsx": "7.29.7"
+      }
+    }
+  },
+  "optional": {
+    "web-motion": {
+      "dependencies": {
+        "motion": "14.0.0"
+      }
+    },
+    "php-livewire-assets": {
+      "remove": [
+        "alpinejs"
+      ],
+      "reason": "Livewire fournit déjà Alpine ; charger une seule instance."
+    },
+    "desktop-sqlite": {
+      "dependencies": {
+        "typeorm": "1.1.1",
+        "reflect-metadata": "0.2.2",
+        "better-sqlite3": "12.11.1"
+      },
+      "devDependencies": {
+        "@types/better-sqlite3": "9.6.0",
+        "@electron/rebuild": "4.2.0"
+      }
+    },
+    "mobile-sqlite": {
+      "dependencies": {
+        "expo-sqlite": "57.0.3"
+      }
+    },
+    "mobile-animation": {
+      "dependencies": {
+        "react-native-gesture-handler": "2.32.0"
+      }
+    },
+    "web-editorial": {
+      "status": "pending-version-and-lock",
+      "requestedLibraries": [
+        "gsap",
+        "@gsap/react for React only"
+      ],
+      "license": "GSAP Standard No Charge, custom license; not MIT/Apache",
+      "licenseSource": "https://gsap.com/community/standard-license/",
+      "installable": false
+    }
+  },
+  "packages": [
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "publishedAt": "2025-09-30T21:19:38.784Z",
+      "registry": "https://registry.npmjs.org/typescript/5.9.3",
+      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
+      "tarball": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.9",
+      "publishedAt": "2026-09-23T06:31:34.693Z",
+      "registry": "https://registry.npmjs.org/prettier/3.9.9",
+      "integrity": "sha512-Z/CJHIkdujO/OtN7nXUii0Rf3VT5SRuhjBA82Xvu2XhBUgX3nhP67T0LHceBdQLex7OOFGTox+Q5Yg8Jk2Qivg==",
+      "tarball": "https://registry.npmjs.org/prettier/-/prettier-3.9.9.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=14"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/node",
+      "version": "24.19.1",
+      "publishedAt": "2026-10-01T22:38:02.894Z",
+      "registry": "https://registry.npmjs.org/%40types%2Fnode/24.19.1",
+      "integrity": "sha512-aS3/DG0oM05K0RIXXP+hKjinGG5IgSSVGzswZxW3O0sS3pH4/fycXundUC9XsszgKCk4gHXylTEK6hyFxVxnoQ==",
+      "tarball": "https://registry.npmjs.org/@types/node/-/node-24.19.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "eslint",
+      "version": "10.12.0",
+      "publishedAt": "2026-10-02T20:08:19.213Z",
+      "registry": "https://registry.npmjs.org/eslint/10.12.0",
+      "integrity": "sha512-npHjrHb2o4ehH3mE+YuxABR+0gyb0aVWCIolgJDArwCiHEIsonBm3ZKjel5b0U5+a+MbEvIyRCGCzD3eKKK2NA==",
+      "tarball": "https://registry.npmjs.org/eslint/-/eslint-10.12.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "peerDependencies": {
+        "jiti": "*"
+      },
+      "peerDependenciesMeta": {
+        "jiti": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "publishedAt": "2026-02-06T22:34:56.290Z",
+      "registry": "https://registry.npmjs.org/%40eslint%2Fjs/10.0.1",
+      "integrity": "sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==",
+      "tarball": "https://registry.npmjs.org/@eslint/js/-/js-10.0.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "peerDependencies": {
+        "eslint": "^10.0.0"
+      },
+      "peerDependenciesMeta": {
+        "eslint": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.71.0",
+      "publishedAt": "2026-09-28T17:12:00.356Z",
+      "registry": "https://registry.npmjs.org/typescript-eslint/8.71.0",
+      "integrity": "sha512-fBdHYiqQ14RW6mOMXD14Svn82ZsCYAoQSzGRzyEjR59S5A2Krh/l7fGTOQ7iCr8gGy/mHVXtEF7s5fgjEdV0Pw==",
+      "tarball": "https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.71.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      },
+      "peerDependencies": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "eslint-config-prettier",
+      "version": "10.1.8",
+      "publishedAt": "2025-07-18T18:40:08.244Z",
+      "registry": "https://registry.npmjs.org/eslint-config-prettier/10.1.8",
+      "integrity": "sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==",
+      "tarball": "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-10.1.8.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "eslint": ">=7.0.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.3",
+      "publishedAt": "2026-09-30T11:30:42.429Z",
+      "registry": "https://registry.npmjs.org/vitest/5.0.3",
+      "integrity": "sha512-xMw97S3rjdtj5dkVat7jCsqWBpvchs3RlpQctUqwJD0KkERk40vz2fJ77lDwW/Vzh/pk18eItYAzkodhSes3jQ==",
+      "tarball": "https://registry.npmjs.org/vitest/-/vitest-5.0.3.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      },
+      "peerDependencies": {
+        "vite": "^6.4.0 || ^7.0.0 || ^8.0.0",
+        "jsdom": "*",
+        "happy-dom": "*",
+        "@vitest/ui": "5.0.3",
+        "@types/node": "^22.0.0 || >=24.0.0",
+        "@edge-runtime/vm": "*",
+        "@opentelemetry/api": "^1.9.0",
+        "@vitest/coverage-v8": "5.0.3",
+        "@vitest/browser-preview": "5.0.3",
+        "@vitest/coverage-istanbul": "5.0.3",
+        "@vitest/browser-playwright": "5.0.3",
+        "@vitest/browser-webdriverio": "^5.0.0-beta.5 || >=5.0.0"
+      },
+      "peerDependenciesMeta": {
+        "vite": {
+          "optional": false
+        },
+        "jsdom": {
+          "optional": true
+        },
+        "happy-dom": {
+          "optional": true
+        },
+        "@vitest/ui": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "@edge-runtime/vm": {
+          "optional": true
+        },
+        "@opentelemetry/api": {
+          "optional": true
+        },
+        "@vitest/coverage-v8": {
+          "optional": true
+        },
+        "@vitest/browser-preview": {
+          "optional": true
+        },
+        "@vitest/coverage-istanbul": {
+          "optional": true
+        },
+        "@vitest/browser-playwright": {
+          "optional": true
+        },
+        "@vitest/browser-webdriverio": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@testing-library/react",
+      "version": "16.3.3",
+      "publishedAt": "2026-08-27T17:41:18.735Z",
+      "registry": "https://registry.npmjs.org/%40testing-library%2Freact/16.3.3",
+      "integrity": "sha512-Uo193NgQbPMz6lrrhtRQQFcMC6Re/ELLFbbuVL30WDlZxlpZf9/lMHTAVxPRLw1q1iu9OJmR1c2BLiENRstdBg==",
+      "tarball": "https://registry.npmjs.org/@testing-library/react/-/react-16.3.3.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0",
+        "@types/react": "^18.0.0 || ^19.0.0",
+        "@types/react-dom": "^18.0.0 || ^19.0.0",
+        "@testing-library/dom": "^10.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@types/react": {
+          "optional": true
+        },
+        "@types/react-dom": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@testing-library/dom",
+      "version": "10.4.2",
+      "publishedAt": "2026-09-13T18:08:36.116Z",
+      "registry": "https://registry.npmjs.org/%40testing-library%2Fdom/10.4.2",
+      "integrity": "sha512-yzr2S9HyAIdhz2/6qHgbs665Q7PKVcDF05vsOlHPxG1mo36gKVesdYVeDLnXgfjJ03CrKRk08knc6+E/9m8v2Q==",
+      "tarball": "https://registry.npmjs.org/@testing-library/dom/-/dom-10.4.2.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@testing-library/jest-dom",
+      "version": "7.0.1",
+      "publishedAt": "2026-08-09T23:44:33.598Z",
+      "registry": "https://registry.npmjs.org/%40testing-library%2Fjest-dom/7.0.1",
+      "integrity": "sha512-oMDTC3oA+6CXSO2JZnvOI7CA6oVub6kij5ggk9ohwye5slmkwxYDXcPOVxgMw/RQlticjtO0C1RZkR97HgrWMw==",
+      "tarball": "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-7.0.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "npm": ">=6",
+        "node": ">=22",
+        "yarn": ">=1"
+      },
+      "peerDependencies": {
+        "vitest": ">= 0.32",
+        "@testing-library/dom": ">=10 <11"
+      },
+      "peerDependenciesMeta": {
+        "vitest": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@testing-library/user-event",
+      "version": "14.6.7",
+      "publishedAt": "2026-09-02T01:56:32.109Z",
+      "registry": "https://registry.npmjs.org/%40testing-library%2Fuser-event/14.6.7",
+      "integrity": "sha512-MPCpX8bxe8zS+JmmTwLp8jd0dy1rAm60Te/SL8JrQM3qvQJcBOs1d7IefJMyZzqM3EWBrDn/LWDt1BCGu4ASfg==",
+      "tarball": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-14.6.7.tgz",
+      "license": "MIT",
+      "engines": {
+        "npm": ">=6",
+        "node": ">=12"
+      },
+      "peerDependencies": {
+        "@testing-library/dom": ">=7.21.4"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "jsdom",
+      "version": "30.1.2",
+      "publishedAt": "2026-10-04T09:15:00.333Z",
+      "registry": "https://registry.npmjs.org/jsdom/30.1.2",
+      "integrity": "sha512-0FFE/jE1rppmVfUrJUgxqXjcwolZYIGtAgj1pTussMhNZxIxi7W/PvfWaMNroGi2B36X1IKHbexpZ9DhkoOPiQ==",
+      "tarball": "https://registry.npmjs.org/jsdom/-/jsdom-30.1.2.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+      },
+      "peerDependencies": {
+        "canvas": "^3.2.3"
+      },
+      "peerDependenciesMeta": {
+        "canvas": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "publishedAt": "2026-09-09T17:21:30.071Z",
+      "registry": "https://registry.npmjs.org/react/19.3.0",
+      "integrity": "sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==",
+      "tarball": "https://registry.npmjs.org/react/-/react-19.3.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "publishedAt": "2026-09-09T17:17:39.744Z",
+      "registry": "https://registry.npmjs.org/react-dom/19.3.0",
+      "integrity": "sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==",
+      "tarball": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^19.3.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "clsx",
+      "version": "2.1.1",
+      "publishedAt": "2024-04-23T05:26:04.645Z",
+      "registry": "https://registry.npmjs.org/clsx/2.1.1",
+      "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+      "tarball": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "tailwind-merge",
+      "version": "3.7.0",
+      "publishedAt": "2026-09-12T20:10:15.257Z",
+      "registry": "https://registry.npmjs.org/tailwind-merge/3.7.0",
+      "integrity": "sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==",
+      "tarball": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.7.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "class-variance-authority",
+      "version": "0.7.1",
+      "publishedAt": "2024-11-26T08:20:34.604Z",
+      "registry": "https://registry.npmjs.org/class-variance-authority/0.7.1",
+      "integrity": "sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==",
+      "tarball": "https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz",
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "publishedAt": "2026-09-09T18:08:49.750Z",
+      "registry": "https://registry.npmjs.org/%40types%2Freact/19.3.0",
+      "integrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==",
+      "tarball": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "publishedAt": "2026-09-09T18:07:51.886Z",
+      "registry": "https://registry.npmjs.org/%40types%2Freact-dom/19.3.0",
+      "integrity": "sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==",
+      "tarball": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "@types/react": "^19.3.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.3",
+      "publishedAt": "2026-07-16T12:03:35.267Z",
+      "registry": "https://registry.npmjs.org/tailwindcss/4.3.3",
+      "integrity": "sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==",
+      "tarball": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@tailwindcss/vite",
+      "version": "4.3.3",
+      "publishedAt": "2026-07-16T12:04:06.316Z",
+      "registry": "https://registry.npmjs.org/%40tailwindcss%2Fvite/4.3.3",
+      "integrity": "sha512-yYU8cogLeSh/ms2jh8Fj7jaba/EWa7Ja6GoUqYZaraEuCI5YS6ms6ObZgjjedm+jm6XZjdNRWBpPP6Z86oOxcw==",
+      "tarball": "https://registry.npmjs.org/@tailwindcss/vite/-/vite-4.3.3.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "vite": "^5.2.0 || ^6 || ^7 || ^8"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "publishedAt": "2026-04-17T18:03:19.591Z",
+      "registry": "https://registry.npmjs.org/eslint-plugin-react-hooks/7.1.1",
+      "integrity": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g==",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {
+        "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "version": "0.5.7",
+      "publishedAt": "2026-09-14T16:12:50.394Z",
+      "registry": "https://registry.npmjs.org/eslint-plugin-react-refresh/0.5.7",
+      "integrity": "sha512-XhJSzLljuYD4UjNuFGJu2v7aD3sqNVK12w5/DCUfrNfHWegZo2+TsavNx8MuxMwEquuFAzNbNfXKU0WoZ+YUIg==",
+      "tarball": "https://registry.npmjs.org/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.5.7.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "eslint": "^9 || ^10"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "vite",
+      "version": "8.3.2",
+      "publishedAt": "2026-10-01T10:17:44.767Z",
+      "registry": "https://registry.npmjs.org/vite/8.3.2",
+      "integrity": "sha512-SQr1x6W5vVSbROg7vsyXIaxK9b0G7zsT68acdWWRmnBUsgDieLCRG+Rep9WdZgcposvv/GSnr4GUUBqB3vXq6w==",
+      "tarball": "https://registry.npmjs.org/vite/-/vite-8.3.2.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1"
+      },
+      "peerDependenciesMeta": {
+        "tsx": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "esbuild": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "@vitejs/devtools": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.1",
+      "publishedAt": "2026-08-28T03:30:56.619Z",
+      "registry": "https://registry.npmjs.org/%40vitejs%2Fplugin-react/6.1.1",
+      "integrity": "sha512-yxLaQV9gkhS8ezJqCM6+ndU7mDY6gqAg75NQ+0IjwEI8IYOmQCgkRwHKVSfWXW076DsqMo0Dk+0FK1U+M5RgFw==",
+      "tarball": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.1.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^8.0.0",
+        "oxc-transform-react": "^0.145.0",
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0"
+      },
+      "peerDependenciesMeta": {
+        "oxc-transform-react": {
+          "optional": true
+        },
+        "@rolldown/plugin-babel": {
+          "optional": true
+        },
+        "babel-plugin-react-compiler": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@nestjs/common",
+      "version": "12.1.2",
+      "publishedAt": "2026-09-30T09:05:54.345Z",
+      "registry": "https://registry.npmjs.org/%40nestjs%2Fcommon/12.1.2",
+      "integrity": "sha512-e2tvLcEaG18sJy5IXrdSLv0ZBpR5djWxypCLkLuMAEFCvVPYL1lEIhvAMBkarlg+ZA8tbZN40J0tFurUl9NpdA==",
+      "tarball": "https://registry.npmjs.org/@nestjs/common/-/common-12.1.2.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "rxjs": "^7.1.0",
+        "class-validator": ">=0.13.2",
+        "reflect-metadata": "^0.1.12 || ^0.2.0",
+        "class-transformer": ">=0.4.1"
+      },
+      "peerDependenciesMeta": {
+        "class-validator": {
+          "optional": true
+        },
+        "class-transformer": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@nestjs/core",
+      "version": "12.1.2",
+      "publishedAt": "2026-09-30T09:06:56.995Z",
+      "registry": "https://registry.npmjs.org/%40nestjs%2Fcore/12.1.2",
+      "integrity": "sha512-ieNRDv6P6dLsF/wMz9IUjwnyQbj7/Oluq1FXe3Xhje7TFSKPprLc83QniA2I6tjkr7YVDosdL2Dj7CVv9kU8og==",
+      "tarball": "https://registry.npmjs.org/@nestjs/core/-/core-12.1.2.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 20"
+      },
+      "peerDependencies": {
+        "rxjs": "^7.1.0",
+        "@nestjs/common": "^12.0.0",
+        "reflect-metadata": "^0.1.12 || ^0.2.0",
+        "@nestjs/websockets": "^12.0.0",
+        "@nestjs/microservices": "^12.0.0",
+        "@nestjs/platform-express": "^12.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@nestjs/websockets": {
+          "optional": true
+        },
+        "@nestjs/microservices": {
+          "optional": true
+        },
+        "@nestjs/platform-express": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@nestjs/platform-express",
+      "version": "12.1.2",
+      "publishedAt": "2026-09-30T09:08:30.276Z",
+      "registry": "https://registry.npmjs.org/%40nestjs%2Fplatform-express/12.1.2",
+      "integrity": "sha512-//ftPv5+UONizm5zcme/AP91EFo1EsqFFyC2I3HC2w8swYVXadHKW1L3A2mgUuOhM1sdKkd2gzjQmL9504x85Q==",
+      "tarball": "https://registry.npmjs.org/@nestjs/platform-express/-/platform-express-12.1.2.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "@nestjs/core": "^12.0.0",
+        "@nestjs/common": "^12.0.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@nestjs/typeorm",
+      "version": "12.0.2",
+      "publishedAt": "2026-09-28T08:57:14.819Z",
+      "registry": "https://registry.npmjs.org/%40nestjs%2Ftypeorm/12.0.2",
+      "integrity": "sha512-16b8s8mGkQdTH4i+dhhCwYkfuhWpLMdtuK82vOMjwa5ZpKYjFohU2jvbqkEJmx03fVO4HEpb0aw4VQXo+lxdKw==",
+      "tarball": "https://registry.npmjs.org/@nestjs/typeorm/-/typeorm-12.0.2.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=20.19.0"
+      },
+      "peerDependencies": {
+        "rxjs": "^7.2.0",
+        "typeorm": "^0.3.0 || ^1.0.0-dev",
+        "@nestjs/core": "^10.0.0 || ^11.0.0 || ^12.0.0",
+        "@nestjs/common": "^10.0.0 || ^11.0.0 || ^12.0.0",
+        "reflect-metadata": "^0.1.13 || ^0.2.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "typeorm",
+      "version": "1.1.1",
+      "publishedAt": "2026-09-01T11:02:28.812Z",
+      "registry": "https://registry.npmjs.org/typeorm/1.1.1",
+      "integrity": "sha512-og9mG4Lwlvj6MfvYd8yRCzXy73gETtwgTKQ/ISLYvEOpJPy4IrjU/89HK4ZAFmRIbEg1hkIk04v8phTrxfgPmQ==",
+      "tarball": "https://registry.npmjs.org/typeorm/-/typeorm-1.1.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24.11.0"
+      },
+      "peerDependencies": {
+        "pg": "^8.5.1",
+        "mssql": "^12.0.0",
+        "redis": "^5.0.0 || ^6.0.0",
+        "mysql2": "^3.15.3",
+        "sql.js": "^1.4.0",
+        "ioredis": "^5.0.4",
+        "mongodb": "^7.0.0",
+        "ts-node": "^10.9.2",
+        "oracledb": "^6.3.0 || ^7.0.0",
+        "pg-native": "^3.0.0",
+        "better-sqlite3": "^12.0.0",
+        "pg-query-stream": "^4.0.0",
+        "@sap/hana-client": "^2.14.22",
+        "@google-cloud/spanner": "^8.0.0",
+        "typeorm-aurora-data-api-driver": "^3.0.0"
+      },
+      "peerDependenciesMeta": {
+        "pg": {
+          "optional": true
+        },
+        "mssql": {
+          "optional": true
+        },
+        "redis": {
+          "optional": true
+        },
+        "mysql2": {
+          "optional": true
+        },
+        "sql.js": {
+          "optional": true
+        },
+        "ioredis": {
+          "optional": true
+        },
+        "mongodb": {
+          "optional": true
+        },
+        "ts-node": {
+          "optional": true
+        },
+        "oracledb": {
+          "optional": true
+        },
+        "pg-native": {
+          "optional": true
+        },
+        "better-sqlite3": {
+          "optional": true
+        },
+        "pg-query-stream": {
+          "optional": true
+        },
+        "@sap/hana-client": {
+          "optional": true
+        },
+        "@google-cloud/spanner": {
+          "optional": true
+        },
+        "typeorm-aurora-data-api-driver": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "pg",
+      "version": "8.23.1",
+      "publishedAt": "2026-09-30T15:39:58.489Z",
+      "registry": "https://registry.npmjs.org/pg/8.23.1",
+      "integrity": "sha512-aL96AHANtWjPLDOLqnhx+ngp9+UK7ETEU8VJrDCGvsSSi/mGLcWYsS6Herg7lmaBJe4uwrfqsa7gTEFaSizDoQ==",
+      "tarball": "https://registry.npmjs.org/pg/-/pg-8.23.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 16.0.0"
+      },
+      "peerDependencies": {
+        "pg-native": ">=3.0.1"
+      },
+      "peerDependenciesMeta": {
+        "pg-native": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "reflect-metadata",
+      "version": "0.2.2",
+      "publishedAt": "2024-03-29T01:38:46.117Z",
+      "registry": "https://registry.npmjs.org/reflect-metadata/0.2.2",
+      "integrity": "sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==",
+      "tarball": "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.2.2.tgz",
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "rxjs",
+      "version": "7.8.2",
+      "publishedAt": "2025-02-22T03:00:42.711Z",
+      "registry": "https://registry.npmjs.org/rxjs/7.8.2",
+      "integrity": "sha512-dhKf903U/PQZY6boNNtAGdWbG85WAbjT/1xYoZIC7FAY0yWapOBQVsVrDl58W86//e1VpMNBtRV4MaXfdMySFA==",
+      "tarball": "https://registry.npmjs.org/rxjs/-/rxjs-7.8.2.tgz",
+      "license": "Apache-2.0",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "class-transformer",
+      "version": "0.5.1",
+      "publishedAt": "2021-11-22T19:04:09.677Z",
+      "registry": "https://registry.npmjs.org/class-transformer/0.5.1",
+      "integrity": "sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==",
+      "tarball": "https://registry.npmjs.org/class-transformer/-/class-transformer-0.5.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "class-validator",
+      "version": "0.15.1",
+      "publishedAt": "2026-02-26T10:46:55.062Z",
+      "registry": "https://registry.npmjs.org/class-validator/0.15.1",
+      "integrity": "sha512-LqoS80HBBSCVhz/3KloUly0ovokxpdOLR++Al3J3+dHXWt9sTKlKd4eYtoxhxyUjoe5+UcIM+5k9MIxyBWnRTw==",
+      "tarball": "https://registry.npmjs.org/class-validator/-/class-validator-0.15.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@nestjs/testing",
+      "version": "12.1.2",
+      "publishedAt": "2026-09-30T09:06:55.492Z",
+      "registry": "https://registry.npmjs.org/%40nestjs%2Ftesting/12.1.2",
+      "integrity": "sha512-JgetYeGHGK6iUEztXyiQLOfYLWqUgAyexLMzhuAMasgLiDgYShh/PoRESE9tzpRZo4eWKme3uSZ9DFR6Myuojw==",
+      "tarball": "https://registry.npmjs.org/@nestjs/testing/-/testing-12.1.2.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "@nestjs/core": "^12.0.0",
+        "@nestjs/common": "^12.0.0",
+        "@nestjs/microservices": "^12.0.0",
+        "@nestjs/platform-express": "^12.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@nestjs/microservices": {
+          "optional": true
+        },
+        "@nestjs/platform-express": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "supertest",
+      "version": "7.3.1",
+      "publishedAt": "2026-10-02T14:51:40.083Z",
+      "registry": "https://registry.npmjs.org/supertest/7.3.1",
+      "integrity": "sha512-vNaNCFoCR/edDbErQZp5KLNT8R4dSPHX7rlDLoE8hWLAm/878j6ShMbe8HK/E6RwwuhlSXVelXAIg9AxR5WWPw==",
+      "tarball": "https://registry.npmjs.org/supertest/-/supertest-7.3.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=14.18.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/supertest",
+      "version": "7.2.1",
+      "publishedAt": "2026-07-14T08:15:42.665Z",
+      "registry": "https://registry.npmjs.org/%40types%2Fsupertest/7.2.1",
+      "integrity": "sha512-4CbBvoYVLHL7+yhbYrZET0vsvuyXTC05aRe7dNQkwMzm56auceoy6Yu3K50uZmwfHna1os3CMSgM/3QVkUtPTw==",
+      "tarball": "https://registry.npmjs.org/@types/supertest/-/supertest-7.2.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "unplugin-swc",
+      "version": "2.0.0",
+      "publishedAt": "2026-09-21T17:07:40.598Z",
+      "registry": "https://registry.npmjs.org/unplugin-swc/2.0.0",
+      "integrity": "sha512-hMdGJEtkwiJhzuXXx4Nb1XYDeD9KG4+P7KZOaErJTpZNYhTo1sbWIsXb+u410zXyaqH00veNX4UxOr6TpUwNiQ==",
+      "tarball": "https://registry.npmjs.org/unplugin-swc/-/unplugin-swc-2.0.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "@swc/core": "^1.2.108"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@swc/core",
+      "version": "1.16.13",
+      "publishedAt": "2026-09-30T09:51:31.904Z",
+      "registry": "https://registry.npmjs.org/%40swc%2Fcore/1.16.13",
+      "integrity": "sha512-k4uUsIMS0IwOKVsrQs48IZK75O4roV3FnuJEdL7ES+DFESftdgvz73QBqN3VUAbUmUr78We4tzG0kgYj36M22Q==",
+      "tarball": "https://registry.npmjs.org/@swc/core/-/core-1.16.13.tgz",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=10"
+      },
+      "peerDependencies": {
+        "@swc/helpers": ">=0.5.17"
+      },
+      "peerDependenciesMeta": {
+        "@swc/helpers": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "electron",
+      "version": "44.5.1",
+      "publishedAt": "2026-09-30T06:59:15.983Z",
+      "registry": "https://registry.npmjs.org/electron/44.5.1",
+      "integrity": "sha512-lx7AYoFIiyvEvgvpyWO9kOC60xtNPpiPZAth6Fmg9NutzpCAMLwpUlaBY2EXfZyIgUdzEmLMj9KvK0Vrokl1yQ==",
+      "tarball": "https://registry.npmjs.org/electron/-/electron-44.5.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 22.12.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "electron-vite",
+      "version": "5.0.0",
+      "publishedAt": "2025-12-07T14:29:24.439Z",
+      "registry": "https://registry.npmjs.org/electron-vite/5.0.0",
+      "integrity": "sha512-OHp/vjdlubNlhNkPkL/+3JD34ii5ov7M0GpuXEVdQeqdQ3ulvVR7Dg/rNBLfS5XPIFwgoBLDf9sjjrL+CuDyRQ==",
+      "tarball": "https://registry.npmjs.org/electron-vite/-/electron-vite-5.0.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^5.0.0 || ^6.0.0 || ^7.0.0",
+        "@swc/core": "^1.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@swc/core": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "vite",
+      "version": "7.3.6",
+      "publishedAt": "2026-06-25T01:51:49.605Z",
+      "registry": "https://registry.npmjs.org/vite/7.3.6",
+      "integrity": "sha512-4XP60spRGjSZFf1qYH+dJIkK2znL3zQfl9KkOV9MkkRR/3Dls0dxaBsQPTloEc5BLXWPL9vsOxopxyKoMmDueg==",
+      "tarball": "https://registry.npmjs.org/vite/-/vite-7.3.6.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "lightningcss": "^1.21.0",
+        "sass-embedded": "^1.70.0"
+      },
+      "peerDependenciesMeta": {
+        "tsx": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "lightningcss": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "5.2.0",
+      "publishedAt": "2026-03-12T14:27:45.817Z",
+      "registry": "https://registry.npmjs.org/%40vitejs%2Fplugin-react/5.2.0",
+      "integrity": "sha512-YmKkfhOAi3wsB1PhJq5Scj3GXMn3WvtQ/JC0xoopuHoXSdmtdStOpFrYaT1kie2YgFBcIe64ROzMYRjCrYOdYw==",
+      "tarball": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.2.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "alpinejs",
+      "version": "3.17.4",
+      "publishedAt": "2026-09-21T11:36:35.242Z",
+      "registry": "https://registry.npmjs.org/alpinejs/3.17.4",
+      "integrity": "sha512-N2gsr+58XVUt7OAPKnUGiKPDtkd+xbSGTae8C8IJxeRdkkhBJPIautkJ+qcwb7lcjJ/QK3/CPVIbN20JPvtK7A==",
+      "tarball": "https://registry.npmjs.org/alpinejs/-/alpinejs-3.17.4.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "laravel-vite-plugin",
+      "version": "3.2.0",
+      "publishedAt": "2026-08-11T14:24:08.596Z",
+      "registry": "https://registry.npmjs.org/laravel-vite-plugin/3.2.0",
+      "integrity": "sha512-xSxY9Gzeb/eancd8WeK09piAFP+a6i5QIBqNCKNv9L0Eq6wziwzSem7F1GvMSrtjMh5F/QVKFxn8t9naGOA66A==",
+      "tarball": "https://registry.npmjs.org/laravel-vite-plugin/-/laravel-vite-plugin-3.2.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^8.0.0",
+        "fontaine": "^0.8.0"
+      },
+      "peerDependenciesMeta": {
+        "fontaine": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "expo",
+      "version": "57.0.26",
+      "publishedAt": "2026-09-29T10:57:08.644Z",
+      "registry": "https://registry.npmjs.org/expo/57.0.26",
+      "integrity": "sha512-U1rsFwcuZNnU61Z/YLnnVC/ZqP0wpxh/rCKUMff3ot/rhLpxFY1zxEqu4vyaexyvBAB1mwpl9lA/ltcHBoQGyg==",
+      "tarball": "https://registry.npmjs.org/expo/-/expo-57.0.26.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "react-dom": "*",
+        "react-native": "*",
+        "react-native-web": "*",
+        "@expo/dom-webview": "*",
+        "@expo/metro-runtime": "*",
+        "react-native-webview": "*"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        },
+        "react-native-web": {
+          "optional": true
+        },
+        "@expo/dom-webview": {
+          "optional": true
+        },
+        "@expo/metro-runtime": {
+          "optional": true
+        },
+        "react-native-webview": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "expo-router",
+      "version": "57.0.24",
+      "publishedAt": "2026-09-29T10:59:50.752Z",
+      "registry": "https://registry.npmjs.org/expo-router/57.0.24",
+      "integrity": "sha512-XpqE4Oh4yrmc+sVfsDQPLErBlus//85ulLRghVZltYcdvFm9yNzErmaKrXuBVMUL6D3tnpDtkIgxESG9hYBd7w==",
+      "tarball": "https://registry.npmjs.org/expo-router/-/expo-router-57.0.24.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "expo": "*",
+        "react": "*",
+        "react-dom": "*",
+        "expo-linking": "^57.0.11",
+        "react-native": "*",
+        "@expo/log-box": "^57.0.4",
+        "expo-constants": "^57.0.20",
+        "react-native-web": "*",
+        "@expo/metro-runtime": "^57.0.16",
+        "react-native-screens": "^4.26.0",
+        "react-native-reanimated": "*",
+        "react-server-dom-webpack": "~19.0.4 || ~19.1.5 || ~19.2.4",
+        "react-native-gesture-handler": "*",
+        "@testing-library/react-native": ">= 13.2.0",
+        "react-native-safe-area-context": ">= 5.4.0"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        },
+        "react-native-web": {
+          "optional": true
+        },
+        "react-native-reanimated": {
+          "optional": true
+        },
+        "react-server-dom-webpack": {
+          "optional": true
+        },
+        "react-native-gesture-handler": {
+          "optional": true
+        },
+        "@testing-library/react-native": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "react",
+      "version": "19.2.3",
+      "publishedAt": "2025-12-11T22:55:28.598Z",
+      "registry": "https://registry.npmjs.org/react/19.2.3",
+      "integrity": "sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==",
+      "tarball": "https://registry.npmjs.org/react/-/react-19.2.3.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-native",
+      "version": "0.86.3",
+      "publishedAt": "2026-08-24T16:16:06.034Z",
+      "registry": "https://registry.npmjs.org/react-native/0.86.3",
+      "integrity": "sha512-JR5s3bM9ezud+Mw24GlNXNfthqPIKwrQgPPJcam+L97t2sKjjEavhCzBn+fyqZZRcM5+XlhYxpTxVkK7e1n38Q==",
+      "tarball": "https://registry.npmjs.org/react-native/-/react-native-0.86.3.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peerDependencies": {
+        "react": "^19.2.3",
+        "@types/react": "^19.1.1",
+        "@react-native/jest-preset": "0.86.3"
+      },
+      "peerDependenciesMeta": {
+        "@types/react": {
+          "optional": true
+        },
+        "@react-native/jest-preset": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "nativewind",
+      "version": "4.2.7",
+      "publishedAt": "2026-09-14T22:51:19.095Z",
+      "registry": "https://registry.npmjs.org/nativewind/4.2.7",
+      "integrity": "sha512-h/tdccn3FCotFxZtpBSGCQOK9DcfMrD2YdVnw2PiDhTzE6VGdAw+aDMruaxCXjJq5W/lfCZuBSdhS0enl8BN+w==",
+      "tarball": "https://registry.npmjs.org/nativewind/-/nativewind-4.2.7.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=16"
+      },
+      "peerDependencies": {
+        "tailwindcss": ">3.3.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-native-css-interop",
+      "version": "0.2.7",
+      "publishedAt": "2026-09-14T22:51:43.708Z",
+      "registry": "https://registry.npmjs.org/react-native-css-interop/0.2.7",
+      "integrity": "sha512-8ztp+gkiUE6tJGLFsnLGGAG1cxxkMDxwtoDx2oe18GMl6QRC1lmZ0b2QcE+Ha0fAdG3VmTJggjDitj8FLeIKTA==",
+      "tarball": "https://registry.npmjs.org/react-native-css-interop/-/react-native-css-interop-0.2.7.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": {
+        "react": ">=18",
+        "tailwindcss": "~3",
+        "react-native": "*",
+        "react-native-reanimated": ">=3.6.2"
+      },
+      "peerDependenciesMeta": {
+        "react-native-svg": {
+          "optional": true
+        },
+        "react-native-safe-area-context": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "react-native-reanimated",
+      "version": "4.5.1",
+      "publishedAt": "2026-07-02T18:14:45.684Z",
+      "registry": "https://registry.npmjs.org/react-native-reanimated/4.5.1",
+      "integrity": "sha512-RnMvtDuR+68ig864gAvZCOdZehqhC5rFmMo0kn+ARfgVSTvFeF6IFLBVgMPUu0KwihaapEyW24WRi6nEyy1kSA==",
+      "tarball": "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-4.5.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "react-native": "0.83 - 0.86",
+        "react-native-worklets": "0.10.x"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-native-worklets",
+      "version": "0.10.1",
+      "publishedAt": "2026-07-01T11:25:36.954Z",
+      "registry": "https://registry.npmjs.org/react-native-worklets/0.10.1",
+      "integrity": "sha512-62mRM19bDpfpdI8HLkEErcdOsrAPDtE9lA/sw+5lLRpzBHNhxaoj9QyY2KjXqUmirelxkX4zuPGTC3VdA0feJA==",
+      "tarball": "https://registry.npmjs.org/react-native-worklets/-/react-native-worklets-0.10.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "@babel/core": "*",
+        "react-native": "0.83 - 0.86",
+        "@react-native/metro-config": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "version": "5.7.0",
+      "publishedAt": "2026-02-24T20:53:59.356Z",
+      "registry": "https://registry.npmjs.org/react-native-safe-area-context/5.7.0",
+      "integrity": "sha512-/9/MtQz8ODphjsLdZ+GZAIcC/RtoqW9EeShf7Uvnfgm/pzYrJ75y3PV/J1wuAV1T5Dye5ygq4EAW20RoBq0ABQ==",
+      "tarball": "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-5.7.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-native-screens",
+      "version": "4.26.0",
+      "publishedAt": "2026-07-10T08:22:31.247Z",
+      "registry": "https://registry.npmjs.org/react-native-screens/4.26.0",
+      "integrity": "sha512-8DkONnr4496K6ECMfprqyYM4ya1IQO5mA3ROOAJ1P6OVvNL6rVtjD2Elikd/INC7CrePdFTOHUEahOMSHmWgUA==",
+      "tarball": "https://registry.npmjs.org/react-native-screens/-/react-native-screens-4.26.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "react-native": ">=0.84.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "expo-constants",
+      "version": "57.0.20",
+      "publishedAt": "2026-09-29T10:56:44.657Z",
+      "registry": "https://registry.npmjs.org/expo-constants/57.0.20",
+      "integrity": "sha512-WycPVvBgbluSa6yAh6DKnX646ZHrae0gV2ZLum5fioNkR+DiWyulq1+UfS++Jc6yfAh/l55NOirv6mt5cnQhSw==",
+      "tarball": "https://registry.npmjs.org/expo-constants/-/expo-constants-57.0.20.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "expo": "*",
+        "react-native": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "expo-linking",
+      "version": "57.0.11",
+      "publishedAt": "2026-09-24T10:13:27.455Z",
+      "registry": "https://registry.npmjs.org/expo-linking/57.0.11",
+      "integrity": "sha512-bfTyiPb8szacs8XkGowXt5ssH/vbF26vFG8WUWQar8CcRpQcIzXY980ZkP7pK7Pcdy5MattwFdujrWOxwv5s3Q==",
+      "tarball": "https://registry.npmjs.org/expo-linking/-/expo-linking-57.0.11.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "expo-status-bar",
+      "version": "57.0.1",
+      "publishedAt": "2026-07-15T10:03:18.392Z",
+      "registry": "https://registry.npmjs.org/expo-status-bar/57.0.1",
+      "integrity": "sha512-Xwaq1gAoVRWx5dPG5VhT5RSbnI9OilhZnO5qoPBnUaBAa5VzRzfdS8q0/bsPt0jR2DKLtGuP0bQ6efMJ4RIMDg==",
+      "tarball": "https://registry.npmjs.org/expo-status-bar/-/expo-status-bar-57.0.1.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "expo": "*",
+        "react": "*",
+        "react-native": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "tailwindcss",
+      "version": "3.4.19",
+      "publishedAt": "2025-12-10T18:40:42.410Z",
+      "registry": "https://registry.npmjs.org/tailwindcss/3.4.19",
+      "integrity": "sha512-3ofp+LL8E+pK/JuPLPggVAIaEuhvIz4qNcf3nA1Xn2o/7fb7s/TYpHhwGDv1ZU3PkBluUVaF8PyCHcm48cKLWQ==",
+      "tarball": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.19.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=14.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "eslint",
+      "version": "9.39.4",
+      "publishedAt": "2026-03-06T21:46:46.521Z",
+      "registry": "https://registry.npmjs.org/eslint/9.39.4",
+      "integrity": "sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==",
+      "tarball": "https://registry.npmjs.org/eslint/-/eslint-9.39.4.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      },
+      "peerDependencies": {
+        "jiti": "*"
+      },
+      "peerDependenciesMeta": {
+        "jiti": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "eslint-config-expo",
+      "version": "57.0.2",
+      "publishedAt": "2026-08-26T19:58:58.108Z",
+      "registry": "https://registry.npmjs.org/eslint-config-expo/57.0.2",
+      "integrity": "sha512-dOWkx+MWclLVnYpPPBzas4sfnPaAjk+fe/dbvJSzbWtHUR4fGGaTT/lTcOpxqhwRIlTKKBUYGKude0tcTBsZHg==",
+      "tarball": "https://registry.npmjs.org/eslint-config-expo/-/eslint-config-expo-57.0.2.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "eslint": ">=8.10"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "jest",
+      "version": "29.7.0",
+      "publishedAt": "2023-09-12T06:44:08.561Z",
+      "registry": "https://registry.npmjs.org/jest/29.7.0",
+      "integrity": "sha512-NIy3oAFp9shda19hy4HK0HRTWKtPJmGdnvywu01nOqNC2vZg+Z+fvJDxpMQA88eb2I9EcafcdjYgsDthnYTvGw==",
+      "tarball": "https://registry.npmjs.org/jest/-/jest-29.7.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+      },
+      "peerDependencies": {
+        "node-notifier": "^8.0.1 || ^9.0.0 || ^10.0.0"
+      },
+      "peerDependenciesMeta": {
+        "node-notifier": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "jest-expo",
+      "version": "57.0.5",
+      "publishedAt": "2026-08-26T19:58:08.009Z",
+      "registry": "https://registry.npmjs.org/jest-expo/57.0.5",
+      "integrity": "sha512-U08fwjaDBwnnbKnZcOA0WQbHfKqOWTCGku+IdCaekrLZmfbbZr3P1WqEsXHo6ntidQ3DmW+TT6G1aOp+ChYfKA==",
+      "tarball": "https://registry.npmjs.org/jest-expo/-/jest-expo-57.0.5.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "expo": "*",
+        "react-native": "*",
+        "react-server-dom-webpack": "~19.0.4 || ~19.1.5 || ~19.2.4",
+        "@react-native/jest-preset": "^0.86.3"
+      },
+      "peerDependenciesMeta": {
+        "expo": {
+          "optional": true
+        },
+        "react-server-dom-webpack": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@testing-library/react-native",
+      "version": "14.0.1",
+      "publishedAt": "2026-06-23T10:09:26.344Z",
+      "registry": "https://registry.npmjs.org/%40testing-library%2Freact-native/14.0.1",
+      "integrity": "sha512-2r2e2y8SkUNRWKRXlUGqDYunB+AkbdXUPn49Bs5rpv9oxRb0K3USBVugbPbAKJjfj4w5Ba91NJ8LcQCZyopUZA==",
+      "tarball": "https://registry.npmjs.org/@testing-library/react-native/-/react-native-14.0.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^22.13.0 || >=24"
+      },
+      "peerDependencies": {
+        "jest": ">=29.0.0",
+        "react": ">=19.0.0",
+        "react-native": ">=0.78",
+        "test-renderer": "^1.0.0"
+      },
+      "peerDependenciesMeta": {
+        "jest": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "@react-native/metro-config",
+      "version": "0.86.3",
+      "publishedAt": "2026-08-24T13:30:52.037Z",
+      "registry": "https://registry.npmjs.org/%40react-native%2Fmetro-config/0.86.3",
+      "integrity": "sha512-qdzDMepV2xdUhsO4XC7idnnbt8K6+Hd59AjeK9y4KS86fxSQq5oL0TAbqUuajDGR7beNQoYTuS6AowN/zP0oaQ==",
+      "tarball": "https://registry.npmjs.org/@react-native/metro-config/-/metro-config-0.86.3.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@react-native/jest-preset",
+      "version": "0.86.3",
+      "publishedAt": "2026-08-24T13:30:57.956Z",
+      "registry": "https://registry.npmjs.org/%40react-native%2Fjest-preset/0.86.3",
+      "integrity": "sha512-oMmBwXUpTgJvGlcXQQPuiQLykoM8jsWYp6RwdJ2NWyIWzJcGp1rmSr3XV7istoIcUt0wdOVLtQs0A0nDm9ND+A==",
+      "tarball": "https://registry.npmjs.org/@react-native/jest-preset/-/jest-preset-0.86.3.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 20.19.4"
+      },
+      "peerDependencies": {
+        "react": "^19.2.3"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "motion",
+      "version": "14.0.0",
+      "publishedAt": "2026-10-02T13:15:54.395Z",
+      "registry": "https://registry.npmjs.org/motion/14.0.0",
+      "integrity": "sha512-oGc2lkge2lkRZCP+J8/JsnYu4NFjqP1MtXirNdetn3QbvK2JqwM9A200EdT4C598KfzDhjLT12zF21xDM4Oilw==",
+      "tarball": "https://registry.npmjs.org/motion/-/motion-14.0.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "peerDependenciesMeta": {
+        "react": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "better-sqlite3",
+      "version": "12.11.1",
+      "publishedAt": "2026-06-15T19:15:08.728Z",
+      "registry": "https://registry.npmjs.org/better-sqlite3/12.11.1",
+      "integrity": "sha512-dq9AtApgg5PGFtBzPFSBl3HZQjHok5gaQCM6zh2Yk0aSmDCs1CbnVI8/HgASQkNKsWFpseIO9beg5xxpYhbIfA==",
+      "tarball": "https://registry.npmjs.org/better-sqlite3/-/better-sqlite3-12.11.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": "20.x || 22.x || 23.x || 24.x || 25.x || 26.x"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/better-sqlite3",
+      "version": "9.6.0",
+      "publishedAt": "2026-08-01T06:19:40.247Z",
+      "registry": "https://registry.npmjs.org/%40types%2Fbetter-sqlite3/9.6.0",
+      "integrity": "sha512-ZEEwBSgMu7GYJOynoagg5X9JbxfL6dTJDsgViJIqh67jV44kyOr9RXfmFjLK5rzC4MWssP06t9hu/JwGDnUbCg==",
+      "tarball": "https://registry.npmjs.org/@types/better-sqlite3/-/better-sqlite3-9.6.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@electron/rebuild",
+      "version": "4.2.0",
+      "publishedAt": "2026-07-07T21:16:06.075Z",
+      "registry": "https://registry.npmjs.org/%40electron%2Frebuild/4.2.0",
+      "integrity": "sha512-RKL/O+jGoXJMxrx/5771y1n0xTKmFuOYGO3gMmwypBM6rsH0kou0mswwdXA2JrhIkE4xyC7v9vGk0n6NPzgOxQ==",
+      "tarball": "https://registry.npmjs.org/@electron/rebuild/-/rebuild-4.2.0.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=22.12.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "expo-sqlite",
+      "version": "57.0.3",
+      "publishedAt": "2026-09-11T11:31:22.884Z",
+      "registry": "https://registry.npmjs.org/expo-sqlite/57.0.3",
+      "integrity": "sha512-gbu9Nwm76DNpSK+MEhCjjjF3/EMyFE96IEDSlfO9jPiF4q48a7bef5EXnWVrwW8rvqCZKYAfSGqSpYNhhhpgIg==",
+      "tarball": "https://registry.npmjs.org/expo-sqlite/-/expo-sqlite-57.0.3.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "expo": "*",
+        "react": "*",
+        "react-native": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-native-gesture-handler",
+      "version": "2.32.0",
+      "publishedAt": "2026-06-11T12:51:41.850Z",
+      "registry": "https://registry.npmjs.org/react-native-gesture-handler/2.32.0",
+      "integrity": "sha512-uYIMOKlKENORq2SABE+jIjbPU+h5I/sQKcq2v16zRq848nwEp1fWRVwML4QWqijc8UcXJC25o54S8GQd4Mf2OA==",
+      "tarball": "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.32.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.3",
+      "publishedAt": "2025-12-11T22:55:37.826Z",
+      "registry": "https://registry.npmjs.org/react-dom/19.2.3",
+      "integrity": "sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==",
+      "tarball": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.3.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^19.2.3"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "publishedAt": "2026-05-25T11:16:53.499Z",
+      "registry": "https://registry.npmjs.org/%40babel%2Fcore/7.29.7",
+      "integrity": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA==",
+      "tarball": "https://registry.npmjs.org/@babel/core/-/core-7.29.7.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "babel-preset-expo",
+      "version": "57.0.13",
+      "publishedAt": "2026-09-24T10:15:44.175Z",
+      "registry": "https://registry.npmjs.org/babel-preset-expo/57.0.13",
+      "integrity": "sha512-OOl3lqNQ4IagJfsNgtxuna0wpTWt1BswdyktGTOJ5EJCgdQUk/B2vaj/jsl03+kMyuIvpxKioVtbTzxh3mdvvQ==",
+      "tarball": "https://registry.npmjs.org/babel-preset-expo/-/babel-preset-expo-57.0.13.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "expo": "*",
+        "expo-widgets": "^57.0.21",
+        "react-refresh": ">=0.14.0 <1.0.0",
+        "@babel/runtime": "^7.20.0"
+      },
+      "peerDependenciesMeta": {
+        "expo": {
+          "optional": true
+        },
+        "expo-widgets": {
+          "optional": true
+        },
+        "@babel/runtime": {
+          "optional": true
+        }
+      }
+    },
+    {
+      "name": "test-renderer",
+      "version": "1.2.0",
+      "publishedAt": "2026-04-16T21:43:09.430Z",
+      "registry": "https://registry.npmjs.org/test-renderer/1.2.0",
+      "integrity": "sha512-JYiEGbgBGtmHAWX8Kf99gGRL1HtjcRVHLrmJNTZL4vFs9XrnWcuL45Iszw/pO4094+JR7havSrN+ds6YTOpSQA==",
+      "tarball": "https://registry.npmjs.org/test-renderer/-/test-renderer-1.2.0.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^19.0.0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@babel/plugin-transform-react-jsx",
+      "version": "7.29.7",
+      "publishedAt": "2026-05-25T11:16:48.792Z",
+      "registry": "https://registry.npmjs.org/%40babel%2Fplugin-transform-react-jsx/7.29.7",
+      "integrity": "sha512-WsZulLVBUHXVj2cUcPVx6UE21TpalB6bHbSFErKT0Ib++ax24jjXe73FqlWvdylFOjiuPHYi6VCcgRad1ItN+A==",
+      "tarball": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.29.7.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0-0"
+      },
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@clack/prompts",
+      "version": "1.8.1",
+      "publishedAt": "2026-09-13T17:01:26.605Z",
+      "registry": "https://registry.npmjs.org/%40clack%2Fprompts/1.8.1",
+      "integrity": "sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ==",
+      "tarball": "https://registry.npmjs.org/@clack/prompts/-/prompts-1.8.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 20.12.0"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "shadcn",
+      "version": "4.21.1",
+      "publishedAt": "2026-10-01T10:32:55.723Z",
+      "registry": "https://registry.npmjs.org/shadcn/4.21.1",
+      "integrity": "sha512-keQmMdKI1eLKTtYpwFwrFfFegsskOpUgt1l3aF359pbCFt0taq0TMuZ75yK+q/StcV2YvjmBMenrs0diWoezXQ==",
+      "tarball": "https://registry.npmjs.org/shadcn/-/shadcn-4.21.1.tgz",
+      "license": "MIT",
+      "engines": {
+        "node": ">=20.18.1"
+      },
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/jest",
+      "version": "29.5.14",
+      "publishedAt": "2024-10-23T03:43:49.927Z",
+      "registry": "https://registry.npmjs.org/%40types%2Fjest/29.5.14",
+      "integrity": "sha512-ZN+4sdnLUbo8EVvVc2ao0GFW6oVrQRPn4K2lglySj7APvSrgzxHiNNK99us4WDMi57xxA2yggblIAMNhXOotLQ==",
+      "tarball": "https://registry.npmjs.org/@types/jest/-/jest-29.5.14.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.18",
+      "publishedAt": "2026-07-30T21:54:03.456Z",
+      "registry": "https://registry.npmjs.org/%40types%2Freact/19.2.18",
+      "integrity": "sha512-AnzbBERsrLKtk2XSfTbYRLjQPdy116Sty4q+T+Bp3IC4l6jNBvreVPAHmpq9qhXQM7CXZPjLVmGMw9sy+hxQ3w==",
+      "tarball": "https://registry.npmjs.org/@types/react/-/react-19.2.18.tgz",
+      "license": "MIT",
+      "engines": {},
+      "peerDependencies": {},
+      "peerDependenciesMeta": {}
+    }
+  ],
+  "composer": {
+    "framework": "13.34.0",
+    "skeleton": {
+      "version": "13.10.1",
+      "revision": "5aad4ddf34d5e21dfe6b4c07eeac67d5bd5e08b0"
+    },
+    "pint": "1.32.1",
+    "phpunit": "12.5.37",
+    "livewire": "4.4.7",
+    "minimumPhp": "8.3",
+    "minimumComposer": "2.2",
+    "referenceComposer": "2.10.3"
+  },
+  "finalizedAt": "2026-10-05",
+  "cli": {
+    "runtime": "node24-lts",
+    "node": "24.21.0",
+    "npm": "11.19.0",
+    "typescript": "5.9.3",
+    "prompts": "@clack/prompts@1.8.1",
+    "implemented": true,
+    "status": "preview-native-recipes-pending"
+  },
+  "tools": {
+    "shadcn": "4.21.1",
+    "usage": "local component generation when needed; not installed as a business component pack"
+  },
+  "servers": {
+    "postgresql": {
+      "branch": "18",
+      "referencePatch": "18.6",
+      "installedByCli": false,
+      "execution": "pending-real-database",
+      "implementedInstallation": false,
+      "provisioning": "native-if-required-and-no-compatible-selected-instance"
+    },
+    "mysql": {
+      "branch": "8.4 LTS",
+      "installedByCli": false,
+      "patch": "effective hosting version to record",
+      "implementedInstallation": false,
+      "provisioning": "native-if-required-and-no-compatible-selected-instance"
+    },
+    "mariadb": {
+      "branch": "maintained version offered by hosting",
+      "installedByCli": false,
+      "implementedInstallation": false,
+      "provisioning": "native-if-required-and-no-compatible-selected-instance"
+    }
+  },
+  "qualification": {
+    "baseNpmBlocks": 5,
+    "installScripts": "ignored during preparation; native installation pending",
+    "mobile": "locked SDK tree required; native devices pending",
+    "optionalDependencies": "five resolution scenarios, native execution pending",
+    "evidence": "../validation/RESULTATS.md"
+  },
+  "preparationVersion": "0.2.0"
+}

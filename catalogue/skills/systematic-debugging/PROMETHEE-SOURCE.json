@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "systematic-debugging",
+  "repository": "obra/superpowers",
+  "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+  "source": "skills/systematic-debugging",
+  "upstreamUrl": "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/systematic-debugging",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Reproduction et hypothèse testable selon impact, pas de TDD obligatoire.",
+    "Trois tentatives infructueuses déclenchent une réévaluation ; aucune conclusion automatique sur architecture.",
+    "Pas de Bash obligatoire, journalisation de secrets ou chargement de skills non installés."
+  ]
+}

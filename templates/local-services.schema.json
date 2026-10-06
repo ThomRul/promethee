@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Associations natives locales Prométhée",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "bindings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "databaseId",
+          "engine",
+          "adapter",
+          "instanceId",
+          "ownership"
+        ],
+        "properties": {
+          "databaseId": {
+            "$ref": "#/definitions/id"
+          },
+          "engine": {
+            "enum": [
+              "postgresql",
+              "mysql",
+              "mariadb"
+            ]
+          },
+          "adapter": {
+            "enum": [
+              "windows-service",
+              "ubuntu-systemd",
+              "qualified-process"
+            ]
+          },
+          "instanceId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "pattern": "^[A-Za-z0-9_.@:-]+$"
+          },
+          "ownership": {
+            "enum": [
+              "existing-shared",
+              "created-shared",
+              "created-dedicated"
+            ]
+          },
+          "port": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    }
+  }
+}

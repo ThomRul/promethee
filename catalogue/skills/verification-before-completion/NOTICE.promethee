@@ -1,0 +1,13 @@
+Adaptation Prométhée 1 — 2026-10-05
+
+Source : https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/verification-before-completion
+Révision : 8ca22dba9a94f28898bbce59f2537ff4d87c747d
+Licence amont : MIT. Les fichiers de licence amont sont conservés.
+
+Modifications de préparation :
+- Réécriture proportionnée : résultats encore valides réutilisables, portée annoncée.
+- Suppression du rerun complet à chaque message et du workflow Superpowers obligatoire.
+- Provenance et avis de modification ajoutés aux copies adaptées.
+
+Cette adaptation n'est pas une release officielle du dépôt amont.
+Aucune API payante obligatoire et aucune autorisation externe ajoutée.

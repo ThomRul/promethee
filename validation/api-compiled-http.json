@@ -1,0 +1,8 @@
+{
+  "kind": "Compiled Nest HTTP startup, without SWC test transformer",
+  "passed": true,
+  "status": 200,
+  "body": {
+    "status": "ok"
+  }
+}

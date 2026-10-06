@@ -1,0 +1,32 @@
+[
+  {
+    "profile": "web-api/frontend",
+    "passed": true,
+    "fileCount": 11,
+    "log": "logs/final-format-web-api-frontend.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "passed": true,
+    "fileCount": 10,
+    "log": "logs/final-format-web-api-backend.txt"
+  },
+  {
+    "profile": "desktop",
+    "passed": true,
+    "fileCount": 13,
+    "log": "logs/final-format-desktop.txt"
+  },
+  {
+    "profile": "php",
+    "passed": true,
+    "fileCount": 7,
+    "log": "logs/final-format-php.txt"
+  },
+  {
+    "profile": "mobile",
+    "passed": true,
+    "fileCount": 14,
+    "log": "logs/final-format-mobile.txt"
+  }
+]

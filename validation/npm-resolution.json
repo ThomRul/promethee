@@ -1,0 +1,42 @@
+[
+  {
+    "profile": "web-api/frontend",
+    "exitCode": 0,
+    "seconds": 24,
+    "kind": "npm-resolution-ignore-scripts",
+    "runtime": "Node 24.21.0 / npm 11.19.0",
+    "passed": true
+  },
+  {
+    "profile": "web-api/backend",
+    "exitCode": 0,
+    "seconds": 21,
+    "kind": "npm-resolution-ignore-scripts",
+    "runtime": "Node 24.21.0 / npm 11.19.0",
+    "passed": true
+  },
+  {
+    "profile": "desktop",
+    "exitCode": 0,
+    "seconds": 7,
+    "kind": "npm-resolution-ignore-scripts",
+    "runtime": "Node 24.21.0 / npm 11.19.0",
+    "passed": true
+  },
+  {
+    "profile": "php",
+    "exitCode": 0,
+    "seconds": 4,
+    "kind": "npm-resolution-ignore-scripts",
+    "runtime": "Node 24.21.0 / npm 11.19.0",
+    "passed": true
+  },
+  {
+    "profile": "mobile",
+    "exitCode": 0,
+    "seconds": 31,
+    "kind": "npm-resolution-ignore-scripts",
+    "runtime": "Node 24.21.0 / npm 11.19.0",
+    "passed": true
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "web-motion",
+    "profile": "web-api/frontend",
+    "groups": [
+      "web-motion"
+    ],
+    "kind": "strict-peer-resolution-only",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/option-web-motion.txt"
+  },
+  {
+    "id": "desktop-sqlite-motion",
+    "profile": "desktop",
+    "groups": [
+      "desktop-sqlite",
+      "web-motion"
+    ],
+    "kind": "strict-peer-resolution-only",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/option-desktop-sqlite-motion.txt"
+  },
+  {
+    "id": "php-motion-livewire-assets",
+    "profile": "php",
+    "groups": [
+      "web-motion"
+    ],
+    "kind": "strict-peer-resolution-only",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/option-php-motion-livewire-assets.txt"
+  },
+  {
+    "id": "mobile-sqlite-animation",
+    "profile": "mobile",
+    "groups": [
+      "mobile-sqlite",
+      "mobile-animation"
+    ],
+    "kind": "strict-peer-resolution-only-from-frozen-base-lock",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/option-mobile-sqlite-animation.txt"
+  },
+  {
+    "id": "php-livewire-composer",
+    "kind": "resolution-only-platform-php8.3",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/option-livewire-composer.txt"
+  }
+]

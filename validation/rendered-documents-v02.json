@@ -1,0 +1,413 @@
+[
+  {
+    "case": "web-api",
+    "profile": "web-api",
+    "documentRoot": "examples/web-api",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "supabase-postgres-best-practices",
+      "security-best-practices",
+      "humanizer",
+      "frontend-a11y"
+    ],
+    "fixtureCopiedSkills": [
+      "frontend-a11y",
+      "humanizer",
+      "security-best-practices",
+      "stop-design-slop",
+      "supabase-postgres-best-practices",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "frontend",
+      "backend"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "php",
+    "profile": "php",
+    "documentRoot": "examples/php",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "laravel-best-practices",
+      "humanizer",
+      "frontend-a11y"
+    ],
+    "fixtureCopiedSkills": [
+      "frontend-a11y",
+      "humanizer",
+      "laravel-best-practices",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "php",
+      "interface"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "desktop",
+    "profile": "desktop",
+    "documentRoot": "examples/desktop",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "humanizer",
+      "frontend-a11y"
+    ],
+    "fixtureCopiedSkills": [
+      "frontend-a11y",
+      "humanizer",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "main",
+      "preload",
+      "renderer"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "mobile",
+    "profile": "mobile",
+    "documentRoot": "examples/mobile",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "expo-router",
+      "expo-design-system",
+      "expo-native-ui",
+      "humanizer"
+    ],
+    "fixtureCopiedSkills": [
+      "expo-design-system",
+      "expo-native-ui",
+      "expo-router",
+      "humanizer",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "mobile"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "web-full",
+    "profile": "web-api",
+    "documentRoot": "examples/variants/web-full",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "supabase-postgres-best-practices",
+      "security-best-practices",
+      "humanizer",
+      "frontend-a11y",
+      "impeccable",
+      "diagram-design",
+      "security-threat-model",
+      "gpt-taste"
+    ],
+    "fixtureCopiedSkills": [
+      "diagram-design",
+      "frontend-a11y",
+      "gpt-taste",
+      "humanizer",
+      "impeccable",
+      "security-best-practices",
+      "security-threat-model",
+      "stop-design-slop",
+      "supabase-postgres-best-practices",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "frontend",
+      "backend"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "preview-only-pending-gsap"
+  },
+  {
+    "case": "php-full",
+    "profile": "php",
+    "documentRoot": "examples/variants/php-full",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "laravel-best-practices",
+      "humanizer",
+      "frontend-a11y",
+      "impeccable",
+      "diagram-design",
+      "security-threat-model",
+      "gpt-taste",
+      "livewire-development"
+    ],
+    "fixtureCopiedSkills": [
+      "diagram-design",
+      "frontend-a11y",
+      "gpt-taste",
+      "humanizer",
+      "impeccable",
+      "laravel-best-practices",
+      "livewire-development",
+      "security-threat-model",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "php",
+      "interface"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "preview-only-pending-gsap"
+  },
+  {
+    "case": "desktop-full",
+    "profile": "desktop",
+    "documentRoot": "examples/variants/desktop-full",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "humanizer",
+      "frontend-a11y",
+      "impeccable",
+      "diagram-design",
+      "security-threat-model"
+    ],
+    "fixtureCopiedSkills": [
+      "diagram-design",
+      "frontend-a11y",
+      "humanizer",
+      "impeccable",
+      "security-threat-model",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "main",
+      "preload",
+      "renderer"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "mobile-full",
+    "profile": "mobile",
+    "documentRoot": "examples/variants/mobile-full",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "expo-router",
+      "expo-design-system",
+      "expo-native-ui",
+      "humanizer",
+      "impeccable",
+      "diagram-design",
+      "security-threat-model",
+      "expo-animation",
+      "expo-data-fetching"
+    ],
+    "fixtureCopiedSkills": [
+      "diagram-design",
+      "expo-animation",
+      "expo-data-fetching",
+      "expo-design-system",
+      "expo-native-ui",
+      "expo-router",
+      "humanizer",
+      "impeccable",
+      "security-threat-model",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "mobile"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "web-no-skills",
+    "profile": "web-api",
+    "documentRoot": "examples/variants/web-no-skills",
+    "selectedSkills": [],
+    "fixtureCopiedSkills": [],
+    "zones": [
+      "frontend",
+      "backend"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "mobile-expo-go",
+    "profile": "mobile",
+    "documentRoot": "examples/variants/mobile-expo-go",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "expo-router",
+      "expo-design-system",
+      "expo-native-ui",
+      "humanizer"
+    ],
+    "fixtureCopiedSkills": [
+      "expo-design-system",
+      "expo-native-ui",
+      "expo-router",
+      "humanizer",
+      "stop-design-slop",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "mobile"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "web-container-db",
+    "profile": "web-api",
+    "documentRoot": "examples/variants/web-container-db",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "supabase-postgres-best-practices",
+      "security-best-practices",
+      "humanizer",
+      "frontend-a11y"
+    ],
+    "fixtureCopiedSkills": [
+      "frontend-a11y",
+      "humanizer",
+      "security-best-practices",
+      "stop-design-slop",
+      "supabase-postgres-best-practices",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "frontend",
+      "backend"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "not-selected"
+  },
+  {
+    "case": "web-editorial-without-taste",
+    "profile": "web-api",
+    "documentRoot": "examples/variants/web-editorial-without-taste",
+    "selectedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "supabase-postgres-best-practices",
+      "security-best-practices",
+      "humanizer",
+      "frontend-a11y"
+    ],
+    "fixtureCopiedSkills": [
+      "frontend-a11y",
+      "humanizer",
+      "security-best-practices",
+      "stop-design-slop",
+      "supabase-postgres-best-practices",
+      "systematic-debugging",
+      "ui-ux-pro-max",
+      "verification-before-completion"
+    ],
+    "zones": [
+      "frontend",
+      "backend"
+    ],
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "installationExecuted": false,
+    "nativeServicesControlled": false,
+    "editorialAvailability": "preview-only-pending-gsap"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "supabase-postgres-best-practices",
+  "repository": "supabase/agent-skills",
+  "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+  "source": "skills/supabase-postgres-best-practices",
+  "upstreamUrl": "https://github.com/supabase/agent-skills/tree/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase-postgres-best-practices",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Description ciblée PostgreSQL, références pertinentes seulement.",
+    "Pas de compte Supabase, infrastructure RLS/extension/pooler imposée ou capacité chiffrée garantie.",
+    "Pool TypeORM/pg en premier ; PgBouncer seulement pour un besoin démontré."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "gpt-taste",
+  "repository": "Leonxlnx/taste-skill",
+  "revision": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+  "source": "skills/gpt-tasteskill",
+  "upstreamUrl": "https://github.com/Leonxlnx/taste-skill/tree/ce26fc25c0e5e8cab638f883de62d9a86ee5e45b/skills/gpt-tasteskill",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "upstreamEntrySha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+  "adaptations": [
+    "Adaptation importante : direction éditoriale avancée limitée aux zones web choisies.",
+    "Suppression du faux Python/randomisation, de AIDA et GSAP universels, de l’interdiction du statique et des photos distantes imposées.",
+    "GSAP seulement avec option éditoriale et bibliothèque qualifiée ; Motion garde les interactions ordinaires.",
+    "Typographie, séquences et contraste adaptés au brief ; contenu statique utilisable et reduced motion préservés."
+  ]
+}

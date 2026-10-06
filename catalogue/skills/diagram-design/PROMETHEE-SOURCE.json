@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "diagram-design",
+  "repository": "cathrynlavery/diagram-design",
+  "revision": "cb80b0d299a5c0674e0d133d33f91f19af8cda0f",
+  "source": "skills/diagram-design",
+  "upstreamUrl": "https://github.com/cathrynlavery/diagram-design/tree/cb80b0d299a5c0674e0d133d33f91f19af8cda0f/skills/diagram-design",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "upstreamEntrySha256": "a7f05d4349b1747c7c01044ba168307dc77a2c693f174449589a0b434fad9e84",
+  "adaptations": [
+    "Périmètre réduit et annoncé : architecture, flux, séquence, états et modèle de données.",
+    "Références de conception condensées ; pas de scripts, exporteurs, icônes, polices ou profils globaux amont embarqués.",
+    "Tokens du projet ; Mermaid pour diagramme simple, HTML/SVG local pour composition justifiée ; aucune obligation de personnalisation préalable."
+  ]
+}

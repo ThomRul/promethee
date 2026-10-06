@@ -1,0 +1,13 @@
+Adaptation Prométhée V0.2, révision 1 — 2026-10-05
+
+Source : https://github.com/Leonxlnx/taste-skill/tree/ce26fc25c0e5e8cab638f883de62d9a86ee5e45b/skills/gpt-tasteskill
+Révision : ce26fc25c0e5e8cab638f883de62d9a86ee5e45b
+Licence amont : MIT, licence complète conservée.
+
+Modifications :
+- Adaptation importante : direction éditoriale avancée limitée aux zones web choisies.
+- Suppression du faux Python/randomisation, de AIDA et GSAP universels, de l’interdiction du statique et des photos distantes imposées.
+- GSAP seulement avec option éditoriale et bibliothèque qualifiée ; Motion garde les interactions ordinaires.
+- Typographie, séquences et contraste adaptés au brief ; contenu statique utilisable et reduced motion préservés.
+
+Références condensées/rédigées pour Prométhée ; outils et assets amont non distribués. Adaptation indépendante, pas une release officielle amont. Aucun appel externe payant requis.

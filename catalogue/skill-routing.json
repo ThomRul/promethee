@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "preparationVersion": "0.2.0",
+  "policy": "selected-and-task-relevant-only",
+  "entries": [
+    {
+      "id": "ui-ux-pro-max",
+      "purpose": "Conception et recherche UI ciblées ; pilote visuel",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": {
+        "web-api": [
+          "frontend"
+        ],
+        "php": [
+          "interface"
+        ],
+        "desktop": [
+          "renderer"
+        ],
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Conception ou décision visuelle nécessitant des références",
+      "limit": "Tokens/brief existants ; aucune refonte pour un ajout local",
+      "toolRequirements": [
+        "python"
+      ]
+    },
+    {
+      "id": "stop-design-slop",
+      "purpose": "Audit anti-slop ciblé",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": {
+        "web-api": [
+          "frontend"
+        ],
+        "php": [
+          "interface"
+        ],
+        "desktop": [
+          "renderer"
+        ],
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Audit demandé ou correction d’un rendu jugé générique",
+      "limit": "CLEAN conserve la direction ; audit seul sans écriture ; pas de cascade",
+      "toolRequirements": []
+    },
+    {
+      "id": "frontend-a11y",
+      "purpose": "Contrat accessible web",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop"
+      ],
+      "zones": {
+        "web-api": [
+          "frontend"
+        ],
+        "php": [
+          "interface"
+        ],
+        "desktop": [
+          "renderer"
+        ]
+      },
+      "trigger": "Formulaire, dialogue, clavier/focus ou défaut d’accessibilité web",
+      "limit": "Réutiliser les primitives ; DOM ne qualifie pas React Native",
+      "toolRequirements": []
+    },
+    {
+      "id": "humanizer",
+      "purpose": "Révision des textes",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": "text-only-any-zone",
+      "trigger": "Rédaction ou révision de prose UI/documentation concernée",
+      "limit": "Faits, voix, liens et placeholders conservés ; pas de réécriture de code",
+      "toolRequirements": []
+    },
+    {
+      "id": "diagram-design",
+      "purpose": "Diagramme demandé",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": "documentation",
+      "trigger": "Architecture, flux, séquence, états ou données à expliquer visuellement",
+      "limit": "Périmètre réduit ; ne remplace pas les cartes de contexte",
+      "toolRequirements": []
+    },
+    {
+      "id": "impeccable",
+      "purpose": "Critique UI ciblée",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": {
+        "web-api": [
+          "frontend"
+        ],
+        "php": [
+          "interface"
+        ],
+        "desktop": [
+          "renderer"
+        ],
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Critique de hiérarchie, parcours ou composition d’une interface existante",
+      "limit": "Variante web/native ; pas de nouveau moteur ni de refonte implicite",
+      "toolRequirements": []
+    },
+    {
+      "id": "gpt-taste",
+      "purpose": "Direction éditoriale avancée",
+      "profiles": [
+        "web-api",
+        "php"
+      ],
+      "zones": {
+        "web-api": [
+          "frontend"
+        ],
+        "php": [
+          "interface"
+        ]
+      },
+      "when": {
+        "editorialAnimations": true
+      },
+      "trigger": "Composition ou séquence éditoriale explicitement choisie",
+      "limit": "GSAP qualifié uniquement ; pas de faux script, animation universelle ou fonction native",
+      "toolRequirements": []
+    },
+    {
+      "id": "verification-before-completion",
+      "purpose": "Vérification proportionnée",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": "technical-any-zone",
+      "trigger": "Conclure une unité de travail avec les preuves utiles",
+      "limit": "Réutiliser les résultats valables ; pas de suite complète à chaque message",
+      "toolRequirements": []
+    },
+    {
+      "id": "systematic-debugging",
+      "purpose": "Diagnostic causal",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": "technical-any-zone",
+      "trigger": "Bug reproduit dont la cause reste à établir",
+      "limit": "Zones concernées ; aucune refonte ou architecture imposée",
+      "toolRequirements": []
+    },
+    {
+      "id": "supabase-postgres-best-practices",
+      "purpose": "PostgreSQL",
+      "profiles": [
+        "web-api",
+        "mobile"
+      ],
+      "zones": {
+        "web-api": [
+          "backend"
+        ],
+        "mobile": [
+          "backend"
+        ]
+      },
+      "trigger": "Requête, schéma, index ou performance PostgreSQL concernés",
+      "limit": "Aucun compte Supabase requis ; contexte PostgreSQL réellement présent",
+      "toolRequirements": []
+    },
+    {
+      "id": "laravel-best-practices",
+      "purpose": "Conventions Laravel",
+      "profiles": [
+        "php"
+      ],
+      "zones": {
+        "php": [
+          "php"
+        ]
+      },
+      "trigger": "Route, validation, métier ou données Laravel concernés",
+      "limit": "MVC natif ; abstraction justifiée par le besoin",
+      "toolRequirements": []
+    },
+    {
+      "id": "livewire-development",
+      "purpose": "Livewire",
+      "profiles": [
+        "php"
+      ],
+      "when": {
+        "livewire": true
+      },
+      "zones": {
+        "php": [
+          "php",
+          "interface"
+        ]
+      },
+      "trigger": "Composant ou interaction Livewire concernés",
+      "limit": "Une seule instance Alpine ; option et stack sélectionnées",
+      "toolRequirements": []
+    },
+    {
+      "id": "expo-router",
+      "purpose": "Navigation Expo",
+      "profiles": [
+        "mobile"
+      ],
+      "zones": {
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Navigation, route ou lien profond Expo concernés",
+      "limit": "SDK/routes présents ; pas de backend ajouté",
+      "toolRequirements": []
+    },
+    {
+      "id": "expo-design-system",
+      "purpose": "Tokens natifs",
+      "profiles": [
+        "mobile"
+      ],
+      "zones": {
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Composant partagé, token ou cohérence UI native concernés",
+      "limit": "NativeWind choisi ; pas de réinitialisation de thème",
+      "toolRequirements": []
+    },
+    {
+      "id": "expo-native-ui",
+      "purpose": "Interaction native",
+      "profiles": [
+        "mobile"
+      ],
+      "zones": {
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Élément ou interaction d’interface native concernés",
+      "limit": "Conventions OS et SDK ; aucune recette DOM",
+      "toolRequirements": []
+    },
+    {
+      "id": "expo-data-fetching",
+      "purpose": "Accès aux données mobile",
+      "profiles": [
+        "mobile"
+      ],
+      "when": {
+        "backend": [
+          "existing",
+          "new"
+        ]
+      },
+      "zones": {
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Appel réseau, cache, erreur ou état des données natifs concernés",
+      "limit": "Respecter API choisie ; aucun service payant requis",
+      "toolRequirements": []
+    },
+    {
+      "id": "expo-animation",
+      "purpose": "Animation UI native",
+      "profiles": [
+        "mobile"
+      ],
+      "when": {
+        "uiAnimations": true
+      },
+      "zones": {
+        "mobile": [
+          "mobile"
+        ]
+      },
+      "trigger": "Animation UI native explicitement utile",
+      "limit": "Reanimated/SDK fixés ; reduced motion et gestes natifs",
+      "toolRequirements": []
+    },
+    {
+      "id": "security-best-practices",
+      "purpose": "Revue sécurité spécialisée",
+      "profiles": [
+        "web-api",
+        "desktop",
+        "mobile"
+      ],
+      "zones": "covered-js-ts-context",
+      "trigger": "Audit ou durcissement sécurité demandé dans le contexte couvert",
+      "limit": "Langages couverts JS/TS/Python/Go ; pas d’expertise PHP implicite",
+      "toolRequirements": []
+    },
+    {
+      "id": "security-threat-model",
+      "purpose": "Modèle de menaces",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "zones": "boundaries",
+      "trigger": "Modèle de menaces explicitement demandé",
+      "limit": "Valider les hypothèses et frontières ; aucun envoi de code",
+      "toolRequirements": []
+    }
+  ]
+}

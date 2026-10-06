@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 2,
+  "cliVersion": "0.2.0-preparation",
+  "createdAt": "2026-10-05T00:00:00Z",
+  "updatedAt": "2026-10-05T00:00:00Z",
+  "project": {
+    "name": "Exemple Prométhée V0.2 — web-no-skills",
+    "packageName": "exemple-promethee-web-no-skills",
+    "profile": "web-api",
+    "scope": "undefined",
+    "docker": "undecided",
+    "git": true,
+    "options": {
+      "database": "postgresql",
+      "uiAnimations": false,
+      "editorialAnimations": false
+    }
+  },
+  "catalogue": {
+    "id": "promethee-preparation-v0.2",
+    "sha256": "77aa35ae9f50b8f152013c4c710e5cf1c16ec5a831d3ea99e21429a389300201"
+  },
+  "versions": {
+    "node": "24.21.0",
+    "npm": "11.19.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.7.0",
+    "class-variance-authority": "0.7.1",
+    "typescript": "5.9.3",
+    "prettier": "3.9.9",
+    "@types/node": "24.19.1",
+    "eslint": "10.12.0",
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.71.0",
+    "eslint-config-prettier": "10.1.8",
+    "vitest": "5.0.3",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/user-event": "14.6.7",
+    "jsdom": "30.1.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/vite": "4.3.3",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "vite": "8.3.2",
+    "@vitejs/plugin-react": "6.1.1",
+    "@nestjs/common": "12.1.2",
+    "@nestjs/core": "12.1.2",
+    "@nestjs/platform-express": "12.1.2",
+    "@nestjs/typeorm": "12.0.2",
+    "typeorm": "1.1.1",
+    "pg": "8.23.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1",
+    "@nestjs/testing": "12.1.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "unplugin-swc": "2.0.0",
+    "@swc/core": "1.16.13"
+  },
+  "skills": [],
+  "files": [],
+  "toolchain": [
+    {
+      "id": "node",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "npm",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "git",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "postgresql",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    }
+  ],
+  "databases": [
+    {
+      "id": "primary",
+      "engine": "postgresql",
+      "mode": "native",
+      "target": "backend",
+      "state": "planned",
+      "qualification": "pending"
+    }
+  ],
+  "steps": [
+    {
+      "id": "preflight",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "node",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "npm",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "git",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "postgresql",
+      "state": "planned"
+    },
+    {
+      "id": "database-setup",
+      "databaseId": "primary",
+      "state": "planned"
+    },
+    {
+      "id": "database-verification",
+      "databaseId": "primary",
+      "state": "planned"
+    },
+    {
+      "id": "scaffold",
+      "state": "planned"
+    },
+    {
+      "id": "dependencies",
+      "state": "planned",
+      "target": "frontend"
+    },
+    {
+      "id": "dependencies",
+      "state": "planned",
+      "target": "backend"
+    },
+    {
+      "id": "skills",
+      "state": "planned"
+    },
+    {
+      "id": "documents",
+      "state": "planned"
+    },
+    {
+      "id": "verification",
+      "state": "planned",
+      "target": "frontend"
+    },
+    {
+      "id": "verification",
+      "state": "planned",
+      "target": "backend"
+    },
+    {
+      "id": "git-init",
+      "state": "planned"
+    },
+    {
+      "id": "initial-commit",
+      "state": "planned"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# Dépendances et sorties
+node_modules/
+vendor/
+dist/
+out/
+build/
+coverage/
+.vitest/
+.expo/
+
+# Secrets et environnement local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Bases et sauvegardes locales
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-journal
+.promethee/backups/
+.promethee/tmp/
+.promethee/local-services.json
+.promethee/local-tools.json
+
+# Journaux et fichiers temporaires
+*.log
+.DS_Store
+Thumbs.db
+public/build/
+public/hot
+bootstrap/cache/*.php
+storage/*.key
+

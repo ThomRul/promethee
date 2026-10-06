@@ -1,0 +1,931 @@
+{
+  "schemaVersion": 2,
+  "cliVersion": "0.2.0-preparation",
+  "createdAt": "2026-10-05T00:00:00Z",
+  "updatedAt": "2026-10-05T00:00:00Z",
+  "project": {
+    "name": "Exemple Prométhée V0.2 — web-full",
+    "packageName": "exemple-promethee-web-full",
+    "profile": "web-api",
+    "scope": "undefined",
+    "docker": "undecided",
+    "git": true,
+    "options": {
+      "database": "postgresql",
+      "uiAnimations": true,
+      "editorialAnimations": true
+    }
+  },
+  "catalogue": {
+    "id": "promethee-preparation-v0.2",
+    "sha256": "77aa35ae9f50b8f152013c4c710e5cf1c16ec5a831d3ea99e21429a389300201"
+  },
+  "versions": {
+    "node": "24.21.0",
+    "npm": "11.19.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.7.0",
+    "class-variance-authority": "0.7.1",
+    "typescript": "5.9.3",
+    "prettier": "3.9.9",
+    "@types/node": "24.19.1",
+    "eslint": "10.12.0",
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.71.0",
+    "eslint-config-prettier": "10.1.8",
+    "vitest": "5.0.3",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/user-event": "14.6.7",
+    "jsdom": "30.1.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/vite": "4.3.3",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "vite": "8.3.2",
+    "@vitejs/plugin-react": "6.1.1",
+    "@nestjs/common": "12.1.2",
+    "@nestjs/core": "12.1.2",
+    "@nestjs/platform-express": "12.1.2",
+    "@nestjs/typeorm": "12.0.2",
+    "typeorm": "1.1.1",
+    "pg": "8.23.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1",
+    "@nestjs/testing": "12.1.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "unplugin-swc": "2.0.0",
+    "@swc/core": "1.16.13",
+    "motion": "14.0.0"
+  },
+  "skills": [
+    {
+      "id": "ui-ux-pro-max",
+      "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/477bcb28c9812b385cb51a4605ddf30d7b2266e2/.claude/skills/ui-ux-pro-max",
+      "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "2d9f10c36141b1f9ae89f2ad536b0ef5f6e14d6bf2c7e9d5648f354760007577",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "a2c8454a97515d8a9a2f1a6fe9bf31ec42226e4645bf94bbc23b680bfbd79991"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "01c35e7f960fa172464c8b9043dd7df7c88f5edea50f4d00a2543c30f3acbbe0"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "eeb4415effc4375517246dad0b599cc03c3c9353a1a3df78ed8fb48f1f4fa282"
+        },
+        {
+          "path": "data/app-interface.csv",
+          "sha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08"
+        },
+        {
+          "path": "data/catalog-summary.json",
+          "sha256": "6638da97231c07fb5cef3cd9d3ce483ca7b2f9748980f8c27490eb03968d8894"
+        },
+        {
+          "path": "data/charts.csv",
+          "sha256": "4115cf1120680f2cedef0676cb648f30c7ef4699e2a947535d4113e71ed3b12a"
+        },
+        {
+          "path": "data/colors.csv",
+          "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c"
+        },
+        {
+          "path": "data/data-provenance.json",
+          "sha256": "e82fb33ed49375a300e93d9c11ccd1c1493c999e84ee7ee295e527634786e2e0"
+        },
+        {
+          "path": "data/google-font-licenses.json",
+          "sha256": "35688523f2955795caa1a47c53b83099e60c1708461476f9cc3a050cf3b0148a"
+        },
+        {
+          "path": "data/google-fonts.csv",
+          "sha256": "1c8c3b2ea1faf6a1012da463756def8b3889db33f2226f0343bb4daa80307d03"
+        },
+        {
+          "path": "data/icons.csv",
+          "sha256": "50816c6012030178195a16ee481ebf58b47bd985d70e8ec58886cc83f6eddafc"
+        },
+        {
+          "path": "data/landing.csv",
+          "sha256": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0"
+        },
+        {
+          "path": "data/motion.csv",
+          "sha256": "381affe8df8ea1f66fbbda2598827f9f54299107bbe6a1b4e9b68f6b62091ceb"
+        },
+        {
+          "path": "data/phosphor-icons-upstream.json",
+          "sha256": "2399325233b277b5c97a80e6a5e8941154f5d057beee4e7613db87c87d700236"
+        },
+        {
+          "path": "data/products.csv",
+          "sha256": "42473f75e8dde5987bdf89ce55d8c168091b80a356cae691dd60247d80720b70"
+        },
+        {
+          "path": "data/react-performance.csv",
+          "sha256": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734"
+        },
+        {
+          "path": "data/stacks/angular.csv",
+          "sha256": "704be83f2bad30c7e6de01afb113ffa01e0c458762f48b7102f31ba2367b5553"
+        },
+        {
+          "path": "data/stacks/astro.csv",
+          "sha256": "2c2f55fadaafc05e04cc321c8194a1a28b656e6757fe2ba316f41b16428299c6"
+        },
+        {
+          "path": "data/stacks/avalonia.csv",
+          "sha256": "442fca14675a020683473e7e49f08abb27b9df0765c80efe54aef61f1a4ac258"
+        },
+        {
+          "path": "data/stacks/flutter.csv",
+          "sha256": "64dba0ac17349f28bce517a0f5f48c54d9ed2e487ec0c0258303463b382f41a0"
+        },
+        {
+          "path": "data/stacks/html-tailwind.csv",
+          "sha256": "d05a581d20af57b8ca0104a6d31d90a07c437d500662a96c3029fc2f9a4678ee"
+        },
+        {
+          "path": "data/stacks/javafx.csv",
+          "sha256": "2e819b8d5abdd23ad4dae0991650fdb57af497aabd68b37463aa9c442944c869"
+        },
+        {
+          "path": "data/stacks/jetpack-compose.csv",
+          "sha256": "699de218b286948eaec7d15767b6e1350ee299167e49bf476d82e3ff58724e0a"
+        },
+        {
+          "path": "data/stacks/laravel.csv",
+          "sha256": "854ea4daa5fc61292d22235ad33b49ba3fe22423c3de8d3cb03758ffed3b59f9"
+        },
+        {
+          "path": "data/stacks/nextjs.csv",
+          "sha256": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4"
+        },
+        {
+          "path": "data/stacks/nuxt-ui.csv",
+          "sha256": "fce682a338cfcdbf35d318d20e5befbe7b5d81b05abc37f87677a6d9cde84dc6"
+        },
+        {
+          "path": "data/stacks/nuxtjs.csv",
+          "sha256": "3d9b54ed2d151bd9c86e9e5609b8a6f88a00c4c52fa601a30af96c49b2c4d176"
+        },
+        {
+          "path": "data/stacks/react-native.csv",
+          "sha256": "ba31dd9c0c04da6bc02a74448bf121f9c0728ae5ba3b4d47b487778b0a1135b5"
+        },
+        {
+          "path": "data/stacks/react.csv",
+          "sha256": "4dd176a9787e5c6306b5df94158d75955adcdc6edab41ce5286641a5842303c1"
+        },
+        {
+          "path": "data/stacks/shadcn.csv",
+          "sha256": "e56cfde5b74907836ac3582a4779d5b7f3d206a702ab81b8669a1b668c3eeb51"
+        },
+        {
+          "path": "data/stacks/svelte.csv",
+          "sha256": "f6e379ba802941ba26b01d4ffbe3cd39120f2587659a1d93851c707f66bc13db"
+        },
+        {
+          "path": "data/stacks/swiftui.csv",
+          "sha256": "bdd9231ff3ad658f4e7c063e1eb49df2fd09ac8d90631a86df899b39833b9623"
+        },
+        {
+          "path": "data/stacks/threejs.csv",
+          "sha256": "155d583b9c64da0df4b6c6cb060c02eab222505e0734d6353da02c9e2b5d982b"
+        },
+        {
+          "path": "data/stacks/uno.csv",
+          "sha256": "a0474363e4225b5367214d5675fd3e075f137026f9500f0d04357882ef4f6d48"
+        },
+        {
+          "path": "data/stacks/uwp.csv",
+          "sha256": "c409f08c1fbba1f1029f1acaa554e7b4471cc85517a5751c9f2e62465badcd5c"
+        },
+        {
+          "path": "data/stacks/vue.csv",
+          "sha256": "b655f1ebb9dff2652d15981f31b1784c8a6d4759efd2815a14f3088257569f95"
+        },
+        {
+          "path": "data/stacks/winui.csv",
+          "sha256": "e676dc1c13ee6c205c40b0746f1335150a346c7a49a0616d2545bc3d2c930c85"
+        },
+        {
+          "path": "data/stacks/wpf.csv",
+          "sha256": "9781a9950b20333637b30a02e498b7efca21b618a3eeb8665836f3ac6e974da7"
+        },
+        {
+          "path": "data/styles.csv",
+          "sha256": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7"
+        },
+        {
+          "path": "data/typography.csv",
+          "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8"
+        },
+        {
+          "path": "data/ui-reasoning.csv",
+          "sha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a"
+        },
+        {
+          "path": "data/ux-guidelines.csv",
+          "sha256": "ff81ec613f70ba9fc3fcce52dbe4ae35d44b2079dbe6dc066d2d6e38c28facd5"
+        },
+        {
+          "path": "references/pro-rules.md",
+          "sha256": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23"
+        },
+        {
+          "path": "references/quick-reference.md",
+          "sha256": "0609bc7c89dacb40472465d8fc14257b56b2c43439660fc8d6fa3b8c022e1876"
+        },
+        {
+          "path": "scripts/core.py",
+          "sha256": "c3be4b23e7150e6b45095213158cfa3c8ad96502f01dde3f6ffff9de64a4f481"
+        },
+        {
+          "path": "scripts/design_system.py",
+          "sha256": "e7d1c94c4b2eada17c5551157668362659ccf9626d34dbd58e68142410f90103"
+        },
+        {
+          "path": "scripts/reasoning_contract.py",
+          "sha256": "b8bac1af82aa280d3e06f00aabaeac4337e632996b07fed874e2b6ee6e9c5913"
+        },
+        {
+          "path": "scripts/search.py",
+          "sha256": "d54e648fe0ec2932cac66684220cc17be4bd4b4eba1d23d3195d509d398db374"
+        },
+        {
+          "path": "scripts/validate_data.py",
+          "sha256": "a599aa256049cf30954d1f164721b99e453eb7e4cb8241bcab2d5573e6cf58b8"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "stop-design-slop",
+      "source": "https://github.com/Juuzoe/stop-design-slop/tree/8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "c0a1d82b459e8b6a63676139d11a4474d777ea2c76e90e52fd6e181e5ec272b9",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "b460c0b8bf25cc26b17363152f107805fc8913260b94abc9a66c9ea57f004ce5"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "0f31d26e738834fa75dd4e9a0126c2fdc2da6f25d479bd524e20db525bb0a214"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "63bbdefce7dce3daf4d416a7e3b69c7e76372f85014ab7442d78d3ac7004380b"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "78821ff00ef7946490cd08486bd4a3f9140c2045e666dfe3ed1298920faf8ddd"
+        },
+        {
+          "path": "references/clean.md",
+          "sha256": "04f46d60f55f1182a336cd88d174edf7abfbce05b059cc547206e562d9d83142"
+        },
+        {
+          "path": "references/direction.md",
+          "sha256": "8637297228aad6ec097d2f5c9a1bdbdfe130b98a4ecc938f3d995036bb34f7cd"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "verification-before-completion",
+      "source": "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/verification-before-completion",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "00e12854c6d947c8f6ac02f8df428770b3d889daed5515b8cb3e2292406b697c",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "e0dec61d7ee93e07f30af221e0da429f29d7453c5bf00ee9960fc82a60af6de9"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "dbebb29560cad8831685985c5a213d23d017532d736132151aa65deed220f1cf"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "9ee76709498a71e7ae99c29c8ab8ec6ba71e165c8c4afc6b68bb8fa3f160bbbb"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "systematic-debugging",
+      "source": "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/systematic-debugging",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "cb3041452441de664394efdc920fa7d202a85994ea060bcbd5e5e1bbe110f59e",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "421445ec8263063e82c2945c621b9c8791d03224d8649f3f495ea40d135038e0"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "810303f770b7422a0ac633d2b47413634493c5212f2f1bca3874c6f60a16fe0a"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "3a87b0cf681c025a90c4e449caf7b4177c3a8347a676623e66d4a897f06d0bfe"
+        },
+        {
+          "path": "references/condition-based-waiting.md",
+          "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+        },
+        {
+          "path": "references/defense-in-depth.md",
+          "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+        },
+        {
+          "path": "references/root-cause-tracing.md",
+          "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "supabase-postgres-best-practices",
+      "source": "https://github.com/supabase/agent-skills/tree/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase-postgres-best-practices",
+      "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "09b8cc85b93d532f2e33c3d016e36e6f935a4fa2659e5afc06a70d5661a7a2d0",
+      "baselineFiles": [
+        {
+          "path": "CHANGELOG.md",
+          "sha256": "751ad110037c85d400018c9894716a04fa46357ff55c22b1169b280752e19e88"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b65e575eb4f04a13c187d64e958321298e2ab84d67aa8428819f362056ba292c"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "7455b2c52b686ad6e0a0911c0425737f2075a45080b9b5f37cc9fd424d98a9b8"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "4c9d5e3adadc4bcce107cffc3476571c369a1810276ba9db769e4e997264e62c"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "0e1bf421ee3a6f86b0a0c2dde8be8cc36a81196f3c2190a98071251bf6be5bde"
+        },
+        {
+          "path": "references/_contributing.md",
+          "sha256": "191e039e7d94764e6073410b513b559f9a594e0fdf0252a30c2a2986df2ab3bc"
+        },
+        {
+          "path": "references/_sections.md",
+          "sha256": "c9e992612b422c7122de0b7542ebc2450db283edaab08cfe86c6d657fcccccd5"
+        },
+        {
+          "path": "references/_template.md",
+          "sha256": "6299954250f212caabe339d752c3e5313a8e07d1a182a4e4b425baee91df1bd2"
+        },
+        {
+          "path": "references/advanced-full-text-search.md",
+          "sha256": "40c2606bbb4c4dce31308f201b24cc7f58c7df05b1d9c6856fe2b888d3b7cf28"
+        },
+        {
+          "path": "references/advanced-jsonb-indexing.md",
+          "sha256": "24cacf6a8bc35901dd566d24502ce8e57f810a5c196b897e61d52726e521d106"
+        },
+        {
+          "path": "references/conn-idle-timeout.md",
+          "sha256": "630588902c00fcec59a5988cc5d042f76dcf2c923a535abfd8c47dca205eaed5"
+        },
+        {
+          "path": "references/conn-limits.md",
+          "sha256": "11b2a67a7c7679cbbc5d807bbb17e69c98484a581d0c8b929c03408f412b81b2"
+        },
+        {
+          "path": "references/conn-pooling.md",
+          "sha256": "e1941aaa82387074c7c0604102fd81e4837a5dffffaeb5187d9b09b033fe4fbb"
+        },
+        {
+          "path": "references/conn-prepared-statements.md",
+          "sha256": "174e9332fe3dda5c99b2b00159fb1915ae36c00bab3a7882c14e73e4344e946e"
+        },
+        {
+          "path": "references/data-batch-inserts.md",
+          "sha256": "531933b82d6a622d0fae29e0ea80be6fe5d78655adf2804c271ea84a1930de37"
+        },
+        {
+          "path": "references/data-n-plus-one.md",
+          "sha256": "21a44905e5b16a42741892ec34bb1bfef124d049b140a76934a9acd0f46f5fc2"
+        },
+        {
+          "path": "references/data-pagination.md",
+          "sha256": "73c9fa10a3d439bedea0e11b640bd25bf30dd50f0d9006cf85baf7c3151543fa"
+        },
+        {
+          "path": "references/data-upsert.md",
+          "sha256": "2612af83b20a2701dde30ef1f8d7efd26b7e9eef84717226b8f038a2d2150ff7"
+        },
+        {
+          "path": "references/guide.md",
+          "sha256": "733b3b5e6dede1b951e69bbb52bc75b53fe4d04ada3fb79bd505285d1084e10a"
+        },
+        {
+          "path": "references/lock-advisory.md",
+          "sha256": "c88d259dbf81c3771438f59a165f7eab8acd09999dd370bdf807521c73f35aab"
+        },
+        {
+          "path": "references/lock-deadlock-prevention.md",
+          "sha256": "09aee46f51d7178c8e55fe056cd5a94a64ba2c122fe418e6900cd99f297b2347"
+        },
+        {
+          "path": "references/lock-short-transactions.md",
+          "sha256": "5aa7f61095916986d39644b446cdbcd2bacca7ef698a3bb50b3f82dd60207602"
+        },
+        {
+          "path": "references/lock-skip-locked.md",
+          "sha256": "6c45077f430f29cd9cd8f448c94d578e827e7bd023fcdaf717a756acb116fa4b"
+        },
+        {
+          "path": "references/monitor-explain-analyze.md",
+          "sha256": "4cb67ffbf8e57f2e5b380b0beb4242528b513723ce314a2c2ffcf083bd4203d7"
+        },
+        {
+          "path": "references/monitor-pg-stat-statements.md",
+          "sha256": "89dca99d4e894fcbdcac136be7ad9fbc03d1342904f065c1b198dc9cf495f098"
+        },
+        {
+          "path": "references/monitor-vacuum-analyze.md",
+          "sha256": "2892272011710eb49b3f185ec12f15ce9ce4c365792c672f6e2a9c90da426a1a"
+        },
+        {
+          "path": "references/query-composite-indexes.md",
+          "sha256": "73e42424e671f0266e74fdb220db3196790f69fb43e2b19c7b9483eb4971b554"
+        },
+        {
+          "path": "references/query-covering-indexes.md",
+          "sha256": "daf2a7f0477fb7357b62b5fb5b185b1995a77a186347e45cb780e25e7a7589b6"
+        },
+        {
+          "path": "references/query-index-types.md",
+          "sha256": "472a74f22c2df203bd0154999b3a5a0187cca2ab3d9a3978e305bb7c32f1a282"
+        },
+        {
+          "path": "references/query-missing-indexes.md",
+          "sha256": "91ad8b0ff4365704b4830a7f077c6f140f7140fd5d3ce5cd0b92b160cf9e25f1"
+        },
+        {
+          "path": "references/query-partial-indexes.md",
+          "sha256": "6448982bc8558c6555284958edc331b29239c6a0130e6b4501dd6d4da607a6dd"
+        },
+        {
+          "path": "references/schema-constraints.md",
+          "sha256": "90e8efda3e9e81095e642911ad4aae2809d160f29414338fa997253238f510f8"
+        },
+        {
+          "path": "references/schema-data-types.md",
+          "sha256": "e01b58c14c7f3f65d8ead580b9a4fcf70b83baaab0f9a5f83c569c9fd113e8c8"
+        },
+        {
+          "path": "references/schema-foreign-key-indexes.md",
+          "sha256": "7587713d12a65a212365459b3d39e4717d8a79e4073b10bd62f1054d8192c0dd"
+        },
+        {
+          "path": "references/schema-lowercase-identifiers.md",
+          "sha256": "4bc80f70865f2390872591f326c8a6be6456a0aeb5a7e5a2475d7cd9d43059ab"
+        },
+        {
+          "path": "references/schema-partitioning.md",
+          "sha256": "541e13fbeaf4bb1485c9059d4c9417dbdb766cf16f4237cd63a04ada7ec45b90"
+        },
+        {
+          "path": "references/schema-primary-keys.md",
+          "sha256": "3c8beabef82066f9a0838b926da0885117fd2d9a263aaf84cb5ca9e5f0d400e9"
+        },
+        {
+          "path": "references/security-privileges.md",
+          "sha256": "095909274a4fb43df785d7144cf674eeb40284d2d45628f14af4108737b93663"
+        },
+        {
+          "path": "references/security-rls-basics.md",
+          "sha256": "e04dd1a3a382aafdaaa73fe9f7976352acdde6e90c2a2470d281b94d4f44b096"
+        },
+        {
+          "path": "references/security-rls-performance.md",
+          "sha256": "2e1faeca7d5746e246b1c78f9492fe2a9cfa41c4d7fa1e23c402d58fa18ea014"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "security-best-practices",
+      "source": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "f893431e7f518179c5ba66a40c19df4bf8ac4491d4ca751a99413b9a90767834",
+      "baselineFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "a717f353a9b05595fda0b6e655345bf06cb0152a8511e2dfa8b6e44f7f50ea5e"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "98e0534df555006f789060eec01d0e5a4f855cb8c7e8197beaa541a9a7d2e07b"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "6b846414ae959304be148912c8c54195afca62ea9945cba79de9988fbaec8c38"
+        },
+        {
+          "path": "references/golang-general-backend-security.md",
+          "sha256": "a73c47c34497b120672d48411fe51dc90d426a571801a0b3f649e2ce4ec658b4"
+        },
+        {
+          "path": "references/javascript-express-web-server-security.md",
+          "sha256": "427835cbb5be7ba96172ea6ca9af80ddd4419c833e9ebf870996740c80d8406c"
+        },
+        {
+          "path": "references/javascript-general-web-frontend-security.md",
+          "sha256": "3a7bc7b3f6e7ff043db9dbaa8933894d7a19d987d0607e4ddae5d70184a63d63"
+        },
+        {
+          "path": "references/javascript-jquery-web-frontend-security.md",
+          "sha256": "bcbad2fa6c2a02709e47e889e70102c76886bf36bc798624d27db570eccf40da"
+        },
+        {
+          "path": "references/javascript-typescript-nextjs-web-server-security.md",
+          "sha256": "71c773f7a97ce60c853adfa100b3d88b3b7bc4c6b8acaef1432ffabd923ee182"
+        },
+        {
+          "path": "references/javascript-typescript-react-web-frontend-security.md",
+          "sha256": "d3030c0f24bddb56b9bbb91bbec1ee49eb7778bce4d3e0297b2641b2fc6b0d9c"
+        },
+        {
+          "path": "references/javascript-typescript-vue-web-frontend-security.md",
+          "sha256": "77c6a747f9f17e3df03aad0fcb20d99ac7898001b81aef8b80908e45ac14a688"
+        },
+        {
+          "path": "references/python-django-web-server-security.md",
+          "sha256": "4fb69b5d45f10e588d1a8c35cdc5f59e18910f6b46a93e2d342d90f286f8dfd2"
+        },
+        {
+          "path": "references/python-fastapi-web-server-security.md",
+          "sha256": "7383c7f4fc271190b05e562ada7e825982a2c76b6c79a9f95a1da7687b65a616"
+        },
+        {
+          "path": "references/python-flask-web-server-security.md",
+          "sha256": "9606d69190c04c167fdeac57e61297547a57b0542fd89dede36f355970446929"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "humanizer",
+      "source": "https://github.com/blader/humanizer/tree/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "revision": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "aba314109218ec1911e797a86eb8f772dc9aa39765e232739eb7619779b30c52",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "f38f3f37b02d9b8cf0e8dcd7c8099929dd5398229939d040380e7f119ee53d75"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "46564fbeaccb5903bf13b13a8654e621bec54b39207444c7311b74cd5809c9ec"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "02d66ad204251131c39eb384273547cb197c48d6ead049ae03df5e88cd482311"
+        },
+        {
+          "path": "references/prose.md",
+          "sha256": "429006a480d0dadec9994cd8dbb094bf68d20c1d7798b6c699694ec69ffed017"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "frontend-a11y",
+      "source": "https://github.com/affaan-m/ECC/tree/ef648e01899ba3e8dc6371642deaaf64b4477775/skills/frontend-a11y",
+      "revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "b276c6d982408eb36d65ce2d355ca66aae29b5cadd21713a16157fe2efb0c723",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "87d7cde9d72220e01b952466be469b053dc3b936e0e596d290c769d4bdbfcae3"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "a331747974d0a4286c22cc1d1127ad0c98c874811661af32127526b5a5a0f1c7"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "67d72e948fc68f5eed1e0d9c0e4244d0fc207d6669a518e9a632d8114600af1e"
+        },
+        {
+          "path": "references/interactions.md",
+          "sha256": "0fdfc1ebee7b9e8844b62c2dc90c2213e6ccb361c42d14489867e347f6a30633"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "impeccable",
+      "source": "https://github.com/pbakaus/impeccable/tree/ece38d9904b8a619b3f77cab476eacad09c4fb11/.agents/skills/impeccable",
+      "revision": "ece38d9904b8a619b3f77cab476eacad09c4fb11",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "4eecccde7bb62bddd53e316d660eb67a38db0dc376d31edae00eb612be814ca5",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812"
+        },
+        {
+          "path": "NOTICE.md",
+          "sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "79be8756412df1f0d0d5c9c5a1f1b13bd47c7fc9182d1d7b9a8161b4d7f28cc7"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "a34ec25bbd131a8db37d0314bbfe1ec7466a9f211b5e399715f962ea73d57963"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "f2a61fb70cecc47682f08cf44f8dfd751d363d761e06b195f5f06dfd3857c6a2"
+        },
+        {
+          "path": "references/native.md",
+          "sha256": "73879dc06d0514da8dff9e4a403cf16a49dcb034e6d5016580612d12a8f4c088"
+        },
+        {
+          "path": "references/web.md",
+          "sha256": "40c80b5a9e36639f463fe0907cf964d0755371244f2482449cd413b8963beddc"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "diagram-design",
+      "source": "https://github.com/cathrynlavery/diagram-design/tree/cb80b0d299a5c0674e0d133d33f91f19af8cda0f/skills/diagram-design",
+      "revision": "cb80b0d299a5c0674e0d133d33f91f19af8cda0f",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "f0335756e2c98738c61891ad0f3352f344ba5db0f97cf592c36486bfd4807a9c",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "b0132b58dadf253e0fdc61a9a249191e87227749638844337385bc68bb79d9a4"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "392a300de03e9b18d624e931dcc604f2d4581e1ab15338000de365cd8685b3af"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "3b1e0bcc0201283e7e10469ebfac26831627e15c2b24060e8935f0ed7132b2bb"
+        },
+        {
+          "path": "references/diagrams.md",
+          "sha256": "d1b2fb2d4b90311302878de528a9db9d1db84c709c11b19767631b387b600f2e"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "security-threat-model",
+      "source": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "4e6ba9c935512cabcdd3b57403a4414c1b4d3767c1bc993ef6bad483dbea5e56",
+      "baselineFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "1172c82d551dcd1bcbe0693a12cec32a3d80e56c7fccda9c34081f0051f5147c"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "a0548c515276fa2b49b57364230b3b69032200982819d8a462491f51df1c5945"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a72cdf71d88a1cbb5a4328a50de8cef71fc7983c7bcae8a70f813a55ec91bcca"
+        },
+        {
+          "path": "references/prompt-template.md",
+          "sha256": "81a59aa3fb3ac3a739d6a26ab38e4015965f215581ee54becef21a2b121ec29b"
+        },
+        {
+          "path": "references/security-controls-and-assets.md",
+          "sha256": "d536cfa9acad2523dc39134bcf33b9566c29dd9a57b407cbc9901637230c6b98"
+        }
+      ],
+      "state": "pending"
+    },
+    {
+      "id": "gpt-taste",
+      "source": "https://github.com/Leonxlnx/taste-skill/tree/ce26fc25c0e5e8cab638f883de62d9a86ee5e45b/skills/gpt-tasteskill",
+      "revision": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "adaptationVersion": 1,
+      "installedTreeSha256": "aa28e1691510d6d4808bc0be03156338ae73b4e57beb294c2c4182c34bd7370d",
+      "baselineFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "sha256": "a9652a1320479fbd43177e04a23ee13a303a3f635add25c041e11ee655638471"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "sha256": "61150ce2b020b44f7d0c09de105e64addfd2e0937d2933be96f22a69c497b60d"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "669868bbe3bd7f47767069bd1d810483382b12c2c46da02bde86e81088daf8ea"
+        },
+        {
+          "path": "references/editorial-motion.md",
+          "sha256": "487402bff496af3455497c8090187872cd63a5a191e3184b51132c1a8a071426"
+        }
+      ],
+      "state": "pending"
+    }
+  ],
+  "files": [],
+  "toolchain": [
+    {
+      "id": "node",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "npm",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "git",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "python",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    },
+    {
+      "id": "postgresql",
+      "required": true,
+      "state": "planned",
+      "qualification": "pending"
+    }
+  ],
+  "databases": [
+    {
+      "id": "primary",
+      "engine": "postgresql",
+      "mode": "native",
+      "target": "backend",
+      "state": "planned",
+      "qualification": "pending"
+    }
+  ],
+  "steps": [
+    {
+      "id": "preflight",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "node",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "npm",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "git",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "python",
+      "state": "planned"
+    },
+    {
+      "id": "tool-install",
+      "toolId": "postgresql",
+      "state": "planned"
+    },
+    {
+      "id": "database-setup",
+      "databaseId": "primary",
+      "state": "planned"
+    },
+    {
+      "id": "database-verification",
+      "databaseId": "primary",
+      "state": "planned"
+    },
+    {
+      "id": "scaffold",
+      "state": "planned"
+    },
+    {
+      "id": "dependencies",
+      "state": "planned",
+      "target": "frontend"
+    },
+    {
+      "id": "dependencies",
+      "state": "planned",
+      "target": "backend"
+    },
+    {
+      "id": "skills",
+      "state": "planned"
+    },
+    {
+      "id": "documents",
+      "state": "planned"
+    },
+    {
+      "id": "verification",
+      "state": "planned",
+      "target": "frontend"
+    },
+    {
+      "id": "verification",
+      "state": "planned",
+      "target": "backend"
+    },
+    {
+      "id": "git-init",
+      "state": "planned"
+    },
+    {
+      "id": "initial-commit",
+      "state": "planned"
+    }
+  ]
+}

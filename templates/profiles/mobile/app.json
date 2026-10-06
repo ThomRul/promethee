@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Projet",
+    "slug": "project",
+    "scheme": "project",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "package": "com.example.project"
+    },
+    "ios": {
+      "bundleIdentifier": "com.example.project"
+    },
+    "userInterfaceStyle": "automatic"
+  }
+}

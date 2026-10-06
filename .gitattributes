@@ -1,0 +1,4 @@
+# Les ressources vérifiées par SHA-256 doivent conserver leurs octets sur chaque OS.
+# Désactiver la conversion automatique des fins de ligne, y compris sous Windows.
+* -text
+*.png binary

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "impeccable",
+  "repository": "pbakaus/impeccable",
+  "revision": "ece38d9904b8a619b3f77cab476eacad09c4fb11",
+  "source": ".agents/skills/impeccable",
+  "upstreamUrl": "https://github.com/pbakaus/impeccable/tree/ece38d9904b8a619b3f77cab476eacad09c4fb11/.agents/skills/impeccable",
+  "license": "Apache-2.0",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "upstreamEntrySha256": "e1a965737ca8255934bad358d5cfb8788ce013867910efd97d1daac68375e941",
+  "adaptations": [
+    "Spécialisation en critique UI ciblée sur quatre profils, sans remplacer le pilote visuel.",
+    "Entrée et référence audit web amont examinées ; références de critique web/native rédigées pour Prométhée.",
+    "Moteur, hooks, génération payante, contexte PRODUCT/DESIGN concurrent et orchestration amont exclus.",
+    "Fichiers ios/android dérivés et leurs assets non copiés ; NOTICE.md amont conservé pour provenance."
+  ]
+}

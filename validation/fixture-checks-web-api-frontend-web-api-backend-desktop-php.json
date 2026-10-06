@@ -1,0 +1,100 @@
+[
+  {
+    "profile": "web-api/frontend",
+    "command": "npm exec -- prettier --write .",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-frontend-exec----prettier---write-.txt"
+  },
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run typecheck",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-frontend-run-typecheck.txt"
+  },
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run lint",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-frontend-run-lint.txt"
+  },
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run build",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-frontend-run-build.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm exec -- prettier --write .",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-backend-exec----prettier---write-.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm run typecheck",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-backend-run-typecheck.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm run lint",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-backend-run-lint.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm run build",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-web-api-backend-run-build.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm exec -- prettier --write .",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-desktop-exec----prettier---write-.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run typecheck",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-desktop-run-typecheck.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run lint",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-desktop-run-lint.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run build",
+    "passed": false,
+    "exitCode": 1,
+    "log": "logs/check-desktop-run-build.txt"
+  },
+  {
+    "profile": "php",
+    "command": "npm exec -- prettier --write resources/js resources/css",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-php-exec----prettier---write-resourcesjs-resourcescss.txt"
+  },
+  {
+    "profile": "php",
+    "command": "npm run build",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/check-php-run-build.txt"
+  }
+]

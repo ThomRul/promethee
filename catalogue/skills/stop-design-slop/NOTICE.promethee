@@ -1,0 +1,15 @@
+Adaptation Prométhée 1 — 2026-10-05
+
+Source : https://github.com/Juuzoe/stop-design-slop/tree/8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e
+Révision : 8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e
+Licence amont : MIT. Les fichiers de licence amont sont conservés.
+
+Modifications de préparation :
+- Entrée française courte et deux références adaptées à CLEAN et à une refonte demandée ; catalogue exhaustif, exemples et scripts non embarqués.
+- Préservation de la direction existante, des faits, du ton, des fonctions et des choix intentionnels ; correction locale d’accessibilité possible sans refonte.
+- Suppression des garanties universelles, scores et quotas imposés, refonte par mot-clé et lecture générale de références.
+- Pas de palette framework supprimée, rollback Git, architecture, service ou bibliothèque imposés ; contrôles web limités aux contextes pertinents, références natives sur mobile.
+- Provenance et avis de modification ajoutés aux copies adaptées.
+
+Cette adaptation n'est pas une release officielle du dépôt amont.
+Aucune API payante obligatoire et aucune autorisation externe ajoutée.

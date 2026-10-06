@@ -1,0 +1,35 @@
+{
+  "name": "promethee-cli",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Prépare des projets et des skills pour Codex",
+  "type": "module",
+  "bin": {
+    "promethee": "dist/src/main.js"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/src/main.js",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "verify:resources": "node scripts/verify-resources.mjs",
+    "package:distribution": "node scripts/package-distribution.mjs",
+    "format": "prettier --write src tests scripts",
+    "format:check": "prettier --check src tests scripts"
+  },
+  "dependencies": {
+    "@clack/prompts": "1.8.1",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "semver": "^7.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/semver": "^7.7.1",
+    "prettier": "^3.6.2",
+    "typescript": "5.9.3"
+  }
+}

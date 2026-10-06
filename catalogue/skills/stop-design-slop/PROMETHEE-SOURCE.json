@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-design-slop",
+  "repository": "Juuzoe/stop-design-slop",
+  "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+  "source": ".",
+  "upstreamUrl": "https://github.com/Juuzoe/stop-design-slop/tree/8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Entrée française courte et deux références adaptées à CLEAN et à une refonte demandée ; catalogue exhaustif, exemples et scripts non embarqués.",
+    "Préservation de la direction existante, des faits, du ton, des fonctions et des choix intentionnels ; correction locale d’accessibilité possible sans refonte.",
+    "Suppression des garanties universelles, scores et quotas imposés, refonte par mot-clé et lecture générale de références.",
+    "Pas de palette framework supprimée, rollback Git, architecture, service ou bibliothèque imposés ; contrôles web limités aux contextes pertinents, références natives sur mobile."
+  ]
+}

@@ -1,0 +1,15 @@
+Adaptation Prométhée 1 — 2026-10-05
+
+Source : https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-animation
+Révision : 13ad8e05874195633b5c185f6947bb6400e228fc
+Licence amont : MIT. Les fichiers de licence amont sont conservés.
+
+Modifications de préparation :
+- Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.
+- Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.
+- NativeWind conservé, respecter les conventions et composants présents.
+- Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme.
+- Provenance et avis de modification ajoutés aux copies adaptées.
+
+Cette adaptation n'est pas une release officielle du dépôt amont.
+Aucune API payante obligatoire et aucune autorisation externe ajoutée.

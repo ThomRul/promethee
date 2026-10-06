@@ -1,0 +1,32 @@
+[
+  {
+    "profile": "web-api/frontend",
+    "operation": "npm ci --ignore-scripts",
+    "passed": true,
+    "exitCode": 0
+  },
+  {
+    "profile": "web-api/backend",
+    "operation": "npm ci --ignore-scripts",
+    "passed": true,
+    "exitCode": 0
+  },
+  {
+    "profile": "php",
+    "operation": "npm ci --ignore-scripts",
+    "passed": true,
+    "exitCode": 0
+  },
+  {
+    "profile": "desktop",
+    "operation": "npm ci --ignore-scripts",
+    "passed": true,
+    "exitCode": 0
+  },
+  {
+    "profile": "mobile",
+    "operation": "npm ci --ignore-scripts",
+    "passed": false,
+    "exitCode": 1
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "verification-before-completion",
+  "repository": "obra/superpowers",
+  "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+  "source": "skills/verification-before-completion",
+  "upstreamUrl": "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/verification-before-completion",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Réécriture proportionnée : résultats encore valides réutilisables, portée annoncée.",
+    "Suppression du rerun complet à chaque message et du workflow Superpowers obligatoire."
+  ]
+}

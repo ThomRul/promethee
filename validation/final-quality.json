@@ -1,0 +1,112 @@
+[
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run format",
+    "passed": true,
+    "log": "logs/final-web-api-frontend-run-format.txt"
+  },
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run lint",
+    "passed": true,
+    "log": "logs/final-web-api-frontend-run-lint.txt"
+  },
+  {
+    "profile": "web-api/frontend",
+    "kind": "format-preserves-skill-file-bytes",
+    "passed": true
+  },
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run typecheck",
+    "passed": true,
+    "log": "logs/final-web-api-frontend-run-typecheck.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm run format",
+    "passed": true,
+    "log": "logs/final-web-api-backend-run-format.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm run lint",
+    "passed": true,
+    "log": "logs/final-web-api-backend-run-lint.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "kind": "format-preserves-skill-file-bytes",
+    "passed": true
+  },
+  {
+    "profile": "web-api/backend",
+    "command": "npm run typecheck",
+    "passed": true,
+    "log": "logs/final-web-api-backend-run-typecheck.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run format",
+    "passed": true,
+    "log": "logs/final-desktop-run-format.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run lint",
+    "passed": true,
+    "log": "logs/final-desktop-run-lint.txt"
+  },
+  {
+    "profile": "desktop",
+    "kind": "format-preserves-skill-file-bytes",
+    "passed": true
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run typecheck",
+    "passed": true,
+    "log": "logs/final-desktop-run-typecheck.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm run format",
+    "passed": true,
+    "log": "logs/final-mobile-run-format.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm run lint",
+    "passed": true,
+    "log": "logs/final-mobile-run-lint.txt"
+  },
+  {
+    "profile": "mobile",
+    "kind": "format-preserves-skill-file-bytes",
+    "passed": true
+  },
+  {
+    "profile": "mobile",
+    "command": "npm run typecheck",
+    "passed": true,
+    "log": "logs/final-mobile-run-typecheck.txt"
+  },
+  {
+    "profile": "web-api/frontend",
+    "command": "npm run test -- preparation-smoke.test.tsx",
+    "passed": true,
+    "log": "logs/final-web-api-frontend-run-test----preparation-smoketesttsx.txt"
+  },
+  {
+    "profile": "desktop",
+    "command": "npm run test -- preparation-smoke.test.tsx",
+    "passed": false,
+    "log": "logs/final-desktop-run-test----preparation-smoketesttsx.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm run test -- preparation-smoke.test.tsx",
+    "passed": true,
+    "log": "logs/final-mobile-run-test----preparation-smoketesttsx.txt"
+  }
+]

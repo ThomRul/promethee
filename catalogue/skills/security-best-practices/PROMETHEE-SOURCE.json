@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "security-best-practices",
+  "repository": "openai/skills",
+  "revision": "49f948faa9258a0c61caceaf225e179651397431",
+  "source": "skills/.curated/security-best-practices",
+  "upstreamUrl": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices",
+  "license": "Apache-2.0",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Conserver le déclenchement sécurité explicite et les langages supportés.",
+    "Clarifier limite : aucune référence spécialisée NestJS, PHP, Electron ou React Native.",
+    "Charger seulement les références applicables ; aucune promesse d’audit exhaustif."
+  ]
+}

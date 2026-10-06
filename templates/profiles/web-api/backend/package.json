@@ -1,0 +1,52 @@
+{
+  "name": "promethee-template-api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "packageManager": "npm@11.19.0",
+  "scripts": {
+    "dev": "tsc --watch",
+    "start": "node --env-file=.env dist/main.js",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "migration:run": "typeorm migration:run -d dist/database/data-source.js",
+    "migration:revert": "typeorm migration:revert -d dist/database/data-source.js",
+    "dev:server": "node --watch --env-file=.env dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "12.1.2",
+    "@nestjs/core": "12.1.2",
+    "@nestjs/platform-express": "12.1.2",
+    "@nestjs/typeorm": "12.0.2",
+    "typeorm": "1.1.1",
+    "pg": "8.23.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "prettier": "3.9.9",
+    "@types/node": "24.19.1",
+    "eslint": "10.12.0",
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.71.0",
+    "eslint-config-prettier": "10.1.8",
+    "vitest": "5.0.3",
+    "vite": "8.3.2",
+    "@nestjs/testing": "12.1.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "unplugin-swc": "2.0.0",
+    "@swc/core": "1.16.13"
+  }
+}

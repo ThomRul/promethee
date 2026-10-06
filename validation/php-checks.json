@@ -1,0 +1,32 @@
+[
+  {
+    "command": "php artisan key:generate --no-interaction",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/php-artisan-keygenerate---no-interaction.txt"
+  },
+  {
+    "command": "php vendor/bin/pint",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/php-vendorbinpint.txt"
+  },
+  {
+    "command": "php vendor/bin/phpunit",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/php-vendorbinphpunit.txt"
+  },
+  {
+    "command": "php artisan route:list --json",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/php-artisan-routelist---json.txt"
+  },
+  {
+    "command": "php artisan view:cache",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/php-artisan-viewcache.txt"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "skill": "frontend-a11y",
+    "passed": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "humanizer",
+    "passed": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "diagram-design",
+    "passed": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "impeccable",
+    "passed": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "gpt-taste",
+    "passed": true,
+    "message": "Skill is valid!"
+  }
+]

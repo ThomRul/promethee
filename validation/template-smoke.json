@@ -1,0 +1,16 @@
+[
+  {
+    "profile": "web-api/frontend",
+    "kind": "isolated-template-smoke-not-generated-business-test",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/smoke-web-api-frontend.txt"
+  },
+  {
+    "profile": "web-api/backend",
+    "kind": "isolated-template-smoke-not-generated-business-test",
+    "passed": false,
+    "exitCode": 1,
+    "log": "logs/smoke-web-api-backend.txt"
+  }
+]

@@ -1,0 +1,15 @@
+Source du squelette : laravel/laravel 13.10.1,
+révision 5aad4ddf34d5e21dfe6b4c07eeac67d5bd5e08b0.
+https://github.com/laravel/laravel/tree/5aad4ddf34d5e21dfe6b4c07eeac67d5bd5e08b0
+
+Le README et composer.json amont déclarent MIT. Cette révision du squelette
+ne contient pas de fichier LICENSE séparé ; le README amont est conservé.
+LICENSE.laravel-framework provient de laravel/framework 13.34.0 et porte
+la licence du framework. Son nom distingue cette provenance.
+
+Adaptations de préparation par Prométhée, 2026-10-05 : page de démarrage
+minimale, manifests de dépendances exactes, cible PHP 8.3, MySQL,
+sessions/cache locaux, configuration de qualité et assets Tailwind/Alpine.
+Aucune migration de compte ou de données métier initiale.
+L'inventaire source de préparation est dans catalogue/laravel-skeleton-files.json
+du dossier de ressources Prométhée.

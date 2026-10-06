@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "ui-ux-pro-max",
+  "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+  "source": ".claude/skills/ui-ux-pro-max",
+  "upstreamUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/477bcb28c9812b385cb51a4605ddf30d7b2266e2/.claude/skills/ui-ux-pro-max",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Entrée courte, recherche Python relative au dossier du skill, aucun CLAUDE_PLUGIN_ROOT.",
+    "Respect du brief, tokens/composants existants, pas de régénération de design system pour une petite modification.",
+    "Recherche locale ciblée ; pas de --persist/--force par défaut, pas de bibliothèque GSAP ajoutée automatiquement.",
+    "Aucun fichier de police ou SVG tiers embarqué ; conserver les métadonnées de provenance des suggestions."
+  ]
+}

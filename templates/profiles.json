@@ -1,0 +1,615 @@
+{
+  "schemaVersion": 2,
+  "status": "resources-used-by-cli-preview",
+  "commonGuides": [
+    "docs/agent-guides/anti-slop.md",
+    "docs/agent-guides/skill-routing.md.tpl",
+    "docs/agent-guides/services.md"
+  ],
+  "profiles": [
+    {
+      "id": "web-api",
+      "label": "Web React et API",
+      "template": "profiles/web-api",
+      "dependencyGroups": [
+        "web",
+        "api"
+      ],
+      "guide": "web-api",
+      "stack": "React / TypeScript / Vite, NestJS / TypeORM / PostgreSQL, Tailwind / shadcn",
+      "defaults": {
+        "database": "postgresql",
+        "uiAnimations": false,
+        "editorialAnimations": false
+      },
+      "options": [
+        "ui-animations",
+        "editorial-animations"
+      ],
+      "skills": [
+        "ui-ux-pro-max",
+        "stop-design-slop",
+        "verification-before-completion",
+        "systematic-debugging",
+        "supabase-postgres-best-practices",
+        "security-best-practices",
+        "humanizer",
+        "frontend-a11y"
+      ],
+      "retainedButBlocked": [
+        "vercel-react-best-practices",
+        "vercel-composition-patterns"
+      ],
+      "commands": {
+        "frontend": [
+          "npm ci",
+          "npm run dev",
+          "npm run typecheck",
+          "npm run lint",
+          "npm run build",
+          "npm run test"
+        ],
+        "backend": [
+          "npm ci",
+          "npm run build",
+          "npm run dev",
+          "npm run dev:server",
+          "npm run typecheck",
+          "npm run lint",
+          "npm run test"
+        ]
+      },
+      "zones": [
+        {
+          "id": "frontend",
+          "label": "Interface React",
+          "paths": [
+            "frontend/src/App.tsx",
+            "frontend/src/main.tsx",
+            "frontend/src/styles.css",
+            "frontend/src/lib/utils.ts",
+            "frontend/components.json",
+            "frontend/vite.config.ts"
+          ],
+          "responsibility": "Affichage, tokens et composition React.",
+          "boundaries": "Accès API via /api ; proxy local vers Nest. Les secrets et règles d’autorisation restent côté serveur.",
+          "reusable": "Tokens CSS et cn() ; rechercher les composants UI existants avant ajout.",
+          "checks": [
+            "typecheck",
+            "lint",
+            "build",
+            "test comportement utile"
+          ]
+        },
+        {
+          "id": "backend",
+          "label": "API et configuration des données",
+          "paths": [
+            "backend/src/main.ts",
+            "backend/src/app.module.ts",
+            "backend/src/app.controller.ts",
+            "backend/src/database/data-source.ts",
+            "backend/.env.example"
+          ],
+          "responsibility": "Transport HTTP et préparation PostgreSQL, sans modèle métier.",
+          "boundaries": "Validation globale ; services métier et intégration TypeORM à ajouter selon le périmètre. synchronize=false.",
+          "reusable": "AppModule, route technique /api/health et DataSource.",
+          "checks": [
+            "typecheck",
+            "lint",
+            "build",
+            "test API utile",
+            "migration si schéma modifié"
+          ]
+        }
+      ],
+      "skillSelection": {
+        "allDeselectable": true,
+        "defaults": [
+          "ui-ux-pro-max",
+          "stop-design-slop",
+          "verification-before-completion",
+          "systematic-debugging",
+          "supabase-postgres-best-practices",
+          "security-best-practices",
+          "humanizer",
+          "frontend-a11y"
+        ],
+        "optional": [
+          "diagram-design",
+          "impeccable",
+          "security-threat-model",
+          "gpt-taste"
+        ],
+        "optionSuggestedSkills": {
+          "ui-animations": [],
+          "editorial-animations": [
+            "gpt-taste"
+          ]
+        }
+      }
+    },
+    {
+      "id": "php",
+      "label": "Web PHP Laravel",
+      "template": "profiles/php",
+      "dependencyGroups": [
+        "phpAssets"
+      ],
+      "guide": "php",
+      "stack": "Laravel / Eloquent / Blade, MySQL, Tailwind / Alpine",
+      "defaults": {
+        "database": "mysql",
+        "livewire": false,
+        "uiAnimations": false,
+        "editorialAnimations": false
+      },
+      "options": [
+        "database-mariadb",
+        "livewire",
+        "ui-animations",
+        "editorial-animations"
+      ],
+      "skills": [
+        "ui-ux-pro-max",
+        "stop-design-slop",
+        "verification-before-completion",
+        "systematic-debugging",
+        "laravel-best-practices",
+        "humanizer",
+        "frontend-a11y"
+      ],
+      "retainedButBlocked": [],
+      "commands": {
+        ".": [
+          "composer install",
+          "php artisan key:generate",
+          "npm ci",
+          "npm run build",
+          "php artisan serve",
+          "composer lint",
+          "composer test"
+        ]
+      },
+      "zones": [
+        {
+          "id": "php",
+          "label": "Routes et application Laravel",
+          "paths": [
+            "routes/web.php",
+            "bootstrap/app.php",
+            "app/Providers/AppServiceProvider.php",
+            "app/Http/Controllers/Controller.php",
+            "config/database.php",
+            ".env.example"
+          ],
+          "responsibility": "HTTP, configuration et services Laravel ; modèle métier à définir.",
+          "boundaries": "Blade assure l’affichage ; Eloquent assure la persistance. Validation et autorisation côté serveur.",
+          "reusable": "Conventions Laravel et configuration native. Pas de repository générique imposé.",
+          "checks": [
+            "composer lint",
+            "composer test si tests présents",
+            "migration si schéma modifié"
+          ]
+        },
+        {
+          "id": "interface",
+          "label": "Blade et assets",
+          "paths": [
+            "resources/views/home.blade.php",
+            "resources/css/app.css",
+            "resources/js/app.js",
+            "vite.config.js"
+          ],
+          "responsibility": "Composition Blade et styles Tailwind/Alpine.",
+          "boundaries": "Aucune seconde instance Alpine si Livewire ; sorties Blade échappées.",
+          "reusable": "Tokens CSS et éléments de vue réellement présents.",
+          "checks": [
+            "npm run build",
+            "vérification navigateur selon impact"
+          ]
+        }
+      ],
+      "skillSelection": {
+        "allDeselectable": true,
+        "defaults": [
+          "ui-ux-pro-max",
+          "stop-design-slop",
+          "verification-before-completion",
+          "systematic-debugging",
+          "laravel-best-practices",
+          "humanizer",
+          "frontend-a11y"
+        ],
+        "optional": [
+          "diagram-design",
+          "impeccable",
+          "security-threat-model",
+          "gpt-taste"
+        ],
+        "optionSuggestedSkills": {
+          "ui-animations": [],
+          "editorial-animations": [
+            "gpt-taste"
+          ]
+        }
+      }
+    },
+    {
+      "id": "desktop",
+      "label": "Application desktop Electron",
+      "template": "profiles/desktop",
+      "dependencyGroups": [
+        "desktop"
+      ],
+      "guide": "desktop",
+      "stack": "Electron / React / TypeScript, Vite / Tailwind / shadcn",
+      "defaults": {
+        "database": "none",
+        "uiAnimations": false
+      },
+      "options": [
+        "desktop-sqlite",
+        "ui-animations"
+      ],
+      "skills": [
+        "ui-ux-pro-max",
+        "stop-design-slop",
+        "verification-before-completion",
+        "systematic-debugging",
+        "humanizer",
+        "frontend-a11y"
+      ],
+      "retainedButBlocked": [
+        "vercel-react-best-practices",
+        "vercel-composition-patterns"
+      ],
+      "commands": {
+        ".": [
+          "npm ci",
+          "npm run dev",
+          "npm run typecheck",
+          "npm run lint",
+          "npm run build",
+          "npm run test"
+        ]
+      },
+      "zones": [
+        {
+          "id": "main",
+          "label": "Processus principal",
+          "paths": [
+            "electron/main/index.ts"
+          ],
+          "responsibility": "Fenêtre, permissions et ressources système.",
+          "boundaries": "Aucun accès système libre depuis renderer ; valider émetteur et données des futurs IPC.",
+          "reusable": "Création de fenêtre avec sandbox et contextIsolation.",
+          "checks": [
+            "typecheck",
+            "lint",
+            "build",
+            "essai Electron et permissions"
+          ]
+        },
+        {
+          "id": "preload",
+          "label": "Pont de contexte",
+          "paths": [
+            "electron/preload/index.ts"
+          ],
+          "responsibility": "Expose les seules opérations nécessaires à l’interface.",
+          "boundaries": "Pas d’exposition générale de ipcRenderer, du SQL ou du système de fichiers.",
+          "reusable": "Pont desktop.platform et types associés.",
+          "checks": [
+            "typecheck",
+            "lint",
+            "test contrat IPC si ajouté"
+          ]
+        },
+        {
+          "id": "renderer",
+          "label": "Interface React",
+          "paths": [
+            "src/App.tsx",
+            "src/main.tsx",
+            "src/styles.css",
+            "src/lib/utils.ts",
+            "index.html",
+            "components.json"
+          ],
+          "responsibility": "Affichage React et tokens.",
+          "boundaries": "Pas de Node dans renderer ; appels système uniquement par le pont défini. CSP à adapter au produit empaqueté.",
+          "reusable": "Tokens CSS et cn() ; composants UI existants.",
+          "checks": [
+            "typecheck",
+            "lint",
+            "build",
+            "test interaction utile"
+          ]
+        }
+      ],
+      "skillSelection": {
+        "allDeselectable": true,
+        "defaults": [
+          "ui-ux-pro-max",
+          "stop-design-slop",
+          "verification-before-completion",
+          "systematic-debugging",
+          "humanizer",
+          "frontend-a11y"
+        ],
+        "optional": [
+          "diagram-design",
+          "impeccable",
+          "security-threat-model"
+        ],
+        "optionSuggestedSkills": {
+          "ui-animations": []
+        }
+      }
+    },
+    {
+      "id": "mobile",
+      "label": "Application mobile Expo",
+      "template": "profiles/mobile",
+      "dependencyGroups": [
+        "mobile"
+      ],
+      "guide": "mobile",
+      "stack": "React Native / Expo / TypeScript / Expo Router, NativeWind / Tailwind 3",
+      "defaults": {
+        "database": "none",
+        "backend": "none",
+        "mobileMode": "android-local",
+        "androidTarget": "device",
+        "uiAnimations": false
+      },
+      "options": [
+        "mobile-mode",
+        "android-target",
+        "mobile-sqlite",
+        "backend-existing",
+        "backend-new",
+        "ui-animations"
+      ],
+      "skills": [
+        "ui-ux-pro-max",
+        "stop-design-slop",
+        "verification-before-completion",
+        "systematic-debugging",
+        "expo-router",
+        "expo-design-system",
+        "expo-native-ui",
+        "humanizer"
+      ],
+      "retainedButBlocked": [],
+      "commands": {
+        ".": [
+          "npm ci",
+          "npm run start",
+          "npm run typecheck",
+          "npm run lint",
+          "npm run test",
+          "npx expo install --check"
+        ]
+      },
+      "zones": [
+        {
+          "id": "mobile",
+          "label": "Application Expo",
+          "paths": [
+            "src/app/_layout.tsx",
+            "src/app/index.tsx",
+            "global.css",
+            "tailwind.config.cjs",
+            "metro.config.cjs",
+            "babel.config.cjs",
+            "app.json"
+          ],
+          "responsibility": "Routes et composition native avec styles NativeWind.",
+          "boundaries": "Code métier hors des routes lorsqu’il apparaît. SDK natif cohérent ; pas de secret serveur dans le bundle.",
+          "reusable": "Tokens NativeWind et wrappers de zone sûre présents.",
+          "checks": [
+            "typecheck",
+            "lint",
+            "test comportement utile",
+            "expo install --check",
+            "appareil si changement natif"
+          ]
+        }
+      ],
+      "skillSelection": {
+        "allDeselectable": true,
+        "defaults": [
+          "ui-ux-pro-max",
+          "stop-design-slop",
+          "verification-before-completion",
+          "systematic-debugging",
+          "expo-router",
+          "expo-design-system",
+          "expo-native-ui",
+          "humanizer"
+        ],
+        "optional": [
+          "diagram-design",
+          "impeccable",
+          "security-threat-model"
+        ],
+        "optionSuggestedSkills": {
+          "ui-animations": [
+            "expo-animation"
+          ]
+        }
+      }
+    }
+  ],
+  "globalOptions": {
+    "scope": [
+      "defined",
+      "undefined"
+    ],
+    "docker": "undecided-agent-clarifies",
+    "git": {
+      "default": true
+    },
+    "optionalSkills": [
+      "diagram-design",
+      "impeccable",
+      "security-threat-model"
+    ]
+  },
+  "optionRules": [
+    {
+      "id": "mobile-mode",
+      "profiles": [
+        "mobile"
+      ],
+      "manifestOption": "mobileMode",
+      "choices": [
+        "android-local",
+        "expo-go"
+      ],
+      "default": "android-local",
+      "qualification": "pending-native-toolchain-and-dev-client-lock",
+      "guide": "guides/mobile.md"
+    },
+    {
+      "id": "android-target",
+      "profiles": [
+        "mobile"
+      ],
+      "manifestOption": "androidTarget",
+      "choices": [
+        "device",
+        "emulator"
+      ],
+      "default": "device",
+      "when": {
+        "mobileMode": "android-local"
+      },
+      "omitWhenInactive": true,
+      "qualification": "pending-device-and-emulator-bootstrap",
+      "guide": "guides/mobile.md"
+    },
+    {
+      "id": "ui-animations",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop"
+      ],
+      "dependencyGroup": "web-motion",
+      "skill": "motion",
+      "skillStatus": "blocked-redistribution",
+      "default": false,
+      "manifestOption": "uiAnimations"
+    },
+    {
+      "id": "ui-animations",
+      "profiles": [
+        "mobile"
+      ],
+      "dependencyGroup": "mobile-animation",
+      "skill": "expo-animation",
+      "default": false,
+      "manifestOption": "uiAnimations"
+    },
+    {
+      "id": "livewire",
+      "profiles": [
+        "php"
+      ],
+      "composer": {
+        "livewire/livewire": "4.4.7"
+      },
+      "removeNpm": [
+        "alpinejs"
+      ],
+      "guide": "options/livewire.md",
+      "skill": "livewire-development",
+      "default": false
+    },
+    {
+      "id": "desktop-sqlite",
+      "profiles": [
+        "desktop"
+      ],
+      "dependencyGroup": "desktop-sqlite",
+      "guide": "options/desktop-sqlite.md",
+      "default": false
+    },
+    {
+      "id": "mobile-sqlite",
+      "profiles": [
+        "mobile"
+      ],
+      "dependencyGroup": "mobile-sqlite",
+      "guide": "options/mobile.md",
+      "default": false
+    },
+    {
+      "id": "backend-new",
+      "profiles": [
+        "mobile"
+      ],
+      "additionalTemplate": "profiles/web-api/backend",
+      "layout": {
+        "mobile": "mobile/",
+        "api": "backend/"
+      },
+      "dependencyGroup": "api",
+      "additionalSkills": [
+        "supabase-postgres-best-practices",
+        "expo-data-fetching",
+        "security-best-practices"
+      ],
+      "default": false
+    },
+    {
+      "id": "backend-existing",
+      "profiles": [
+        "mobile"
+      ],
+      "additionalSkills": [
+        "expo-data-fetching"
+      ],
+      "default": false
+    },
+    {
+      "id": "database-mariadb",
+      "profiles": [
+        "php"
+      ],
+      "env": {
+        "DB_CONNECTION": "mariadb"
+      },
+      "serverProvisioning": "native-if-no-compatible-instance",
+      "qualification": "pending-native-database-bootstrap",
+      "default": false
+    },
+    {
+      "id": "editorial-animations",
+      "manifestOption": "editorialAnimations",
+      "profiles": [
+        "web-api",
+        "php"
+      ],
+      "default": false,
+      "dependencyGroup": "web-editorial",
+      "suggestedSkills": [
+        "gpt-taste"
+      ],
+      "deselectable": true,
+      "qualification": "pending-gsap-version-and-lock",
+      "guide": "options/animations.md"
+    }
+  ],
+  "preparationVersion": "0.2.0",
+  "selectionRules": {
+    "rejectUnsupportedChoices": true,
+    "explicitDeselectionWins": true,
+    "unqualifiedOptions": "preview-only-not-installable",
+    "omitInactiveMobileTarget": true,
+    "routingSource": "../catalogue/skill-routing.json"
+  }
+}

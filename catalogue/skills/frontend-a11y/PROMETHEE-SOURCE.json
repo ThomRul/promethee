@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "frontend-a11y",
+  "repository": "affaan-m/ECC",
+  "revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+  "source": "skills/frontend-a11y",
+  "upstreamUrl": "https://github.com/affaan-m/ECC/tree/ef648e01899ba3e8dc6371642deaaf64b4477775/skills/frontend-a11y",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "upstreamEntrySha256": "e00991a3f4d47fcf1529dd74a080afcf46137dc5061e70dc6e3da7b27f2ae3f3",
+  "adaptations": [
+    "Entrée web concise, React/Blade/renderer ; aucun déclencheur natif.",
+    "Référence ciblée par interaction ; retrait des exemples incomplets de combobox et de modal.",
+    "Validation statique, clavier, lecteur et navigateur distinguée ; aucun abonnement ni suite ECC imposés."
+  ]
+}

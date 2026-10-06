@@ -1,0 +1,7 @@
+#!/bin/sh
+promethee_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd) || exit 1
+if [ -x "$promethee_dir/runtime/bin/node" ]; then
+  exec "$promethee_dir/runtime/bin/node" "$promethee_dir/dist/src/main.js" "$@"
+fi
+printf '%s\n' 'Runtime privé absent. Réextraire la distribution Prométhée. Pour les sources, utiliser npm start.' >&2
+exit 1

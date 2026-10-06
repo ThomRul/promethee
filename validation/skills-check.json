@@ -1,0 +1,175 @@
+{
+  "frontmatter": [
+    {
+      "skill": "expo-animation",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "expo-data-fetching",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "expo-design-system",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "expo-native-ui",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "expo-router",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "laravel-best-practices",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "livewire-development",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "security-best-practices",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "security-threat-model",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "stop-design-slop",
+      "passed": true,
+      "output": "Skill is valid!\n",
+      "checkedOn": "2026-10-05"
+    },
+    {
+      "skill": "supabase-postgres-best-practices",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "systematic-debugging",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "ui-ux-pro-max",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    },
+    {
+      "skill": "verification-before-completion",
+      "passed": true,
+      "output": "Skill is valid!\n"
+    }
+  ],
+  "localLinks": [],
+  "scriptImports": [
+    {
+      "file": "catalogue\\skills\\ui-ux-pro-max\\scripts\\core.py",
+      "imports": [
+        "csv",
+        "difflib",
+        "re",
+        "pathlib",
+        "math",
+        "collections"
+      ]
+    },
+    {
+      "file": "catalogue\\skills\\ui-ux-pro-max\\scripts\\design_system.py",
+      "imports": [
+        "csv",
+        "json",
+        "os",
+        "re",
+        "sys",
+        "io",
+        "tempfile",
+        "datetime",
+        "pathlib",
+        "core",
+        "reasoning_contract",
+        "re",
+        "core",
+        "argparse"
+      ]
+    },
+    {
+      "file": "catalogue\\skills\\ui-ux-pro-max\\scripts\\reasoning_contract.py",
+      "imports": [
+        "json",
+        "re"
+      ]
+    },
+    {
+      "file": "catalogue\\skills\\ui-ux-pro-max\\scripts\\search.py",
+      "imports": [
+        "argparse",
+        "json",
+        "sys",
+        "io",
+        "core",
+        "design_system"
+      ]
+    },
+    {
+      "file": "catalogue\\skills\\ui-ux-pro-max\\scripts\\validate_data.py",
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "re",
+        "statistics",
+        "sys",
+        "datetime",
+        "pathlib",
+        "urllib.parse",
+        "core",
+        "reasoning_contract"
+      ]
+    }
+  ],
+  "searchTests": [
+    {
+      "query": "focus visible keyboard",
+      "flags": [
+        "--domain",
+        "ux"
+      ],
+      "passed": true,
+      "count": 3,
+      "stderr": ""
+    },
+    {
+      "query": "button accessibility",
+      "flags": [
+        "--stack",
+        "react"
+      ],
+      "passed": true,
+      "count": 3,
+      "stderr": ""
+    },
+    {
+      "query": "native accessibility",
+      "flags": [
+        "--stack",
+        "react-native"
+      ],
+      "passed": true,
+      "count": 3,
+      "stderr": ""
+    }
+  ]
+}

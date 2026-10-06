@@ -1,0 +1,52 @@
+{
+  "reviewedOn": "2026-10-05",
+  "skill": "stop-design-slop",
+  "repository": "Juuzoe/stop-design-slop",
+  "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+  "license": "MIT",
+  "licenseBytesPreserved": true,
+  "reviewedSourceFiles": [
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "gitBlob": "91e78ed61277d0204da6a09a99fe4b41425548c7",
+      "sha256": "b460c0b8bf25cc26b17363152f107805fc8913260b94abc9a66c9ea57f004ce5",
+      "repo": "Juuzoe/stop-design-slop",
+      "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "mode": "100644"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 16536,
+      "gitBlob": "7576ff0098939a4feaab41fad4c06e69adbc87af",
+      "sha256": "440c23db697c155299b207c3e7393288ede6a65e87839d2f6018e63d79daed8e",
+      "repo": "Juuzoe/stop-design-slop",
+      "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "mode": "100644"
+    },
+    {
+      "path": "references/clean-pass.md",
+      "bytes": 14338,
+      "gitBlob": "fbad093cb84259ca91424066d7633ce5332a21d8",
+      "sha256": "9480ca71a1e4ed5761f3779ec0d03a21ac62c621d0b7a988bc4ef888a2a268f4",
+      "repo": "Juuzoe/stop-design-slop",
+      "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "mode": "100644"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 14520,
+      "gitBlob": "9d3e76c06281c24887729eb41ac97630992ecbac",
+      "sha256": "95ebc1520db105a79482645674607ad60d97ee4041f581cab7bdb76cf2fc912e",
+      "repo": "Juuzoe/stop-design-slop",
+      "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "mode": "100644"
+    }
+  ],
+  "adaptedResourcePolicy": "short entry and two targeted references; no upstream scripts, fonts, icons or remote services",
+  "mandatoryPaidService": false,
+  "executablesIncluded": [],
+  "instructionReview": "CLEAN preserves the incumbent; facts and authorized scope maintained; no universal bans or quality-score guarantee",
+  "behavioralCodexScenariosExecuted": false,
+  "originalSelectionTrace": "../catalogue/initial-selection.json"
+}

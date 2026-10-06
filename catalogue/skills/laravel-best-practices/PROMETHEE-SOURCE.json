@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "laravel-best-practices",
+  "repository": "laravel/boost",
+  "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+  "source": ".ai/laravel/skill/laravel-best-practices",
+  "upstreamUrl": "https://github.com/laravel/boost/tree/97b8da0cb8c2c1da75531a36e34adaa313a64afc/.ai/laravel/skill/laravel-best-practices",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Remplacer search-docs MCP par documentation officielle Laravel 13 ou framework installé.",
+    "Remplacer dépendance testing-best-practices absente par conventions PHPUnit du projet.",
+    "Rendu des six ressources Blade en Markdown : commandes locales et directives échappées, sans dépendance au moteur Boost/Claude."
+  ]
+}

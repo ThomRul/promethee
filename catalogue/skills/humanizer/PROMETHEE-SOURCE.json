@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "humanizer",
+  "repository": "blader/humanizer",
+  "revision": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+  "source": "",
+  "upstreamUrl": "https://github.com/blader/humanizer/tree/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "upstreamEntrySha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+  "adaptations": [
+    "Entrée de révision des textes du projet ; aucune transformation du code ou de ses identifiants.",
+    "Voix, faits, liens et placeholders protégés ; pas de démonstration brouillon/final obligatoire.",
+    "Suppression des prescriptions de style universelles et des promesses de détection IA."
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "repository": "laravel/laravel",
+  "revision": "5aad4ddf34d5e21dfe6b4c07eeac67d5bd5e08b0",
+  "files": [
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "gitBlob": "8677cd5cabb06901eac3d8f9a500094d2c1dab45",
+      "sha256": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1"
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "gitBlob": "452e6b65b7a18aa7c3aaf886fd183a002d381e34",
+      "sha256": "caf306ef6a25a547bbb7edd5508a39b51c365083eb6dd58378cf2242018e94c7"
+    },
+    {
+      "path": "artisan",
+      "gitBlob": "c35e31d6a29f62921a8621944eb20ad162f5b2bb",
+      "sha256": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec"
+    },
+    {
+      "path": "bootstrap/app.php",
+      "gitBlob": "1085719c5683acf7fa298c8efc78fcc5d0d6005e",
+      "sha256": "5affac529645646b3e4d599096e79c194aac63e8293690364b856d72c1e9ecbf"
+    },
+    {
+      "path": "bootstrap/cache/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "bootstrap/providers.php",
+      "gitBlob": "fc94ae6011d6ce1d1175d0f642412c2a27913f6c",
+      "sha256": "f720e185207a343d4c19fc99dbb317a4187efbcd7d38a303a695bbdd77ffb943"
+    },
+    {
+      "path": "config/app.php",
+      "gitBlob": "dfa47ba05c1c5f460f788307bd56b75b546b4758",
+      "sha256": "b4b25e15efa76846a7f2e19fd1044fec4945e4e928c4098126a2b0042b034383"
+    },
+    {
+      "path": "config/auth.php",
+      "gitBlob": "d7568ff194267ec424aa84e2e9c0d2cbea42b8f8",
+      "sha256": "c7e204e9785c9f596d66fb884b493f658f2327f157646bdb4088efd6b3a7773f"
+    },
+    {
+      "path": "config/cache.php",
+      "gitBlob": "d7eec61a39914c7b4794339e723da8503eea3d41",
+      "sha256": "ee4ad2bba1edfcff52e9599f37371f2370d0b167cc226ce72d46cdf6edf2dc55"
+    },
+    {
+      "path": "config/database.php",
+      "gitBlob": "abbb88e37246728f566c8a42fb86c554d50a92bc",
+      "sha256": "02cd62f589b43d33f9ceac740705dac1dec9740eb2bb9e6e202d4b66a15244cf"
+    },
+    {
+      "path": "config/filesystems.php",
+      "gitBlob": "37d8fca4f6f85da3a176a3668c537bc5e7fd29a7",
+      "sha256": "ba7060d7a23e490c3ce830656f6d24ad3ccf5b868e3293f2a12e411959dc5635"
+    },
+    {
+      "path": "config/logging.php",
+      "gitBlob": "97bdc0390b3cb6e55231fa12bdf50d649d37b400",
+      "sha256": "beb1ffd0db910f6f0b4f75214c3d5aa385d692733ece8a450f4c169d2c99ce38"
+    },
+    {
+      "path": "config/mail.php",
+      "gitBlob": "e32e88da2cc82d4139c032c28b03005afc6008c6",
+      "sha256": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474"
+    },
+    {
+      "path": "config/queue.php",
+      "gitBlob": "79c2c0a23cd06bcb6d22ea0a2b218e22a6d51198",
+      "sha256": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4"
+    },
+    {
+      "path": "config/services.php",
+      "gitBlob": "ec226a406664750084d2e49b32fa3b7d03a31ff4",
+      "sha256": "b7ee786ea1adbc92db9f229f479431c94503527c47051da3862eb0e4d7db70aa"
+    },
+    {
+      "path": "config/session.php",
+      "gitBlob": "f5744827f901d05402fe81e2314290ff539c0fd9",
+      "sha256": "64272cfbef6f47c65bf857f1c5b1e853700c0d0278de46b86663fd83ef4aeed8"
+    },
+    {
+      "path": "database/.gitignore",
+      "gitBlob": "9b19b93c9f13d72749cc3bac760a28325116f3f1",
+      "sha256": "e758642d95e83e907e010b6e46b07b3f953c7cef11fe5ebefc2a77b9d7b4d5f7"
+    },
+    {
+      "path": "public/.htaccess",
+      "gitBlob": "b574a597daf309b383dc2dc2bd1e5362630e2531",
+      "sha256": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923"
+    },
+    {
+      "path": "public/index.php",
+      "gitBlob": "ee8f07e993802c29e166435e55e302ebfff1c12b",
+      "sha256": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9"
+    },
+    {
+      "path": "storage/app/.gitignore",
+      "gitBlob": "fedb287fece8049b6bd243804b133e3af7a43f4c",
+      "sha256": "993b9e3709d7b5189da331725d1169d79e561a509db2490b722b525073d2d976"
+    },
+    {
+      "path": "storage/app/private/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "storage/app/public/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "storage/framework/.gitignore",
+      "gitBlob": "7a0b408d97b5c26a287cc2a28e5a7da196b24545",
+      "sha256": "37bc9570de232e9db87ce530b3e4e2d5fa8d75f3bd587069fd26e2fb4ef1ffa5"
+    },
+    {
+      "path": "storage/framework/cache/.gitignore",
+      "gitBlob": "01e4a6cda9eb380973b23a40d562bca8a3a198b4",
+      "sha256": "32f79194633ddb34f013c6ee8819d112104ff822357adf308ec385b46a7f42f6"
+    },
+    {
+      "path": "storage/framework/cache/data/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "storage/framework/sessions/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "storage/framework/testing/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "storage/framework/views/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "storage/logs/.gitignore",
+      "gitBlob": "d6b7ef32c8478a48c3994dcadc86837f4371184d",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "path": "tests/TestCase.php",
+      "gitBlob": "fe1ffc2ff1abc1c23522418994879623c5647859",
+      "sha256": "c7c209f5579c42647c1f7b2a79ac828e8b54ac62a98442045a6e94fa2c0d0ebc"
+    }
+  ],
+  "excluded": "Default business migrations, examples, workflows and original welcome page"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "expo-native-ui",
+  "repository": "expo/skills",
+  "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+  "source": "plugins/expo/skills/expo-native-ui",
+  "upstreamUrl": "https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-native-ui",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.",
+    "Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.",
+    "NativeWind conservé, respecter les conventions et composants présents.",
+    "Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme."
+  ]
+}

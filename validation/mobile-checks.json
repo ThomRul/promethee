@@ -1,0 +1,37 @@
+[
+  {
+    "profile": "mobile",
+    "command": "npm run typecheck",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/native-mobile-run-typecheck.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm run lint",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/native-mobile-run-lint.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm run test -- preparation-smoke.test.tsx",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/native-mobile-run-test----preparation-smoketesttsx.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm exec -- expo install --check",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/native-mobile-exec----expo-install---check.txt"
+  },
+  {
+    "profile": "mobile",
+    "command": "npm exec -- expo export --platform android",
+    "passed": true,
+    "exitCode": 0,
+    "log": "logs/native-mobile-exec----expo-export---platform-android.txt"
+  }
+]

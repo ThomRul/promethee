@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "status": "declarative-draft-not-executable-recipes",
+  "supportedHosts": {
+    "architecture": "x64",
+    "windows": "Windows 11 maintained",
+    "ubuntu": "24.04 LTS native or existing WSL"
+  },
+  "cliRuntime": {
+    "private": true,
+    "inPath": false,
+    "satisfiesProjectNode": false
+  },
+  "preflight": {
+    "scanAllSelectedRequirementsBeforeMutation": true,
+    "compatible": "reuse",
+    "missing": "normal-qualified-install",
+    "incompatible": "stop-with-diagnostic",
+    "unknown": "stop-with-diagnostic"
+  },
+  "requirements": [
+    {
+      "id": "node",
+      "when": "all profiles",
+      "reference": "24.21.0",
+      "compatibility": "pending-qualified-range",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "npm",
+      "when": "all profiles",
+      "reference": "11.19.0",
+      "compatibility": "pending-qualified-range",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "git",
+      "when": "git enabled",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "python",
+      "when": "ui-ux-pro-max selected or native build requires it",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "php",
+      "when": "php profile",
+      "reference": "8.4.26; minimum 8.3",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "composer",
+      "when": "php profile",
+      "reference": "2.10.3",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "database-engine",
+      "when": "each selected native base without compatible instance",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "electron-runtime",
+      "when": "desktop profile",
+      "reference": "44.5.1",
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "android-toolchain",
+      "when": "mobileMode android-local",
+      "components": [
+        "JDK",
+        "Android SDK",
+        "expo-dev-client",
+        "build tools"
+      ],
+      "recipeStatus": "pending"
+    },
+    {
+      "id": "android-emulator",
+      "when": "mobileMode android-local and androidTarget emulator",
+      "recipeStatus": "pending"
+    }
+  ],
+  "excluded": [
+    "Docker installation",
+    "WSL installation",
+    "OS upgrade",
+    "paid cloud build"
+  ],
+  "servicePolicy": {
+    "newNativeInstance": "on-demand-no-boot-autostart",
+    "existingInstance": "preserve-settings",
+    "containerized": "no-native-provision-or-docker-command",
+    "remote": "no-lifecycle-control",
+    "embedded": "no-service"
+  },
+  "cache": {
+    "artifactKey": [
+      "tool",
+      "version",
+      "os",
+      "architecture",
+      "integrity"
+    ],
+    "verifyBeforeReuse": true
+  },
+  "publication": "private GitHub releases planned, not published"
+}

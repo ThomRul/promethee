@@ -1,0 +1,13 @@
+Adaptation Prométhée V0.2, révision 1 — 2026-10-05
+
+Source : https://github.com/pbakaus/impeccable/tree/ece38d9904b8a619b3f77cab476eacad09c4fb11/.agents/skills/impeccable
+Révision : ece38d9904b8a619b3f77cab476eacad09c4fb11
+Licence amont : Apache-2.0, licence complète conservée.
+
+Modifications :
+- Spécialisation en critique UI ciblée sur quatre profils, sans remplacer le pilote visuel.
+- Entrée et référence audit web amont examinées ; références de critique web/native rédigées pour Prométhée.
+- Moteur, hooks, génération payante, contexte PRODUCT/DESIGN concurrent et orchestration amont exclus.
+- Fichiers ios/android dérivés et leurs assets non copiés ; NOTICE.md amont conservé pour provenance.
+
+Références condensées/rédigées pour Prométhée ; outils et assets amont non distribués. Adaptation indépendante, pas une release officielle amont. Aucun appel externe payant requis.

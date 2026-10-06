@@ -1,0 +1,3 @@
+Projet : {{project_name}}. Profil : {{profile_label}}. Installation : {{installation_status}}. Étapes restantes : {{remaining_steps}}.
+
+Travaille dans ce projet en suivant AGENTS.md. Consulte PROJECT.md pour le périmètre actuel et le routage des cartes pour le contexte utile. Avant de développer, complète les informations manquantes selon le cadrage déjà enregistré, clarifie Docker et vérifie l'état des outils/services préparés par Prométhée, leur activation et les étapes restantes. Propose ensuite la première étape cohérente du MVP et mets à jour les documents concernés avec les décisions actées.

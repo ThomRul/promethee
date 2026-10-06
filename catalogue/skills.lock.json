@@ -1,0 +1,3930 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-04",
+  "distributionPolicy": "MIT or Apache-2.0 with complete notices; blocked entries not copied",
+  "entries": [
+    {
+      "id": "ui-ux-pro-max",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source": ".claude/skills/ui-ux-pro-max",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "adaptations": [
+        "Entrée courte, recherche Python relative au dossier du skill, aucun CLAUDE_PLUGIN_ROOT.",
+        "Respect du brief, tokens/composants existants, pas de régénération de design system pour une petite modification.",
+        "Recherche locale ciblée ; pas de --persist/--force par défaut, pas de bibliothèque GSAP ajoutée automatiquement.",
+        "Aucun fichier de police ou SVG tiers embarqué ; conserver les métadonnées de provenance des suggestions."
+      ],
+      "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+      "commitDate": "2026-10-03T16:05:26Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/477bcb28c9812b385cb51a4605ddf30d7b2266e2/.claude/skills/ui-ux-pro-max",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [
+        "Python 3, standard library"
+      ],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1075,
+          "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 983,
+          "sha256": "a2c8454a97515d8a9a2f1a6fe9bf31ec42226e4645bf94bbc23b680bfbd79991"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 916,
+          "sha256": "01c35e7f960fa172464c8b9043dd7df7c88f5edea50f4d00a2543c30f3acbbe0"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 2777,
+          "sha256": "eeb4415effc4375517246dad0b599cc03c3c9353a1a3df78ed8fb48f1f4fa282"
+        },
+        {
+          "path": "data/app-interface.csv",
+          "bytes": 11046,
+          "sha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08"
+        },
+        {
+          "path": "data/catalog-summary.json",
+          "bytes": 2392,
+          "sha256": "6638da97231c07fb5cef3cd9d3ce483ca7b2f9748980f8c27490eb03968d8894"
+        },
+        {
+          "path": "data/charts.csv",
+          "bytes": 23365,
+          "sha256": "4115cf1120680f2cedef0676cb648f30c7ef4699e2a947535d4113e71ed3b12a"
+        },
+        {
+          "path": "data/colors.csv",
+          "bytes": 37940,
+          "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c"
+        },
+        {
+          "path": "data/data-provenance.json",
+          "bytes": 36686,
+          "sha256": "e82fb33ed49375a300e93d9c11ccd1c1493c999e84ee7ee295e527634786e2e0"
+        },
+        {
+          "path": "data/google-font-licenses.json",
+          "bytes": 433127,
+          "sha256": "35688523f2955795caa1a47c53b83099e60c1708461476f9cc3a050cf3b0148a"
+        },
+        {
+          "path": "data/google-fonts.csv",
+          "bytes": 747241,
+          "sha256": "1c8c3b2ea1faf6a1012da463756def8b3889db33f2226f0343bb4daa80307d03"
+        },
+        {
+          "path": "data/icons.csv",
+          "bytes": 57945,
+          "sha256": "50816c6012030178195a16ee481ebf58b47bd985d70e8ec58886cc83f6eddafc"
+        },
+        {
+          "path": "data/landing.csv",
+          "bytes": 25449,
+          "sha256": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0"
+        },
+        {
+          "path": "data/motion.csv",
+          "bytes": 14679,
+          "sha256": "381affe8df8ea1f66fbbda2598827f9f54299107bbe6a1b4e9b68f6b62091ceb"
+        },
+        {
+          "path": "data/phosphor-icons-upstream.json",
+          "bytes": 823933,
+          "sha256": "2399325233b277b5c97a80e6a5e8941154f5d057beee4e7613db87c87d700236"
+        },
+        {
+          "path": "data/products.csv",
+          "bytes": 75623,
+          "sha256": "42473f75e8dde5987bdf89ce55d8c168091b80a356cae691dd60247d80720b70"
+        },
+        {
+          "path": "data/react-performance.csv",
+          "bytes": 15080,
+          "sha256": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734"
+        },
+        {
+          "path": "data/stacks/angular.csv",
+          "bytes": 19863,
+          "sha256": "704be83f2bad30c7e6de01afb113ffa01e0c458762f48b7102f31ba2367b5553"
+        },
+        {
+          "path": "data/stacks/astro.csv",
+          "bytes": 14591,
+          "sha256": "2c2f55fadaafc05e04cc321c8194a1a28b656e6757fe2ba316f41b16428299c6"
+        },
+        {
+          "path": "data/stacks/avalonia.csv",
+          "bytes": 27327,
+          "sha256": "442fca14675a020683473e7e49f08abb27b9df0765c80efe54aef61f1a4ac258"
+        },
+        {
+          "path": "data/stacks/flutter.csv",
+          "bytes": 14192,
+          "sha256": "64dba0ac17349f28bce517a0f5f48c54d9ed2e487ec0c0258303463b382f41a0"
+        },
+        {
+          "path": "data/stacks/html-tailwind.csv",
+          "bytes": 16551,
+          "sha256": "d05a581d20af57b8ca0104a6d31d90a07c437d500662a96c3029fc2f9a4678ee"
+        },
+        {
+          "path": "data/stacks/javafx.csv",
+          "bytes": 33577,
+          "sha256": "2e819b8d5abdd23ad4dae0991650fdb57af497aabd68b37463aa9c442944c869"
+        },
+        {
+          "path": "data/stacks/jetpack-compose.csv",
+          "bytes": 12295,
+          "sha256": "699de218b286948eaec7d15767b6e1350ee299167e49bf476d82e3ff58724e0a"
+        },
+        {
+          "path": "data/stacks/laravel.csv",
+          "bytes": 20163,
+          "sha256": "854ea4daa5fc61292d22235ad33b49ba3fe22423c3de8d3cb03758ffed3b59f9"
+        },
+        {
+          "path": "data/stacks/nextjs.csv",
+          "bytes": 18687,
+          "sha256": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4"
+        },
+        {
+          "path": "data/stacks/nuxt-ui.csv",
+          "bytes": 28700,
+          "sha256": "fce682a338cfcdbf35d318d20e5befbe7b5d81b05abc37f87677a6d9cde84dc6"
+        },
+        {
+          "path": "data/stacks/nuxtjs.csv",
+          "bytes": 23014,
+          "sha256": "3d9b54ed2d151bd9c86e9e5609b8a6f88a00c4c52fa601a30af96c49b2c4d176"
+        },
+        {
+          "path": "data/stacks/react-native.csv",
+          "bytes": 14049,
+          "sha256": "ba31dd9c0c04da6bc02a74448bf121f9c0728ae5ba3b4d47b487778b0a1135b5"
+        },
+        {
+          "path": "data/stacks/react.csv",
+          "bytes": 21166,
+          "sha256": "4dd176a9787e5c6306b5df94158d75955adcdc6edab41ce5286641a5842303c1"
+        },
+        {
+          "path": "data/stacks/shadcn.csv",
+          "bytes": 23184,
+          "sha256": "e56cfde5b74907836ac3582a4779d5b7f3d206a702ab81b8669a1b668c3eeb51"
+        },
+        {
+          "path": "data/stacks/svelte.csv",
+          "bytes": 15078,
+          "sha256": "f6e379ba802941ba26b01d4ffbe3cd39120f2587659a1d93851c707f66bc13db"
+        },
+        {
+          "path": "data/stacks/swiftui.csv",
+          "bytes": 15323,
+          "sha256": "bdd9231ff3ad658f4e7c063e1eb49df2fd09ac8d90631a86df899b39833b9623"
+        },
+        {
+          "path": "data/stacks/threejs.csv",
+          "bytes": 46769,
+          "sha256": "155d583b9c64da0df4b6c6cb060c02eab222505e0734d6353da02c9e2b5d982b"
+        },
+        {
+          "path": "data/stacks/uno.csv",
+          "bytes": 30091,
+          "sha256": "a0474363e4225b5367214d5675fd3e075f137026f9500f0d04357882ef4f6d48"
+        },
+        {
+          "path": "data/stacks/uwp.csv",
+          "bytes": 24692,
+          "sha256": "c409f08c1fbba1f1029f1acaa554e7b4471cc85517a5751c9f2e62465badcd5c"
+        },
+        {
+          "path": "data/stacks/vue.csv",
+          "bytes": 12813,
+          "sha256": "b655f1ebb9dff2652d15981f31b1784c8a6d4759efd2815a14f3088257569f95"
+        },
+        {
+          "path": "data/stacks/winui.csv",
+          "bytes": 27890,
+          "sha256": "e676dc1c13ee6c205c40b0746f1335150a346c7a49a0616d2545bc3d2c930c85"
+        },
+        {
+          "path": "data/stacks/wpf.csv",
+          "bytes": 24158,
+          "sha256": "9781a9950b20333637b30a02e498b7efca21b618a3eeb8665836f3ac6e974da7"
+        },
+        {
+          "path": "data/styles.csv",
+          "bytes": 149478,
+          "sha256": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7"
+        },
+        {
+          "path": "data/typography.csv",
+          "bytes": 49997,
+          "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8"
+        },
+        {
+          "path": "data/ui-reasoning.csv",
+          "bytes": 77360,
+          "sha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a"
+        },
+        {
+          "path": "data/ux-guidelines.csv",
+          "bytes": 27516,
+          "sha256": "ff81ec613f70ba9fc3fcce52dbe4ae35d44b2079dbe6dc066d2d6e38c28facd5"
+        },
+        {
+          "path": "references/pro-rules.md",
+          "bytes": 10909,
+          "sha256": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23"
+        },
+        {
+          "path": "references/quick-reference.md",
+          "bytes": 24526,
+          "sha256": "0609bc7c89dacb40472465d8fc14257b56b2c43439660fc8d6fa3b8c022e1876"
+        },
+        {
+          "path": "scripts/core.py",
+          "bytes": 41236,
+          "sha256": "c3be4b23e7150e6b45095213158cfa3c8ad96502f01dde3f6ffff9de64a4f481"
+        },
+        {
+          "path": "scripts/design_system.py",
+          "bytes": 71537,
+          "sha256": "e7d1c94c4b2eada17c5551157668362659ccf9626d34dbd58e68142410f90103"
+        },
+        {
+          "path": "scripts/reasoning_contract.py",
+          "bytes": 5824,
+          "sha256": "b8bac1af82aa280d3e06f00aabaeac4337e632996b07fed874e2b6ee6e9c5913"
+        },
+        {
+          "path": "scripts/search.py",
+          "bytes": 9373,
+          "sha256": "d54e648fe0ec2932cac66684220cc17be4bd4b4eba1d23d3195d509d398db374"
+        },
+        {
+          "path": "scripts/validate_data.py",
+          "bytes": 52230,
+          "sha256": "a599aa256049cf30954d1f164721b99e453eb7e4cb8241bcab2d5573e6cf58b8"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/app-interface.csv",
+          "gitBlob": "95e328c807a23be02c9c32c736d0fa19109c6076",
+          "mode": "100644",
+          "bytes": 11046,
+          "sha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/catalog-summary.json",
+          "gitBlob": "f911c3ae48fac5863a5a5e210866ec5cabece164",
+          "mode": "100644",
+          "bytes": 2392,
+          "sha256": "6638da97231c07fb5cef3cd9d3ce483ca7b2f9748980f8c27490eb03968d8894"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/charts.csv",
+          "gitBlob": "c6f4f875fd5b34379f24dbb541539492366a1058",
+          "mode": "100644",
+          "bytes": 23365,
+          "sha256": "4115cf1120680f2cedef0676cb648f30c7ef4699e2a947535d4113e71ed3b12a"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/colors.csv",
+          "gitBlob": "5d2bf7389105f8a824b504b57cc93c00dc1d7e0a",
+          "mode": "100644",
+          "bytes": 37940,
+          "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/data-provenance.json",
+          "gitBlob": "e41d2e553bdc7e5a8e6d16f5daab565faf372188",
+          "mode": "100644",
+          "bytes": 36686,
+          "sha256": "e82fb33ed49375a300e93d9c11ccd1c1493c999e84ee7ee295e527634786e2e0"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/google-font-licenses.json",
+          "gitBlob": "3ac2c34e80665bc902e265c52ab6c27b1654524c",
+          "mode": "100644",
+          "bytes": 433127,
+          "sha256": "35688523f2955795caa1a47c53b83099e60c1708461476f9cc3a050cf3b0148a"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/google-fonts.csv",
+          "gitBlob": "d7f87e3e0159b1caba083b9954793d9852256aa0",
+          "mode": "100644",
+          "bytes": 747241,
+          "sha256": "1c8c3b2ea1faf6a1012da463756def8b3889db33f2226f0343bb4daa80307d03"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/icons.csv",
+          "gitBlob": "cfc3f1eccd7e5aee15d8d70f86d8fa17ba737958",
+          "mode": "100644",
+          "bytes": 57945,
+          "sha256": "50816c6012030178195a16ee481ebf58b47bd985d70e8ec58886cc83f6eddafc"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/landing.csv",
+          "gitBlob": "34858160aa2789c49dca274d48bb116d51dd3f0a",
+          "mode": "100644",
+          "bytes": 25449,
+          "sha256": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/motion.csv",
+          "gitBlob": "8e0ca9ceb0e4cd4832aee60ac74713e1e1830de8",
+          "mode": "100644",
+          "bytes": 14679,
+          "sha256": "381affe8df8ea1f66fbbda2598827f9f54299107bbe6a1b4e9b68f6b62091ceb"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+          "gitBlob": "ec1d76b8117ccbfdce5df214bf0d993e41a75318",
+          "mode": "100644",
+          "bytes": 823933,
+          "sha256": "2399325233b277b5c97a80e6a5e8941154f5d057beee4e7613db87c87d700236"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/products.csv",
+          "gitBlob": "9f40f1d1f9743c4a81603076dfbfd115bbb55246",
+          "mode": "100644",
+          "bytes": 75623,
+          "sha256": "42473f75e8dde5987bdf89ce55d8c168091b80a356cae691dd60247d80720b70"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/react-performance.csv",
+          "gitBlob": "425a8e76c6b3bae40e8c633ffbf7ad6222c9f73a",
+          "mode": "100644",
+          "bytes": 15080,
+          "sha256": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/angular.csv",
+          "gitBlob": "5a1878dbee2b3c55c6468cbb18699b84d1a8c4d2",
+          "mode": "100644",
+          "bytes": 19863,
+          "sha256": "704be83f2bad30c7e6de01afb113ffa01e0c458762f48b7102f31ba2367b5553"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/astro.csv",
+          "gitBlob": "1fd2492420b20a0b311295ab883597fadb8245a6",
+          "mode": "100644",
+          "bytes": 14591,
+          "sha256": "2c2f55fadaafc05e04cc321c8194a1a28b656e6757fe2ba316f41b16428299c6"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/avalonia.csv",
+          "gitBlob": "c67f4117105865587eda9020c57d8c209f3a929a",
+          "mode": "100644",
+          "bytes": 27327,
+          "sha256": "442fca14675a020683473e7e49f08abb27b9df0765c80efe54aef61f1a4ac258"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/flutter.csv",
+          "gitBlob": "731805c4076bd9f2755ca4bd7def5be6f6df7e9c",
+          "mode": "100644",
+          "bytes": 14192,
+          "sha256": "64dba0ac17349f28bce517a0f5f48c54d9ed2e487ec0c0258303463b382f41a0"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+          "gitBlob": "9089eb0fc821ff0c8d135f8ee503be345e8fcb84",
+          "mode": "100644",
+          "bytes": 16551,
+          "sha256": "d05a581d20af57b8ca0104a6d31d90a07c437d500662a96c3029fc2f9a4678ee"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/javafx.csv",
+          "gitBlob": "744bd80f437f12bfb5bb9c84630a58022604675a",
+          "mode": "100644",
+          "bytes": 33577,
+          "sha256": "2e819b8d5abdd23ad4dae0991650fdb57af497aabd68b37463aa9c442944c869"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+          "gitBlob": "8daa0b8f9a2ca3f0f1711664d9d677cd1c38dd9e",
+          "mode": "100644",
+          "bytes": 12295,
+          "sha256": "699de218b286948eaec7d15767b6e1350ee299167e49bf476d82e3ff58724e0a"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/laravel.csv",
+          "gitBlob": "ed11b0fba457e02857f996d1542fb0b8e1271756",
+          "mode": "100644",
+          "bytes": 20163,
+          "sha256": "854ea4daa5fc61292d22235ad33b49ba3fe22423c3de8d3cb03758ffed3b59f9"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/nextjs.csv",
+          "gitBlob": "acdaf097dff26ba0d3b22ab4544bf6169c87afd4",
+          "mode": "100644",
+          "bytes": 18687,
+          "sha256": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+          "gitBlob": "e2aaeca45faa8b987bf94010162b14d458811dde",
+          "mode": "100644",
+          "bytes": 28700,
+          "sha256": "fce682a338cfcdbf35d318d20e5befbe7b5d81b05abc37f87677a6d9cde84dc6"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+          "gitBlob": "ceab9cf3358d2788af0bd7dc14cb3fab769740d0",
+          "mode": "100644",
+          "bytes": 23014,
+          "sha256": "3d9b54ed2d151bd9c86e9e5609b8a6f88a00c4c52fa601a30af96c49b2c4d176"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/react-native.csv",
+          "gitBlob": "a5aea45dc1d0341b11ee42076a86db842d4d2a19",
+          "mode": "100644",
+          "bytes": 14049,
+          "sha256": "ba31dd9c0c04da6bc02a74448bf121f9c0728ae5ba3b4d47b487778b0a1135b5"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/react.csv",
+          "gitBlob": "fe8f001e695a978733449e04e99d7135af0f1bf3",
+          "mode": "100644",
+          "bytes": 21166,
+          "sha256": "4dd176a9787e5c6306b5df94158d75955adcdc6edab41ce5286641a5842303c1"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/shadcn.csv",
+          "gitBlob": "0e8bedf3084e7a40d6310bcd3011c437efcb1700",
+          "mode": "100644",
+          "bytes": 23184,
+          "sha256": "e56cfde5b74907836ac3582a4779d5b7f3d206a702ab81b8669a1b668c3eeb51"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/svelte.csv",
+          "gitBlob": "51684fe70448e15333cd16207db7da8aea0508e6",
+          "mode": "100644",
+          "bytes": 15078,
+          "sha256": "f6e379ba802941ba26b01d4ffbe3cd39120f2587659a1d93851c707f66bc13db"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/swiftui.csv",
+          "gitBlob": "ea9b95e8922e663b2adf27a7346e2c2f44c7a215",
+          "mode": "100644",
+          "bytes": 15323,
+          "sha256": "bdd9231ff3ad658f4e7c063e1eb49df2fd09ac8d90631a86df899b39833b9623"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/threejs.csv",
+          "gitBlob": "f62286320038beabbdc5e11e07ca2818d8e959a4",
+          "mode": "100644",
+          "bytes": 46769,
+          "sha256": "155d583b9c64da0df4b6c6cb060c02eab222505e0734d6353da02c9e2b5d982b"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/uno.csv",
+          "gitBlob": "9cab32326b4ad3a3cf43451a3c24553a41126cc1",
+          "mode": "100644",
+          "bytes": 30091,
+          "sha256": "a0474363e4225b5367214d5675fd3e075f137026f9500f0d04357882ef4f6d48"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/uwp.csv",
+          "gitBlob": "04a84ea092a7657fef11e5daa97982be52dc6f59",
+          "mode": "100644",
+          "bytes": 24692,
+          "sha256": "c409f08c1fbba1f1029f1acaa554e7b4471cc85517a5751c9f2e62465badcd5c"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/vue.csv",
+          "gitBlob": "83997c515775170f22b638635aae0a67a46dfc87",
+          "mode": "100644",
+          "bytes": 12813,
+          "sha256": "b655f1ebb9dff2652d15981f31b1784c8a6d4759efd2815a14f3088257569f95"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/winui.csv",
+          "gitBlob": "107ecead11728a83ec0ea10d815a9d1f43a35792",
+          "mode": "100644",
+          "bytes": 27890,
+          "sha256": "e676dc1c13ee6c205c40b0746f1335150a346c7a49a0616d2545bc3d2c930c85"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/stacks/wpf.csv",
+          "gitBlob": "4e88d6750833a74f85ba487cf2b8f4ff6ebd2f4a",
+          "mode": "100644",
+          "bytes": 24158,
+          "sha256": "9781a9950b20333637b30a02e498b7efca21b618a3eeb8665836f3ac6e974da7"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/styles.csv",
+          "gitBlob": "d1eb2c216e453005ffa8232ffb94491c183afe3c",
+          "mode": "100644",
+          "bytes": 149478,
+          "sha256": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/typography.csv",
+          "gitBlob": "70d107d107de30150863c965767320ec33ef29ad",
+          "mode": "100644",
+          "bytes": 49997,
+          "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/ui-reasoning.csv",
+          "gitBlob": "8931d4c809f8e22ddac00ce612ce0c35f34a59b6",
+          "mode": "100644",
+          "bytes": 77360,
+          "sha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/data/ux-guidelines.csv",
+          "gitBlob": "4e7d52b296537a03513b18b2c3f2b946cc802051",
+          "mode": "100644",
+          "bytes": 27516,
+          "sha256": "ff81ec613f70ba9fc3fcce52dbe4ae35d44b2079dbe6dc066d2d6e38c28facd5"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
+          "gitBlob": "b2ce233287e37ec9ca13476c4014b922e9d5a0e9",
+          "mode": "100644",
+          "bytes": 10909,
+          "sha256": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+          "gitBlob": "7acc7e7540ca6981d878a90aae4455c1638e2385",
+          "mode": "100644",
+          "bytes": 24526,
+          "sha256": "0609bc7c89dacb40472465d8fc14257b56b2c43439660fc8d6fa3b8c022e1876"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/core.py",
+          "gitBlob": "670fe33070cfe706401da4ff276831257dbf1e25",
+          "mode": "100644",
+          "bytes": 41236,
+          "sha256": "c3be4b23e7150e6b45095213158cfa3c8ad96502f01dde3f6ffff9de64a4f481"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/design_system.py",
+          "gitBlob": "d5fe1575f00d839f919603bd09b44fe7e9def4fb",
+          "mode": "100644",
+          "bytes": 71537,
+          "sha256": "e7d1c94c4b2eada17c5551157668362659ccf9626d34dbd58e68142410f90103"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/reasoning_contract.py",
+          "gitBlob": "63652a666b130c249ea1e2954316f1ac8a5a73d5",
+          "mode": "100644",
+          "bytes": 5824,
+          "sha256": "b8bac1af82aa280d3e06f00aabaeac4337e632996b07fed874e2b6ee6e9c5913"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/search.py",
+          "gitBlob": "5038aa875a0d39f24dea803a4c73b38f8f56915f",
+          "mode": "100644",
+          "bytes": 9373,
+          "sha256": "d54e648fe0ec2932cac66684220cc17be4bd4b4eba1d23d3195d509d398db374"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-api.json",
+          "gitBlob": "eacf1bb4559875808247df711376e8cc47c4f7c4",
+          "mode": "100644",
+          "bytes": 1079,
+          "sha256": "22d8dc81a7d6827b7e8b64b53e7d184210fb9759e8e294e0d5133c81cc460176"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-catalog.json",
+          "gitBlob": "4eb89d4d3312b670ef70d44563bf2ffd5cf814bb",
+          "mode": "100644",
+          "bytes": 1772,
+          "sha256": "c608ad5c4084ebc50a4bbbfb69ea2456c01fd5519c457e18410fffd250ae948f"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-existing.csv",
+          "gitBlob": "83279e0f218e9725b8a14486a558fa10ff134949",
+          "mode": "100644",
+          "bytes": 480,
+          "sha256": "4e0761b839dc6b2187a370e82eddc0aed8a7ff10c09e28dd814bb3656dac595b"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-metadata.json",
+          "gitBlob": "43edcbec14c4a5e68d373eda8466c235f2ee7e9b",
+          "mode": "100644",
+          "bytes": 328,
+          "sha256": "30bffc29ae348416a2de2f9c6c418e768e4578f136b0f4bac5d2f70124f2e9ba"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-overrides.json",
+          "gitBlob": "162fd1830b08dc1a7b8b891f92f16dbb8b7015f2",
+          "mode": "100644",
+          "bytes": 97,
+          "sha256": "6243a48a4619986768c4628e2d0c98ff195beba71ba9be5df8f0c52fc6d90c0b"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/icons-curated.csv",
+          "gitBlob": "3171bfc7a0a6b3b36745b4f7f0c7743f0afad953",
+          "mode": "100644",
+          "bytes": 495,
+          "sha256": "68362c9a700c13b96f000784a0198c1c7e117a7088a01c85744e44233038fe9d"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-core.json",
+          "gitBlob": "be0edd337f2c731af41b8a745d37089172c5dc60",
+          "mode": "100644",
+          "bytes": 571,
+          "sha256": "ae4d0bb076240824e1b643c2270d1f8cc0952a69502ec1e622b7dedd85b930bb"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-package.json",
+          "gitBlob": "ad9e6ef4b835e65a6c0bd0ad9d11f0517fd718c1",
+          "mode": "100644",
+          "bytes": 370,
+          "sha256": "500588c757d6de03e3d7e69b27a8b8b1f88ccf6bb0333e4c1e9b0d6a4f112475"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-exports.json",
+          "gitBlob": "4a0b4587ce9876acac1904831ea774bbf8c69edf",
+          "mode": "100644",
+          "bytes": 87,
+          "sha256": "d79f2ee0afdbc2f87776733e145df3538a16a25d7c2fba0056bb48295dad0ded"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-package.json",
+          "gitBlob": "a0db183da61e63f3a8f9e3fbfba7405144f41c1e",
+          "mode": "100644",
+          "bytes": 81,
+          "sha256": "1c57a1d76bcc0cdd3632d4c18b9c0e79576b4591df39831c9607e5d0eb4f2cec"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/relevance-baseline.json",
+          "gitBlob": "0894a44cc154a01d3b2d624a66c30e7ac3e1a3d5",
+          "mode": "100644",
+          "bytes": 89426,
+          "sha256": "0df200fc54c1cb97a52d6775e7f501509163cea8f8b73fd7268429bc1f835afe"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/relevance-cases.json",
+          "gitBlob": "a1fbb87835bda252ba8ae7f15e7090cee580cb42",
+          "mode": "100644",
+          "bytes": 36734,
+          "sha256": "e77d36eebbf6ddc2860946a02cdb659351da6c09f2688f1ed30939a418099646"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/fixtures/relevance-thresholds.json",
+          "gitBlob": "1f90e9891fa96bcf9f27db54bcc4bc1eb41328a7",
+          "mode": "100644",
+          "bytes": 5079,
+          "sha256": "1fbe8623fe3e49c8d828139bca9df69043746e488e8bf09d93dfb9cbc31f5cef"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_catalog_refresh.py",
+          "gitBlob": "8379cc3a224bb9f3dca2a3ebd561cd92b7e05ae4",
+          "mode": "100644",
+          "bytes": 19466,
+          "sha256": "3e2ca5d12702318f641ae62d0c14f22a3bcc84d84e79b863c0e947d475604adb"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_catalog_summary_line_endings.py",
+          "gitBlob": "056c8e5e7d8ba69c87c31c8ad7bcd32ca3d7223c",
+          "mode": "100644",
+          "bytes": 2947,
+          "sha256": "fa6ff09f0ec2c99013588c77397f5082dddebe8f467e94c5f8378ec9595f4989"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_core_data_quality.py",
+          "gitBlob": "6d36c79b1f9f8c68c4b02f86a09c5e5f9ba410fe",
+          "mode": "100644",
+          "bytes": 8954,
+          "sha256": "3ffc6b4905c9ea26d7ac4527ab154d153584231aee71b2ae4bd017977fa09cc5"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_core.py",
+          "gitBlob": "b30c0ae54c25f38ec91b37a56cda04426b2510a9",
+          "mode": "100644",
+          "bytes": 16680,
+          "sha256": "3527fe2f4b852f69f07c17ddc0d615d9a6e025c924e45a33985579a94a8d2118"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_data_contracts.py",
+          "gitBlob": "312dc383b3f6548d7200e928c192673a907b5016",
+          "mode": "100644",
+          "bytes": 19513,
+          "sha256": "0360d6e10080c0bca214f2b0bbad582ba50702a542ce21013351aca54938df3a"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_design_system_mode.py",
+          "gitBlob": "44c80c1caa159058a7a5858284ea269bcb561449",
+          "mode": "100644",
+          "bytes": 9815,
+          "sha256": "95ad2c154349f7021f55a558f8dcdd71df1a24fcf531a4364a8e49526a0865ef"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_design_system_stack.py",
+          "gitBlob": "50f0080300b56f4891014d878edddb781b36d7de",
+          "mode": "100644",
+          "bytes": 2261,
+          "sha256": "83d09ffe8cfbf7b265f362129f061dfe8e5e167ce5db43adaead197cabc9ca38"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_native_desktop_stack_freshness.py",
+          "gitBlob": "79e07f4f5f9c88025506cb3d7bb5aad01dbbd339",
+          "mode": "100644",
+          "bytes": 8375,
+          "sha256": "3942845712b9a829323cd3568511483135f2a8c7cd79ccf61679da4b0f624dbb"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_relevance_evaluator.py",
+          "gitBlob": "ed158e2d4e39a342090b29435dee25bcf5c4444f",
+          "mode": "100644",
+          "bytes": 8430,
+          "sha256": "2fe56a4d6fe5fff15ff592274b0eeaba925146cefea6c0fa29d8f1b77c9aca1f"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_skill_script_paths.py",
+          "gitBlob": "36514964d7ea6edcadc169e0d713c18b1cc0bb09",
+          "mode": "100644",
+          "bytes": 4305,
+          "sha256": "7cec24b94be771bc60bc84f8993e614bb16d4047930e1dd3d3bed91628311d44"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_style_taxonomy.py",
+          "gitBlob": "09ec131ea6d609e21aaf81327a2e3ffe1ea59d4c",
+          "mode": "100644",
+          "bytes": 7425,
+          "sha256": "cd14d0092e8a454d213aa104b53e4e70ba698491fa00fde9fdec5ca8a3d70011"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_text_layout_resilience.py",
+          "gitBlob": "8db3b873f958b93906abb8f4e4d6ef75a344c76e",
+          "mode": "100644",
+          "bytes": 5874,
+          "sha256": "b51d32ee8a15505b87cb81957fb2d1b385e041e8beb4463c311d236bfd29ebd4"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/tests/test_web_stack_freshness.py",
+          "gitBlob": "a54b0eaaa564fc4e0390537b268eaca46d36d5bd",
+          "mode": "100644",
+          "bytes": 7701,
+          "sha256": "74897571398585f27e2c35d09d81b0a531c8c774f4a2967e5e1b1d1b05a483d9"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/scripts/validate_data.py",
+          "gitBlob": "8b6c7941f6ad3e51cb9d412b11185133e7763001",
+          "mode": "100644",
+          "bytes": 52230,
+          "sha256": "a599aa256049cf30954d1f164721b99e453eb7e4cb8241bcab2d5573e6cf58b8"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+          "gitBlob": "41f8e2fd7f8c568228d0b55186ebe3f7b4007377",
+          "mode": "100644",
+          "bytes": 15969,
+          "sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+        },
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "revision": "477bcb28c9812b385cb51a4605ddf30d7b2266e2",
+          "path": "LICENSE",
+          "gitBlob": "1e71cbf26660f31903807d099fe902c098fc7e4c",
+          "mode": "100644",
+          "bytes": 1075,
+          "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+        }
+      ],
+      "adaptedTreeSha256": "2d9f10c36141b1f9ae89f2ad536b0ef5f6e14d6bf2c7e9d5648f354760007577",
+      "executionStatus": "three-local-searches-passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+      "adaptedEntrySha256": "eeb4415effc4375517246dad0b599cc03c3c9353a1a3df78ed8fb48f1f4fa282"
+    },
+    {
+      "id": "stop-design-slop",
+      "repo": "Juuzoe/stop-design-slop",
+      "source": ".",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "adaptations": [
+        "Entrée française courte et deux références adaptées à CLEAN et à une refonte demandée ; catalogue exhaustif, exemples et scripts non embarqués.",
+        "Préservation de la direction existante, des faits, du ton, des fonctions et des choix intentionnels ; correction locale d’accessibilité possible sans refonte.",
+        "Suppression des garanties universelles, scores et quotas imposés, refonte par mot-clé et lecture générale de références.",
+        "Pas de palette framework supprimée, rollback Git, architecture, service ou bibliothèque imposés ; contrôles web limités aux contextes pertinents, références natives sur mobile."
+      ],
+      "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "commitDate": "2026-08-30T04:53:27Z",
+      "upstreamVersion": "2.5.0 (CHANGELOG.md)",
+      "upstreamUrl": "https://github.com/Juuzoe/stop-design-slop/tree/8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+      "preparedAt": "2026-10-05",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1072,
+          "sha256": "b460c0b8bf25cc26b17363152f107805fc8913260b94abc9a66c9ea57f004ce5"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 1137,
+          "sha256": "0f31d26e738834fa75dd4e9a0126c2fdc2da6f25d479bd524e20db525bb0a214"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 1033,
+          "sha256": "63bbdefce7dce3daf4d416a7e3b69c7e76372f85014ab7442d78d3ac7004380b"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 2544,
+          "sha256": "78821ff00ef7946490cd08486bd4a3f9140c2045e666dfe3ed1298920faf8ddd"
+        },
+        {
+          "path": "references/clean.md",
+          "bytes": 3054,
+          "sha256": "04f46d60f55f1182a336cd88d174edf7abfbce05b059cc547206e562d9d83142"
+        },
+        {
+          "path": "references/direction.md",
+          "bytes": 1685,
+          "sha256": "8637297228aad6ec097d2f5c9a1bdbdfe130b98a4ecc938f3d995036bb34f7cd"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1072,
+          "gitBlob": "91e78ed61277d0204da6a09a99fe4b41425548c7",
+          "sha256": "b460c0b8bf25cc26b17363152f107805fc8913260b94abc9a66c9ea57f004ce5",
+          "repo": "Juuzoe/stop-design-slop",
+          "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+          "mode": "100644"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 16536,
+          "gitBlob": "7576ff0098939a4feaab41fad4c06e69adbc87af",
+          "sha256": "440c23db697c155299b207c3e7393288ede6a65e87839d2f6018e63d79daed8e",
+          "repo": "Juuzoe/stop-design-slop",
+          "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+          "mode": "100644"
+        },
+        {
+          "path": "references/clean-pass.md",
+          "bytes": 14338,
+          "gitBlob": "fbad093cb84259ca91424066d7633ce5332a21d8",
+          "sha256": "9480ca71a1e4ed5761f3779ec0d03a21ac62c621d0b7a988bc4ef888a2a268f4",
+          "repo": "Juuzoe/stop-design-slop",
+          "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+          "mode": "100644"
+        },
+        {
+          "path": "references/method.md",
+          "bytes": 14520,
+          "gitBlob": "9d3e76c06281c24887729eb41ac97630992ecbac",
+          "sha256": "95ebc1520db105a79482645674607ad60d97ee4041f581cab7bdb76cf2fc912e",
+          "repo": "Juuzoe/stop-design-slop",
+          "revision": "8ad7755204f44cae4350e5a31eb7e8f4d90f0e5e",
+          "mode": "100644"
+        }
+      ],
+      "upstreamEntrySha256": "440c23db697c155299b207c3e7393288ede6a65e87839d2f6018e63d79daed8e",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "adaptedEntrySha256": "78821ff00ef7946490cd08486bd4a3f9140c2045e666dfe3ed1298920faf8ddd",
+      "adaptedTreeSha256": "c0a1d82b459e8b6a63676139d11a4474d777ea2c76e90e52fd6e181e5ec272b9"
+    },
+    {
+      "id": "verification-before-completion",
+      "repo": "obra/superpowers",
+      "source": "skills/verification-before-completion",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "adaptations": [
+        "Réécriture proportionnée : résultats encore valides réutilisables, portée annoncée.",
+        "Suppression du rerun complet à chaque message et du workflow Superpowers obligatoire."
+      ],
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "commitDate": "2026-09-25T18:06:27Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/verification-before-completion",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1070,
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 715,
+          "sha256": "e0dec61d7ee93e07f30af221e0da429f29d7453c5bf00ee9960fc82a60af6de9"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 644,
+          "sha256": "dbebb29560cad8831685985c5a213d23d017532d736132151aa65deed220f1cf"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1529,
+          "sha256": "9ee76709498a71e7ae99c29c8ab8ec6ba71e165c8c4afc6b68bb8fa3f160bbbb"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "LICENSE",
+          "gitBlob": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+          "mode": "100644",
+          "bytes": 1070,
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/verification-before-completion/SKILL.md",
+          "gitBlob": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+          "mode": "100644",
+          "bytes": 3646,
+          "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+        }
+      ],
+      "adaptedTreeSha256": "00e12854c6d947c8f6ac02f8df428770b3d889daed5515b8cb3e2292406b697c",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "adaptedEntrySha256": "9ee76709498a71e7ae99c29c8ab8ec6ba71e165c8c4afc6b68bb8fa3f160bbbb"
+    },
+    {
+      "id": "systematic-debugging",
+      "repo": "obra/superpowers",
+      "source": "skills/systematic-debugging",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "adaptations": [
+        "Reproduction et hypothèse testable selon impact, pas de TDD obligatoire.",
+        "Trois tentatives infructueuses déclenchent une réévaluation ; aucune conclusion automatique sur architecture.",
+        "Pas de Bash obligatoire, journalisation de secrets ou chargement de skills non installés."
+      ],
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "commitDate": "2026-09-25T18:06:27Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/systematic-debugging",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1070,
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 807,
+          "sha256": "421445ec8263063e82c2945c621b9c8791d03224d8649f3f495ea40d135038e0"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 721,
+          "sha256": "810303f770b7422a0ac633d2b47413634493c5212f2f1bca3874c6f60a16fe0a"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1588,
+          "sha256": "3a87b0cf681c025a90c4e449caf7b4177c3a8347a676623e66d4a897f06d0bfe"
+        },
+        {
+          "path": "references/condition-based-waiting.md",
+          "bytes": 3516,
+          "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+        },
+        {
+          "path": "references/defense-in-depth.md",
+          "bytes": 3650,
+          "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+        },
+        {
+          "path": "references/root-cause-tracing.md",
+          "bytes": 5321,
+          "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "LICENSE",
+          "gitBlob": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+          "mode": "100644",
+          "bytes": 1070,
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/condition-based-waiting-example.ts",
+          "gitBlob": "703a06b653160d060bbf46ab5c6e0cd7446bd592",
+          "mode": "100644",
+          "bytes": 5054,
+          "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/condition-based-waiting.md",
+          "gitBlob": "70994f777c586f7d4c43033aac34c7cf0da6688b",
+          "mode": "100644",
+          "bytes": 3516,
+          "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/CREATION-LOG.md",
+          "gitBlob": "9aa03092809feaf93c9bfa985252f6f1c9624692",
+          "mode": "100644",
+          "bytes": 4257,
+          "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/defense-in-depth.md",
+          "gitBlob": "e2483354dc2b62478a2624e34ca18bc0efe887b2",
+          "mode": "100644",
+          "bytes": 3650,
+          "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/find-polluter.sh",
+          "gitBlob": "985f5d08ccf8a3f2d40739cfcaf4413bb24bf1cb",
+          "mode": "100755",
+          "bytes": 1986,
+          "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/root-cause-tracing.md",
+          "gitBlob": "0e72e8f9566b7ef85e814633d1feacad9d0c5868",
+          "mode": "100644",
+          "bytes": 5321,
+          "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/SKILL.md",
+          "gitBlob": "095d194ac041502905f15b01d22d294fb94db8b2",
+          "mode": "100644",
+          "bytes": 9465,
+          "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/test-academic.md",
+          "gitBlob": "23a6ed7a2044e0c44d74c3101406140f4851aa41",
+          "mode": "100644",
+          "bytes": 653,
+          "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/test-pressure-1.md",
+          "gitBlob": "8d13b467e4a98abfffd12161cbc3c418021d6023",
+          "mode": "100644",
+          "bytes": 1900,
+          "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/test-pressure-2.md",
+          "gitBlob": "2d2315ec8a24ca872bc80d2f4056468ba051462a",
+          "mode": "100644",
+          "bytes": 2283,
+          "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+        },
+        {
+          "repo": "obra/superpowers",
+          "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+          "path": "skills/systematic-debugging/test-pressure-3.md",
+          "gitBlob": "89734b86fdc756488df315d53e5c3ac2d3752cd8",
+          "mode": "100644",
+          "bytes": 2692,
+          "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+        }
+      ],
+      "adaptedTreeSha256": "cb3041452441de664394efdc920fa7d202a85994ea060bcbd5e5e1bbe110f59e",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+      "adaptedEntrySha256": "3a87b0cf681c025a90c4e449caf7b4177c3a8347a676623e66d4a897f06d0bfe"
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "repo": "vercel-labs/agent-skills",
+      "source": "skills/react-best-practices",
+      "profiles": [
+        "web-api",
+        "desktop"
+      ],
+      "selected": true,
+      "license": "MIT-declared",
+      "blocked": true,
+      "adaptations": [
+        "Restreindre React/Vite client ; désactiver les règles Next/RSC/server-only hors contexte.",
+        "Lire les seules règles utiles ; optimisation fondée sur un problème ou une mesure."
+      ],
+      "reason": "MIT déclaré dans SKILL.md et README, mais aucun LICENSE/NOTICE de redistribution complet dans cette révision. Pas de copie distribuable préparée.",
+      "revision": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "commitDate": "2026-08-28T13:36:07Z",
+      "upstreamVersion": "1.0.0",
+      "upstreamUrl": "https://github.com/vercel-labs/agent-skills/tree/063bee94c3f4df8453406c830b0a7df0f2860278/skills/react-best-practices",
+      "entrySha256": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+      "preparedAt": "2026-10-04",
+      "status": "blocked-redistribution",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": []
+    },
+    {
+      "id": "vercel-composition-patterns",
+      "repo": "vercel-labs/agent-skills",
+      "source": "skills/composition-patterns",
+      "profiles": [
+        "web-api",
+        "desktop"
+      ],
+      "selected": true,
+      "license": "MIT-declared",
+      "blocked": true,
+      "adaptations": [
+        "Corriger Composer.Context et contrôler les exemples React 19.",
+        "Ne pas imposer contexte, compound components ou suppression globale de useContext/forwardRef."
+      ],
+      "reason": "Même absence de licence complète ; erreurs et formulations à corriger avant une adaptation distribuée.",
+      "revision": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "commitDate": "2026-08-28T13:36:07Z",
+      "upstreamVersion": "1.0.0",
+      "upstreamUrl": "https://github.com/vercel-labs/agent-skills/tree/063bee94c3f4df8453406c830b0a7df0f2860278/skills/composition-patterns",
+      "entrySha256": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
+      "preparedAt": "2026-10-04",
+      "status": "blocked-redistribution",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": []
+    },
+    {
+      "id": "supabase-postgres-best-practices",
+      "repo": "supabase/agent-skills",
+      "source": "skills/supabase-postgres-best-practices",
+      "profiles": [
+        "web-api",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "adaptations": [
+        "Description ciblée PostgreSQL, références pertinentes seulement.",
+        "Pas de compte Supabase, infrastructure RLS/extension/pooler imposée ou capacité chiffrée garantie.",
+        "Pool TypeORM/pg en premier ; PgBouncer seulement pour un besoin démontré."
+      ],
+      "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "commitDate": "2026-10-02T12:34:48Z",
+      "upstreamVersion": "1.1.1",
+      "upstreamUrl": "https://github.com/supabase/agent-skills/tree/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase-postgres-best-practices",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 5684,
+          "sha256": "751ad110037c85d400018c9894716a04fa46357ff55c22b1169b280752e19e88"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "b65e575eb4f04a13c187d64e958321298e2ab84d67aa8428819f362056ba292c"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 792,
+          "sha256": "7455b2c52b686ad6e0a0911c0425737f2075a45080b9b5f37cc9fd424d98a9b8"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 735,
+          "sha256": "4c9d5e3adadc4bcce107cffc3476571c369a1810276ba9db769e4e997264e62c"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1147,
+          "sha256": "0e1bf421ee3a6f86b0a0c2dde8be8cc36a81196f3c2190a98071251bf6be5bde"
+        },
+        {
+          "path": "references/_contributing.md",
+          "bytes": 4113,
+          "sha256": "191e039e7d94764e6073410b513b559f9a594e0fdf0252a30c2a2986df2ab3bc"
+        },
+        {
+          "path": "references/_sections.md",
+          "bytes": 1682,
+          "sha256": "c9e992612b422c7122de0b7542ebc2450db283edaab08cfe86c6d657fcccccd5"
+        },
+        {
+          "path": "references/_template.md",
+          "bytes": 1040,
+          "sha256": "6299954250f212caabe339d752c3e5313a8e07d1a182a4e4b425baee91df1bd2"
+        },
+        {
+          "path": "references/advanced-full-text-search.md",
+          "bytes": 1468,
+          "sha256": "40c2606bbb4c4dce31308f201b24cc7f58c7df05b1d9c6856fe2b888d3b7cf28"
+        },
+        {
+          "path": "references/advanced-jsonb-indexing.md",
+          "bytes": 1444,
+          "sha256": "24cacf6a8bc35901dd566d24502ce8e57f810a5c196b897e61d52726e521d106"
+        },
+        {
+          "path": "references/conn-idle-timeout.md",
+          "bytes": 1282,
+          "sha256": "630588902c00fcec59a5988cc5d042f76dcf2c923a535abfd8c47dca205eaed5"
+        },
+        {
+          "path": "references/conn-limits.md",
+          "bytes": 1325,
+          "sha256": "11b2a67a7c7679cbbc5d807bbb17e69c98484a581d0c8b929c03408f412b81b2"
+        },
+        {
+          "path": "references/conn-pooling.md",
+          "bytes": 1424,
+          "sha256": "e1941aaa82387074c7c0604102fd81e4837a5dffffaeb5187d9b09b033fe4fbb"
+        },
+        {
+          "path": "references/conn-prepared-statements.md",
+          "bytes": 1529,
+          "sha256": "174e9332fe3dda5c99b2b00159fb1915ae36c00bab3a7882c14e73e4344e946e"
+        },
+        {
+          "path": "references/data-batch-inserts.md",
+          "bytes": 1287,
+          "sha256": "531933b82d6a622d0fae29e0ea80be6fe5d78655adf2804c271ea84a1930de37"
+        },
+        {
+          "path": "references/data-n-plus-one.md",
+          "bytes": 1361,
+          "sha256": "21a44905e5b16a42741892ec34bb1bfef124d049b140a76934a9acd0f46f5fc2"
+        },
+        {
+          "path": "references/data-pagination.md",
+          "bytes": 1358,
+          "sha256": "73c9fa10a3d439bedea0e11b640bd25bf30dd50f0d9006cf85baf7c3151543fa"
+        },
+        {
+          "path": "references/data-upsert.md",
+          "bytes": 1390,
+          "sha256": "2612af83b20a2701dde30ef1f8d7efd26b7e9eef84717226b8f038a2d2150ff7"
+        },
+        {
+          "path": "references/guide.md",
+          "bytes": 1766,
+          "sha256": "733b3b5e6dede1b951e69bbb52bc75b53fe4d04ada3fb79bd505285d1084e10a"
+        },
+        {
+          "path": "references/lock-advisory.md",
+          "bytes": 1531,
+          "sha256": "c88d259dbf81c3771438f59a165f7eab8acd09999dd370bdf807521c73f35aab"
+        },
+        {
+          "path": "references/lock-deadlock-prevention.md",
+          "bytes": 1855,
+          "sha256": "09aee46f51d7178c8e55fe056cd5a94a64ba2c122fe418e6900cd99f297b2347"
+        },
+        {
+          "path": "references/lock-short-transactions.md",
+          "bytes": 1350,
+          "sha256": "5aa7f61095916986d39644b446cdbcd2bacca7ef698a3bb50b3f82dd60207602"
+        },
+        {
+          "path": "references/lock-skip-locked.md",
+          "bytes": 1353,
+          "sha256": "6c45077f430f29cd9cd8f448c94d578e827e7bd023fcdaf717a756acb116fa4b"
+        },
+        {
+          "path": "references/monitor-explain-analyze.md",
+          "bytes": 1441,
+          "sha256": "4cb67ffbf8e57f2e5b380b0beb4242528b513723ce314a2c2ffcf083bd4203d7"
+        },
+        {
+          "path": "references/monitor-pg-stat-statements.md",
+          "bytes": 1418,
+          "sha256": "89dca99d4e894fcbdcac136be7ad9fbc03d1342904f065c1b198dc9cf495f098"
+        },
+        {
+          "path": "references/monitor-vacuum-analyze.md",
+          "bytes": 1506,
+          "sha256": "2892272011710eb49b3f185ec12f15ce9ce4c365792c672f6e2a9c90da426a1a"
+        },
+        {
+          "path": "references/query-composite-indexes.md",
+          "bytes": 1454,
+          "sha256": "73e42424e671f0266e74fdb220db3196790f69fb43e2b19c7b9483eb4971b554"
+        },
+        {
+          "path": "references/query-covering-indexes.md",
+          "bytes": 1287,
+          "sha256": "daf2a7f0477fb7357b62b5fb5b185b1995a77a186347e45cb780e25e7a7589b6"
+        },
+        {
+          "path": "references/query-index-types.md",
+          "bytes": 1521,
+          "sha256": "472a74f22c2df203bd0154999b3a5a0187cca2ab3d9a3978e305bb7c32f1a282"
+        },
+        {
+          "path": "references/query-missing-indexes.md",
+          "bytes": 1218,
+          "sha256": "91ad8b0ff4365704b4830a7f077c6f140f7140fd5d3ce5cd0b92b160cf9e25f1"
+        },
+        {
+          "path": "references/query-partial-indexes.md",
+          "bytes": 1347,
+          "sha256": "6448982bc8558c6555284958edc331b29239c6a0130e6b4501dd6d4da607a6dd"
+        },
+        {
+          "path": "references/schema-constraints.md",
+          "bytes": 1880,
+          "sha256": "90e8efda3e9e81095e642911ad4aae2809d160f29414338fa997253238f510f8"
+        },
+        {
+          "path": "references/schema-data-types.md",
+          "bytes": 1453,
+          "sha256": "e01b58c14c7f3f65d8ead580b9a4fcf70b83baaab0f9a5f83c569c9fd113e8c8"
+        },
+        {
+          "path": "references/schema-foreign-key-indexes.md",
+          "bytes": 1679,
+          "sha256": "7587713d12a65a212365459b3d39e4717d8a79e4073b10bd62f1054d8192c0dd"
+        },
+        {
+          "path": "references/schema-lowercase-identifiers.md",
+          "bytes": 1728,
+          "sha256": "4bc80f70865f2390872591f326c8a6be6456a0aeb5a7e5a2475d7cd9d43059ab"
+        },
+        {
+          "path": "references/schema-partitioning.md",
+          "bytes": 1548,
+          "sha256": "541e13fbeaf4bb1485c9059d4c9417dbdb766cf16f4237cd63a04ada7ec45b90"
+        },
+        {
+          "path": "references/schema-primary-keys.md",
+          "bytes": 1821,
+          "sha256": "3c8beabef82066f9a0838b926da0885117fd2d9a263aaf84cb5ca9e5f0d400e9"
+        },
+        {
+          "path": "references/security-privileges.md",
+          "bytes": 1566,
+          "sha256": "095909274a4fb43df785d7144cf674eeb40284d2d45628f14af4108737b93663"
+        },
+        {
+          "path": "references/security-rls-basics.md",
+          "bytes": 1372,
+          "sha256": "e04dd1a3a382aafdaaa73fe9f7976352acdde6e90c2a2470d281b94d4f44b096"
+        },
+        {
+          "path": "references/security-rls-performance.md",
+          "bytes": 2103,
+          "sha256": "2e1faeca7d5746e246b1c78f9492fe2a9cfa41c4d7fa1e23c402d58fa18ea014"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "LICENSE",
+          "gitBlob": "d3c9e94fbc6c28f66ecb5a01407d543c99c811b6",
+          "mode": "100644",
+          "bytes": 1065,
+          "sha256": "b65e575eb4f04a13c187d64e958321298e2ab84d67aa8428819f362056ba292c"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/CHANGELOG.md",
+          "gitBlob": "6d7d0d2acd380d09be9a4431037858149ce3496f",
+          "mode": "100644",
+          "bytes": 5684,
+          "sha256": "751ad110037c85d400018c9894716a04fa46357ff55c22b1169b280752e19e88"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/_contributing.md",
+          "gitBlob": "1c055aff9ad2bf12cfe7edc0002f2f77fe6980d2",
+          "mode": "100644",
+          "bytes": 4113,
+          "sha256": "191e039e7d94764e6073410b513b559f9a594e0fdf0252a30c2a2986df2ab3bc"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/_sections.md",
+          "gitBlob": "8ba57c23e8119e411fcc8a230cda08e695792cac",
+          "mode": "100644",
+          "bytes": 1682,
+          "sha256": "c9e992612b422c7122de0b7542ebc2450db283edaab08cfe86c6d657fcccccd5"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/_template.md",
+          "gitBlob": "91ace90e10a4d8ef354a82bb1994842e6979ebed",
+          "mode": "100644",
+          "bytes": 1040,
+          "sha256": "6299954250f212caabe339d752c3e5313a8e07d1a182a4e4b425baee91df1bd2"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/advanced-full-text-search.md",
+          "gitBlob": "582cbeaada9378a280ad61f57e06c10d258e3c43",
+          "mode": "100644",
+          "bytes": 1468,
+          "sha256": "40c2606bbb4c4dce31308f201b24cc7f58c7df05b1d9c6856fe2b888d3b7cf28"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/advanced-jsonb-indexing.md",
+          "gitBlob": "e3d261ea117fd7b1ad9c4f0d45308407b898ed5a",
+          "mode": "100644",
+          "bytes": 1444,
+          "sha256": "24cacf6a8bc35901dd566d24502ce8e57f810a5c196b897e61d52726e521d106"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/conn-idle-timeout.md",
+          "gitBlob": "40b9cc50dd12cf347ed189fac965673b533f3f99",
+          "mode": "100644",
+          "bytes": 1282,
+          "sha256": "630588902c00fcec59a5988cc5d042f76dcf2c923a535abfd8c47dca205eaed5"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/conn-limits.md",
+          "gitBlob": "cb3e400c0234e7e9196c1650423faad66375b70b",
+          "mode": "100644",
+          "bytes": 1325,
+          "sha256": "11b2a67a7c7679cbbc5d807bbb17e69c98484a581d0c8b929c03408f412b81b2"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/conn-pooling.md",
+          "gitBlob": "e2ebd581d3c85bff0a077e8d9a2cb562d2513d03",
+          "mode": "100644",
+          "bytes": 1382,
+          "sha256": "88cf086bf98ba865d2e9d0579974e1366b14157619d6a93e7da77be91084e4a5"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/conn-prepared-statements.md",
+          "gitBlob": "555547d834e35b5059152dfb2288eca5e9838ea0",
+          "mode": "100644",
+          "bytes": 1529,
+          "sha256": "174e9332fe3dda5c99b2b00159fb1915ae36c00bab3a7882c14e73e4344e946e"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/data-batch-inserts.md",
+          "gitBlob": "997947cb17bfed67f29eaa8da2a58de2306cc2c1",
+          "mode": "100644",
+          "bytes": 1287,
+          "sha256": "531933b82d6a622d0fae29e0ea80be6fe5d78655adf2804c271ea84a1930de37"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/data-n-plus-one.md",
+          "gitBlob": "2109186ff88b3ba1cc32789f81e2a00d345c6e3f",
+          "mode": "100644",
+          "bytes": 1361,
+          "sha256": "21a44905e5b16a42741892ec34bb1bfef124d049b140a76934a9acd0f46f5fc2"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/data-pagination.md",
+          "gitBlob": "633d839323612e212a833dd96828cb31fdfb39f8",
+          "mode": "100644",
+          "bytes": 1358,
+          "sha256": "73c9fa10a3d439bedea0e11b640bd25bf30dd50f0d9006cf85baf7c3151543fa"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/data-upsert.md",
+          "gitBlob": "bc95e2305d955679446c70854cb2b56b183aa56d",
+          "mode": "100644",
+          "bytes": 1390,
+          "sha256": "2612af83b20a2701dde30ef1f8d7efd26b7e9eef84717226b8f038a2d2150ff7"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/lock-advisory.md",
+          "gitBlob": "572eaf0dcf518ac925c4cde41beb60b62852b79c",
+          "mode": "100644",
+          "bytes": 1531,
+          "sha256": "c88d259dbf81c3771438f59a165f7eab8acd09999dd370bdf807521c73f35aab"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/lock-deadlock-prevention.md",
+          "gitBlob": "974da5edec32f79de0fcdc771d4ef759dc3e049d",
+          "mode": "100644",
+          "bytes": 1855,
+          "sha256": "09aee46f51d7178c8e55fe056cd5a94a64ba2c122fe418e6900cd99f297b2347"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/lock-short-transactions.md",
+          "gitBlob": "e6b8ef2633248a4aa4394628e48d8cb693e7e6ab",
+          "mode": "100644",
+          "bytes": 1350,
+          "sha256": "5aa7f61095916986d39644b446cdbcd2bacca7ef698a3bb50b3f82dd60207602"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/lock-skip-locked.md",
+          "gitBlob": "77bdbb97045010ce2fdbd90733e8f764be82881a",
+          "mode": "100644",
+          "bytes": 1353,
+          "sha256": "6c45077f430f29cd9cd8f448c94d578e827e7bd023fcdaf717a756acb116fa4b"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/monitor-explain-analyze.md",
+          "gitBlob": "542978c3bafc510fa8d7a8864cff994ad40be4d7",
+          "mode": "100644",
+          "bytes": 1441,
+          "sha256": "4cb67ffbf8e57f2e5b380b0beb4242528b513723ce314a2c2ffcf083bd4203d7"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/monitor-pg-stat-statements.md",
+          "gitBlob": "d7e82f1aacd105d53789eb6188d11e8ea39e7310",
+          "mode": "100644",
+          "bytes": 1418,
+          "sha256": "89dca99d4e894fcbdcac136be7ad9fbc03d1342904f065c1b198dc9cf495f098"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/monitor-vacuum-analyze.md",
+          "gitBlob": "e0e8ea0b7db8c1513a0d1605be477192bc21d91d",
+          "mode": "100644",
+          "bytes": 1506,
+          "sha256": "2892272011710eb49b3f185ec12f15ce9ce4c365792c672f6e2a9c90da426a1a"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/query-composite-indexes.md",
+          "gitBlob": "fea64523fd5bb3696f943d486ccaf2aea75d27b8",
+          "mode": "100644",
+          "bytes": 1454,
+          "sha256": "73e42424e671f0266e74fdb220db3196790f69fb43e2b19c7b9483eb4971b554"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/query-covering-indexes.md",
+          "gitBlob": "9d2a4947b94516dd975e1044d132bb007280f478",
+          "mode": "100644",
+          "bytes": 1287,
+          "sha256": "daf2a7f0477fb7357b62b5fb5b185b1995a77a186347e45cb780e25e7a7589b6"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/query-index-types.md",
+          "gitBlob": "93b32590f4bfe377869274f45414ae6e43d168fa",
+          "mode": "100644",
+          "bytes": 1521,
+          "sha256": "472a74f22c2df203bd0154999b3a5a0187cca2ab3d9a3978e305bb7c32f1a282"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/query-missing-indexes.md",
+          "gitBlob": "e6daace7dd368c75cdf87dc61be4afd6ff66cbbe",
+          "mode": "100644",
+          "bytes": 1218,
+          "sha256": "91ad8b0ff4365704b4830a7f077c6f140f7140fd5d3ce5cd0b92b160cf9e25f1"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/query-partial-indexes.md",
+          "gitBlob": "3e61a3417b9cce3c8cee99b39b78b7ebf495dd1f",
+          "mode": "100644",
+          "bytes": 1347,
+          "sha256": "6448982bc8558c6555284958edc331b29239c6a0130e6b4501dd6d4da607a6dd"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/schema-constraints.md",
+          "gitBlob": "1d2ef8f9a968cd6fa882c7299134c30ace06373c",
+          "mode": "100644",
+          "bytes": 1880,
+          "sha256": "90e8efda3e9e81095e642911ad4aae2809d160f29414338fa997253238f510f8"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/schema-data-types.md",
+          "gitBlob": "f253a5819d05531371e04485ab84f552fbb32fbe",
+          "mode": "100644",
+          "bytes": 1453,
+          "sha256": "e01b58c14c7f3f65d8ead580b9a4fcf70b83baaab0f9a5f83c569c9fd113e8c8"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/schema-foreign-key-indexes.md",
+          "gitBlob": "6c3d6ff622b8a9df358f6673f323292e682ce87c",
+          "mode": "100644",
+          "bytes": 1679,
+          "sha256": "7587713d12a65a212365459b3d39e4717d8a79e4073b10bd62f1054d8192c0dd"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/schema-lowercase-identifiers.md",
+          "gitBlob": "f0072940b159ff64e0c2d4fbb499133cb8f49a66",
+          "mode": "100644",
+          "bytes": 1728,
+          "sha256": "4bc80f70865f2390872591f326c8a6be6456a0aeb5a7e5a2475d7cd9d43059ab"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/schema-partitioning.md",
+          "gitBlob": "13137a03275fa45001c870a40b0069204d44e005",
+          "mode": "100644",
+          "bytes": 1548,
+          "sha256": "541e13fbeaf4bb1485c9059d4c9417dbdb766cf16f4237cd63a04ada7ec45b90"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/schema-primary-keys.md",
+          "gitBlob": "fb0fbb166fac9ea38c127d807a263282acc2dc93",
+          "mode": "100644",
+          "bytes": 1821,
+          "sha256": "3c8beabef82066f9a0838b926da0885117fd2d9a263aaf84cb5ca9e5f0d400e9"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/security-privileges.md",
+          "gitBlob": "448ec345fab6c5a0116c584d65638b86d758c558",
+          "mode": "100644",
+          "bytes": 1566,
+          "sha256": "095909274a4fb43df785d7144cf674eeb40284d2d45628f14af4108737b93663"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/security-rls-basics.md",
+          "gitBlob": "c61e1a8503de113be0981759b82f5e37090f344c",
+          "mode": "100644",
+          "bytes": 1372,
+          "sha256": "e04dd1a3a382aafdaaa73fe9f7976352acdde6e90c2a2470d281b94d4f44b096"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/references/security-rls-performance.md",
+          "gitBlob": "c3c7c416d57d9a46a9993f4e0c20f772fb64483d",
+          "mode": "100644",
+          "bytes": 2103,
+          "sha256": "2e1faeca7d5746e246b1c78f9492fe2a9cfa41c4d7fa1e23c402d58fa18ea014"
+        },
+        {
+          "repo": "supabase/agent-skills",
+          "revision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+          "path": "skills/supabase-postgres-best-practices/SKILL.md",
+          "gitBlob": "6400792389dfcc82c81953054e546bd72ebcd259",
+          "mode": "100644",
+          "bytes": 3231,
+          "sha256": "ad65e776f45e761bafc609d3f506c77c1032225aa65e0c4c02f241b8071e5855"
+        }
+      ],
+      "adaptedTreeSha256": "09b8cc85b93d532f2e33c3d016e36e6f935a4fa2659e5afc06a70d5661a7a2d0",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "ad65e776f45e761bafc609d3f506c77c1032225aa65e0c4c02f241b8071e5855",
+      "adaptedEntrySha256": "0e1bf421ee3a6f86b0a0c2dde8be8cc36a81196f3c2190a98071251bf6be5bde"
+    },
+    {
+      "id": "laravel-best-practices",
+      "repo": "laravel/boost",
+      "source": ".ai/laravel/skill/laravel-best-practices",
+      "profiles": [
+        "php"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE.md",
+      "adaptations": [
+        "Remplacer search-docs MCP par documentation officielle Laravel 13 ou framework installé.",
+        "Remplacer dépendance testing-best-practices absente par conventions PHPUnit du projet.",
+        "Rendu des six ressources Blade en Markdown : commandes locales et directives échappées, sans dépendance au moteur Boost/Claude."
+      ],
+      "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+      "commitDate": "2026-10-01T02:04:27Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/laravel/boost/tree/97b8da0cb8c2c1da75531a36e34adaa313a64afc/.ai/laravel/skill/laravel-best-practices",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1075,
+          "sha256": "7b4f9149597fbae2ce689bc9317d1869e17f1b3fa5f01c289998c108f8c37cf7"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 848,
+          "sha256": "0518a41178fd2bc76ca699bffe956243acbc8f841e9e5af4f37ba19a821e220a"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 774,
+          "sha256": "95a4b890aa2d2a972349a92dad74abc56dd6ee346300d31d639a3407ed88f69f"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 4440,
+          "sha256": "6f7a4fc4209fb03230151dd9dc42abfe60126abafeabea8d4eabad1dc5e4c06f"
+        },
+        {
+          "path": "rules/advanced-queries.md",
+          "bytes": 4294,
+          "sha256": "fce698e1908bae69ff7158f6419a8267327064966733e7425560cdf453e85ef5"
+        },
+        {
+          "path": "rules/architecture.md",
+          "bytes": 6272,
+          "sha256": "ec19c18c0d0774faa2f5da57722d17b1a6f10956520c419c4571a6a2cdffa5a7"
+        },
+        {
+          "path": "rules/blade-views.md",
+          "bytes": 1847,
+          "sha256": "4a3dafd6ae508f024e662f83313bbc687deb248cb63d2ad31bd7e81c2b6d6fbd"
+        },
+        {
+          "path": "rules/caching.md",
+          "bytes": 3384,
+          "sha256": "37ea49baba7a4a4396535ec86a18697d15e4693b1faf2af8a572959da87e4c74"
+        },
+        {
+          "path": "rules/collections.md",
+          "bytes": 2434,
+          "sha256": "0980c7981f3b6987524f682bf6927db024fc4e3d6837a42a123a6084c63680dd"
+        },
+        {
+          "path": "rules/config.md",
+          "bytes": 2102,
+          "sha256": "54ba564af35ddfe88462ebb9dfab1ef99a8d6a355ff43d8c022a9b4967d4a61a"
+        },
+        {
+          "path": "rules/db-performance.md",
+          "bytes": 5535,
+          "sha256": "2e05ae18996de4514212d9b7e77cf65c0b8c4de13ebe5c213701f5ce26afd2fc"
+        },
+        {
+          "path": "rules/eloquent.md",
+          "bytes": 4007,
+          "sha256": "8fce9ae0d17d5ddac03d3957a8db21d1e5ca5cc7152d9d16b09923d229d5016e"
+        },
+        {
+          "path": "rules/error-handling.md",
+          "bytes": 3137,
+          "sha256": "1ff685f9a145c02cd2fc88f271eab2ab53cae7e6141b407c27747bdbb0c7efc8"
+        },
+        {
+          "path": "rules/events-notifications.md",
+          "bytes": 2665,
+          "sha256": "dc818062e0b82b479d8199589d67317c27b3ae5db4c202edaf90dec6ca8b9e79"
+        },
+        {
+          "path": "rules/http-client.md",
+          "bytes": 4553,
+          "sha256": "4b99d3b1c4f9dac702658b2c26e6886a9b0f6ca6857dd8eaab1ea40dc16d160a"
+        },
+        {
+          "path": "rules/mail.md",
+          "bytes": 2046,
+          "sha256": "09e4fe341f7974ed2cf7c44bc54a85158d406b398bdc1b3c087cf578baafb988"
+        },
+        {
+          "path": "rules/migrations.md",
+          "bytes": 3574,
+          "sha256": "ce02bce640f3d55848aa78571de1d045d78e1f12841a05caac053f2127428da2"
+        },
+        {
+          "path": "rules/queue-jobs.md",
+          "bytes": 4449,
+          "sha256": "9bd86c68cf596d603b836a8ee6dbe8dac2107f1c84128536fbe1293661fa0690"
+        },
+        {
+          "path": "rules/routing.md",
+          "bytes": 3831,
+          "sha256": "5bbfd27366142e5a45f744c7853490ed92e0025de4f51f98e33a9010ce378751"
+        },
+        {
+          "path": "rules/scheduling.md",
+          "bytes": 2801,
+          "sha256": "94a13a249e638feb8a99cab2a2bac650280112e041db8de6e3d613e2c7c53633"
+        },
+        {
+          "path": "rules/security.md",
+          "bytes": 5918,
+          "sha256": "003355c9328e675c32b0e0fc3e7ccc7353c8012940cd9cc0946fee3aef5df75f"
+        },
+        {
+          "path": "rules/style.md",
+          "bytes": 4380,
+          "sha256": "516eab65ce5f68e0e6826581b834e0e68b0d2c19b38b8e1f66428a2d95d13f90"
+        },
+        {
+          "path": "rules/validation.md",
+          "bytes": 2977,
+          "sha256": "ab44a92d44b320f9a64986d336aff83b39182a87f6839cc1227d201eb19d4124"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/advanced-queries.md",
+          "gitBlob": "54dd783d939e8dfad0c4722755ebef122fd7bb80",
+          "mode": "100644",
+          "bytes": 4294,
+          "sha256": "fce698e1908bae69ff7158f6419a8267327064966733e7425560cdf453e85ef5"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/architecture.md",
+          "gitBlob": "5e7af23b59eefcb4034b2ab39f8ba208def1ba57",
+          "mode": "100644",
+          "bytes": 6272,
+          "sha256": "ec19c18c0d0774faa2f5da57722d17b1a6f10956520c419c4571a6a2cdffa5a7"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/blade-views.md",
+          "gitBlob": "4ea2c6c34fdf9c57d2223fa45d60e574d3cbd28a",
+          "mode": "100644",
+          "bytes": 1847,
+          "sha256": "4a3dafd6ae508f024e662f83313bbc687deb248cb63d2ad31bd7e81c2b6d6fbd"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/caching.md",
+          "gitBlob": "cd2ffd60239a08e7d8d65c306c0ee11aa337f605",
+          "mode": "100644",
+          "bytes": 3384,
+          "sha256": "37ea49baba7a4a4396535ec86a18697d15e4693b1faf2af8a572959da87e4c74"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/collections.md",
+          "gitBlob": "211fec11d1360c21668967f433027160865145e4",
+          "mode": "100644",
+          "bytes": 2434,
+          "sha256": "0980c7981f3b6987524f682bf6927db024fc4e3d6837a42a123a6084c63680dd"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/config.blade.php",
+          "gitBlob": "61e4d0a5ced5d458ad37e544b83ba75b0b3c18f3",
+          "mode": "100644",
+          "bytes": 2137,
+          "sha256": "5c7af611fef14b138b4e67752c69813bfae9836e2662c7cad8717d381b858fb4"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/db-performance.md",
+          "gitBlob": "3f339770d11581f336c536fe6b36361027cae007",
+          "mode": "100644",
+          "bytes": 5535,
+          "sha256": "2e05ae18996de4514212d9b7e77cf65c0b8c4de13ebe5c213701f5ce26afd2fc"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/eloquent.md",
+          "gitBlob": "5a89510d0006bfc03653f00d4eac2ed27e8aa318",
+          "mode": "100644",
+          "bytes": 4007,
+          "sha256": "8fce9ae0d17d5ddac03d3957a8db21d1e5ca5cc7152d9d16b09923d229d5016e"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/error-handling.md",
+          "gitBlob": "afcdf4ac5db9d426a6bddc675ee9b4381211dfb6",
+          "mode": "100644",
+          "bytes": 3137,
+          "sha256": "1ff685f9a145c02cd2fc88f271eab2ab53cae7e6141b407c27747bdbb0c7efc8"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/events-notifications.blade.php",
+          "gitBlob": "4660016284022729e7a93eb08c24efcf5cd52f00",
+          "mode": "100644",
+          "bytes": 2700,
+          "sha256": "9c4d9747a7e79d0455d36bd6aaf881ad4e51d49154d5704a861f049f1b88312b"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/http-client.md",
+          "gitBlob": "cc8fdd6ab2c8d09dc60873c46244a21b45cb56ad",
+          "mode": "100644",
+          "bytes": 4553,
+          "sha256": "4b99d3b1c4f9dac702658b2c26e6886a9b0f6ca6857dd8eaab1ea40dc16d160a"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/mail.blade.php",
+          "gitBlob": "3d3e598dfeb123a001dac2aecad793ecbf48d76e",
+          "mode": "100644",
+          "bytes": 2060,
+          "sha256": "ad389818c5ea9f719a36562973b26cd5a8f2f963752c000b3b125c903afc2f09"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/migrations.blade.php",
+          "gitBlob": "bf896efa928104a373dc6cd712d13659a02be2fe",
+          "mode": "100644",
+          "bytes": 3630,
+          "sha256": "27638b0e642911c0839fd4cd6eababc9e2e658cc6cbee2bddf6b34f36805dd28"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/queue-jobs.md",
+          "gitBlob": "011828a6c8b70ee21da6bcae9acd58c57449443e",
+          "mode": "100644",
+          "bytes": 4449,
+          "sha256": "9bd86c68cf596d603b836a8ee6dbe8dac2107f1c84128536fbe1293661fa0690"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/routing.md",
+          "gitBlob": "604a8d96d7944788924d61cccd5c07243b92238f",
+          "mode": "100644",
+          "bytes": 3831,
+          "sha256": "5bbfd27366142e5a45f744c7853490ed92e0025de4f51f98e33a9010ce378751"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/scheduling.blade.php",
+          "gitBlob": "dce2dca21209c6f8bddf3a063a3f27c1dc70e676",
+          "mode": "100644",
+          "bytes": 2815,
+          "sha256": "7e774026f8fa546d682a99116f49f3eba4ca146ec91a0ee5110d15448a83c09f"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/security.blade.php",
+          "gitBlob": "a70864e214c41d6c7b9ee887e6ac3bf4fb07ec77",
+          "mode": "100644",
+          "bytes": 5967,
+          "sha256": "3b11c1f60eae46c6d95b9cee5a77ee6dd306d8079a12a0ad61dcd616a231dedc"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/style.md",
+          "gitBlob": "3f3f14fbc0de7e6788758f67d8aa256d793e00c3",
+          "mode": "100644",
+          "bytes": 4380,
+          "sha256": "516eab65ce5f68e0e6826581b834e0e68b0d2c19b38b8e1f66428a2d95d13f90"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/rules/validation.md",
+          "gitBlob": "37ce6c5e245f1400190ec1c8b36ab6862eac936a",
+          "mode": "100644",
+          "bytes": 2977,
+          "sha256": "ab44a92d44b320f9a64986d336aff83b39182a87f6839cc1227d201eb19d4124"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/laravel/skill/laravel-best-practices/SKILL.md",
+          "gitBlob": "311ab844371848853840f9e53df62908572a05fa",
+          "mode": "100644",
+          "bytes": 4644,
+          "sha256": "3eeacd93123654b2a78caf3f839bda24299d5b2d2bab02f4a1491140d0d865eb"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": "LICENSE.md",
+          "gitBlob": "79810c848f8bdbd8f1629f46079ad482f33fc371",
+          "mode": "100644",
+          "bytes": 1075,
+          "sha256": "7b4f9149597fbae2ce689bc9317d1869e17f1b3fa5f01c289998c108f8c37cf7"
+        }
+      ],
+      "adaptedTreeSha256": "6634ca5d66b6293433d641bb6f47dac341dc8b9f800dda03fb68c3564c2a2002",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "3eeacd93123654b2a78caf3f839bda24299d5b2d2bab02f4a1491140d0d865eb",
+      "adaptedEntrySha256": "6f7a4fc4209fb03230151dd9dc42abfe60126abafeabea8d4eabad1dc5e4c06f"
+    },
+    {
+      "id": "livewire-development",
+      "repo": "laravel/boost",
+      "source": ".ai/livewire/4/skill/livewire-development",
+      "entry": "SKILL.blade.php",
+      "profiles": [
+        "php"
+      ],
+      "selected": false,
+      "condition": "livewire",
+      "license": "MIT",
+      "licensePath": "LICENSE.md",
+      "adaptations": [
+        "Rendre les variables GuidelineAssist pour php artisan et app/ ; snippets convertis en clôtures Markdown.",
+        "Documentation officielle Livewire 4, pas de MCP Boost requis.",
+        "Alpine fourni par Livewire : pas de double instance."
+      ],
+      "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+      "commitDate": "2026-10-01T02:04:27Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/laravel/boost/tree/97b8da0cb8c2c1da75531a36e34adaa313a64afc/.ai/livewire/4/skill/livewire-development",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1075,
+          "sha256": "7b4f9149597fbae2ce689bc9317d1869e17f1b3fa5f01c289998c108f8c37cf7"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 761,
+          "sha256": "d7719c0a2990db243a4878e394aac7cbdb8e6529577770efd677810d7139686a"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 686,
+          "sha256": "451667e64ec327930393414d12c575fee9b80ac780a41d1c0210ad225db0d8d6"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1085,
+          "sha256": "20068b790c0e800e63d69d66777e899c46c23f7e9eb74ec0938e12e6a93dd507"
+        },
+        {
+          "path": "reference/javascript-hooks.md",
+          "bytes": 1073,
+          "sha256": "3c6f6632855239379ac7c427cee76ca34d982330a3eb0132059af01745a4508c"
+        },
+        {
+          "path": "references/guide.md",
+          "bytes": 6864,
+          "sha256": "904585a019984dc1a56e2635553166ee97cec20ec6ffce8c1826ee7494755360"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/livewire/4/skill/livewire-development/reference/javascript-hooks.md",
+          "gitBlob": "660d66b5a6b29e953063db01aeedaa343f0a2fc4",
+          "mode": "100644",
+          "bytes": 1073,
+          "sha256": "3c6f6632855239379ac7c427cee76ca34d982330a3eb0132059af01745a4508c"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": ".ai/livewire/4/skill/livewire-development/SKILL.blade.php",
+          "gitBlob": "ff1758ecfead79f592d2c0cae9e6d7c1b684f4b9",
+          "mode": "100644",
+          "bytes": 7835,
+          "sha256": "f9e07e768eed16a54043bfa7114eeb1736a044b71dd3a3e4b36ef846e22e261e"
+        },
+        {
+          "repo": "laravel/boost",
+          "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+          "path": "LICENSE.md",
+          "gitBlob": "79810c848f8bdbd8f1629f46079ad482f33fc371",
+          "mode": "100644",
+          "bytes": 1075,
+          "sha256": "7b4f9149597fbae2ce689bc9317d1869e17f1b3fa5f01c289998c108f8c37cf7"
+        }
+      ],
+      "adaptedTreeSha256": "ae74bb292157d851479c8415690f66711bc96b0f9a695ef08065a1a78db8759a",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "f9e07e768eed16a54043bfa7114eeb1736a044b71dd3a3e4b36ef846e22e261e",
+      "adaptedEntrySha256": "20068b790c0e800e63d69d66777e899c46c23f7e9eb74ec0938e12e6a93dd507"
+    },
+    {
+      "id": "expo-router",
+      "repo": "expo/skills",
+      "source": "plugins/expo/skills/expo-router",
+      "profiles": [
+        "mobile"
+      ],
+      "selected": true,
+      "condition": null,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "additionalLicensePath": null,
+      "adaptations": [
+        "Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.",
+        "Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.",
+        "NativeWind conservé, respecter les conventions et composants présents.",
+        "Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme."
+      ],
+      "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+      "commitDate": "2026-10-02T10:45:26Z",
+      "upstreamVersion": "1.0.1",
+      "upstreamUrl": "https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-router",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 902,
+          "sha256": "fa6c511a779cbb34fe66e02c5d8cdf0d263d84e4439d8f432e3eb378f5365bd9"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 811,
+          "sha256": "da6b8815fe27a251d3fc3fb20b733c840cd6e8ab6ec6eb16b894b42ba59c3c61"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1941,
+          "sha256": "220f305307a60718d3cf062692f287f3f034d34b95e3aa7d799a115ac52da621"
+        },
+        {
+          "path": "references/form-sheet.md",
+          "bytes": 6320,
+          "sha256": "947de9cf35a15aacf3f02e96e45942b5e4826e536e529570886e5ddbb7ec8591"
+        },
+        {
+          "path": "references/guide-behavior.md",
+          "bytes": 87,
+          "sha256": "8087a6f71b7d92e5b0607180197334ff6f65ccfc08e351ade99e98ee00b9dde6"
+        },
+        {
+          "path": "references/guide-code-style.md",
+          "bytes": 364,
+          "sha256": "bd6ce5c2d1db97b6278d39b401b33fe936fd241d6577c4b4dd7701fbab7b543b"
+        },
+        {
+          "path": "references/guide-common-route-structure.md",
+          "bytes": 2047,
+          "sha256": "8653cbf1938a81414d04231eff0931e3756a2d4dc15e295be2e831945143542b"
+        },
+        {
+          "path": "references/guide-context-menus.md",
+          "bytes": 764,
+          "sha256": "a39f5ea58538265d7099390667e4947bec8278619d601efb11e9f97b9bd45130"
+        },
+        {
+          "path": "references/guide-library-preferences.md",
+          "bytes": 383,
+          "sha256": "a9292c4ccc6560108720730526a2cf754f6905397d8ab511d42c62c89aaadb48"
+        },
+        {
+          "path": "references/guide-link-previews.md",
+          "bytes": 263,
+          "sha256": "b984c8e6b361ec7dcc89442438eba6ac2d1b5891ce5da5a05590001c38e8526b"
+        },
+        {
+          "path": "references/guide-link.md",
+          "bytes": 408,
+          "sha256": "17a887b71d952dcc8853cfe0c592f560892f530cb441e5089c14a7cd2c4f38dd"
+        },
+        {
+          "path": "references/guide-modal.md",
+          "bytes": 169,
+          "sha256": "17751d65cc1030a47f9e1d2cff26c2879cbea8f965dd795f52453560d8b6f4a9"
+        },
+        {
+          "path": "references/guide-routes.md",
+          "bytes": 306,
+          "sha256": "969a53cdfb572166bb13fe064ebc42df9ea8f9d44a9420b25706ac1187988f8b"
+        },
+        {
+          "path": "references/guide-sheet.md",
+          "bytes": 374,
+          "sha256": "1ba0ebb16034025d36049d9f9828bd9389bcc0b8895affda66cfea2e54e9884b"
+        },
+        {
+          "path": "references/guide-stack.md",
+          "bytes": 227,
+          "sha256": "45f8b8e894f7b1e6418df904ce96735ab2c38dec96b472fc9469389c8ce898f2"
+        },
+        {
+          "path": "references/route-structure.md",
+          "bytes": 5106,
+          "sha256": "4c3d70edeb7e36d965c4d96fa150f23ee57e01be5f6c57dd3e34c6309aab7e87"
+        },
+        {
+          "path": "references/search.md",
+          "bytes": 5173,
+          "sha256": "bb4785df4757d84f1aff09d34cdb84043e7099684b9731a24a1d79cc3c0df172"
+        },
+        {
+          "path": "references/tabs.md",
+          "bytes": 13323,
+          "sha256": "c49081529a200bfc62c95d41229e5dd7368f2e35cd5775ccaaab3289ed1fd7eb"
+        },
+        {
+          "path": "references/toolbar-and-headers.md",
+          "bytes": 8061,
+          "sha256": "14d9a71dd949bd2b28a5bd531f6b9c1b4f3fa847a86db8c5218fee67b5295769"
+        },
+        {
+          "path": "references/zoom-transitions.md",
+          "bytes": 4848,
+          "sha256": "cacc1665e9f3044762765d2cd55fd1ead9627f06478f12dfa2280c6f9ae88ede"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "LICENSE",
+          "gitBlob": "548fbcb6e0cc27e99b2cd341feb421a67eafdd2f",
+          "mode": "100644",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/agents/openai.yaml",
+          "gitBlob": "a314bc85a701a0464b6408fa3a0dbd4624984901",
+          "mode": "100644",
+          "bytes": 422,
+          "sha256": "7b76d9331a33e06e61504db9af069bccc8ab4a02e2f8be92727e8e0f9ad7941d"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/references/form-sheet.md",
+          "gitBlob": "1ed80fb6f4e0c01104768079156381865a9dddd8",
+          "mode": "100644",
+          "bytes": 6320,
+          "sha256": "947de9cf35a15aacf3f02e96e45942b5e4826e536e529570886e5ddbb7ec8591"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/references/route-structure.md",
+          "gitBlob": "b552729a4d9b845b482f69d002433e146c1b41ab",
+          "mode": "100644",
+          "bytes": 5106,
+          "sha256": "4c3d70edeb7e36d965c4d96fa150f23ee57e01be5f6c57dd3e34c6309aab7e87"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/references/search.md",
+          "gitBlob": "9ca13bd58396a4aa9c4eb8e5a5fc21de552e8f86",
+          "mode": "100644",
+          "bytes": 5173,
+          "sha256": "bb4785df4757d84f1aff09d34cdb84043e7099684b9731a24a1d79cc3c0df172"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/references/tabs.md",
+          "gitBlob": "f689f74c506c04bc28a01ba6106ed2d77810e564",
+          "mode": "100644",
+          "bytes": 13323,
+          "sha256": "c49081529a200bfc62c95d41229e5dd7368f2e35cd5775ccaaab3289ed1fd7eb"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/references/toolbar-and-headers.md",
+          "gitBlob": "9706b8d3f09abd5bae0d56b6179664e99b7bf940",
+          "mode": "100644",
+          "bytes": 8061,
+          "sha256": "14d9a71dd949bd2b28a5bd531f6b9c1b4f3fa847a86db8c5218fee67b5295769"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/references/zoom-transitions.md",
+          "gitBlob": "27e00a888aa2ba998443ea9e3006b11321d14849",
+          "mode": "100644",
+          "bytes": 4848,
+          "sha256": "cacc1665e9f3044762765d2cd55fd1ead9627f06478f12dfa2280c6f9ae88ede"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-router/SKILL.md",
+          "gitBlob": "21c5c245db867c9b842f4d65fd8f1a2e9114a58e",
+          "mode": "100644",
+          "bytes": 7018,
+          "sha256": "71d0e312f432a809a6fd91583846644e82e0ba842ee05a41c179ce9dc222dcdb"
+        }
+      ],
+      "adaptedTreeSha256": "3d1f1ad1f9c7f08eb38d9687ffdf1a3d2d1cb2531b135b475a9a0b0e758c8377",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "71d0e312f432a809a6fd91583846644e82e0ba842ee05a41c179ce9dc222dcdb",
+      "adaptedEntrySha256": "220f305307a60718d3cf062692f287f3f034d34b95e3aa7d799a115ac52da621"
+    },
+    {
+      "id": "expo-design-system",
+      "repo": "expo/skills",
+      "source": "plugins/expo/skills/expo-design-system",
+      "profiles": [
+        "mobile"
+      ],
+      "selected": true,
+      "condition": null,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "additionalLicensePath": null,
+      "adaptations": [
+        "Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.",
+        "Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.",
+        "NativeWind conservé, respecter les conventions et composants présents.",
+        "Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme."
+      ],
+      "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+      "commitDate": "2026-10-02T10:45:26Z",
+      "upstreamVersion": "1.0.0",
+      "upstreamUrl": "https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-design-system",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 909,
+          "sha256": "96be37232c66a98579a561095cba6f7690f7c8ee975985f85df3d0fba2b04e66"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 832,
+          "sha256": "2ada9c102480052e8fffb07d6ae4abfb666a51ccfa80582bad42a24d3ad69f42"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1902,
+          "sha256": "2f71baeb21ec5093f8b2b4454a9b7bbc93c140b0c863deab95511362b76014e6"
+        },
+        {
+          "path": "references/audit.md",
+          "bytes": 8462,
+          "sha256": "a0ead76ab904c119a1353d8d91b9138144a97da43fdff683f291f2d45d868915"
+        },
+        {
+          "path": "references/guide-adopt-before-you-build.md",
+          "bytes": 1115,
+          "sha256": "2394cf3f008152a0d669cfbe35659b9bc410ac136f4f3b57d0086bd7dae7aaf0"
+        },
+        {
+          "path": "references/guide-auditing-an-existing-app.md",
+          "bytes": 366,
+          "sha256": "824c440393f5db1927fc08e166f4e5820626d71a653d77ff1553571281c303f4"
+        },
+        {
+          "path": "references/guide-named-failures-native-slop.md",
+          "bytes": 1289,
+          "sha256": "0106da9a8b48ea353c77f9f1518c491ef8ba4b55f74eb7c137fc84120b90b413"
+        },
+        {
+          "path": "references/guide-reusable-components.md",
+          "bytes": 4364,
+          "sha256": "a666f7326b1c0de4bce858326666a836511bfe3323f12caf7758792cb902070c"
+        },
+        {
+          "path": "references/guide-self-critique-pass.md",
+          "bytes": 1049,
+          "sha256": "12cb7c688ece1526d971123628dad9dfa263cd3f660c681289916b337e06bf27"
+        },
+        {
+          "path": "references/guide-the-theme.md",
+          "bytes": 7872,
+          "sha256": "e9c1b85b70a0326af0ba10c6f58a296e45c85b80b3780a3126b1dfbf9c795237"
+        },
+        {
+          "path": "references/guide-where-decisions-live.md",
+          "bytes": 502,
+          "sha256": "89c7ef9f220cc3284bc16c49f2ef0154dc8d2fd99d57e681a40a2b0d7ae300d0"
+        },
+        {
+          "path": "references/native-slop.md",
+          "bytes": 8440,
+          "sha256": "5662bd04ac2d6367fc4ca3ae355ec1b970752dcd8693a099a5e0792227eb09c1"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "LICENSE",
+          "gitBlob": "548fbcb6e0cc27e99b2cd341feb421a67eafdd2f",
+          "mode": "100644",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-design-system/agents/openai.yaml",
+          "gitBlob": "2322f6ef8e7cfe1716bfc0254adb03a2faefe604",
+          "mode": "100644",
+          "bytes": 576,
+          "sha256": "16d7f7f1bb47bc02fa2a816280403bfaccd24e436672cd1503670fcc2a42fd26"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-design-system/references/audit.md",
+          "gitBlob": "0a6e276fb410982ca3f5167f69fbe925286e0a14",
+          "mode": "100644",
+          "bytes": 8462,
+          "sha256": "a0ead76ab904c119a1353d8d91b9138144a97da43fdff683f291f2d45d868915"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-design-system/references/native-slop.md",
+          "gitBlob": "b313f4c7f1f361b567b051682500a78245946bf6",
+          "mode": "100644",
+          "bytes": 8440,
+          "sha256": "5662bd04ac2d6367fc4ca3ae355ec1b970752dcd8693a099a5e0792227eb09c1"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-design-system/SKILL.md",
+          "gitBlob": "6a884f76885ef25ea17042a6ed2e14a1c29140a5",
+          "mode": "100644",
+          "bytes": 19388,
+          "sha256": "581d755baacc268373229f79546ddd6907bbf4f002e5182b9ec6c72ad0c8f31d"
+        }
+      ],
+      "adaptedTreeSha256": "29b29c3ebc4283b0936c725874ac7b5690704ec68e5748c811ca76dfd1fe0fd8",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "581d755baacc268373229f79546ddd6907bbf4f002e5182b9ec6c72ad0c8f31d",
+      "adaptedEntrySha256": "2f71baeb21ec5093f8b2b4454a9b7bbc93c140b0c863deab95511362b76014e6"
+    },
+    {
+      "id": "expo-native-ui",
+      "repo": "expo/skills",
+      "source": "plugins/expo/skills/expo-native-ui",
+      "profiles": [
+        "mobile"
+      ],
+      "selected": true,
+      "condition": null,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "additionalLicensePath": null,
+      "adaptations": [
+        "Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.",
+        "Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.",
+        "NativeWind conservé, respecter les conventions et composants présents.",
+        "Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme."
+      ],
+      "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+      "commitDate": "2026-10-02T10:45:26Z",
+      "upstreamVersion": "1.1.1",
+      "upstreamUrl": "https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-native-ui",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 905,
+          "sha256": "ab5f7c6216c258b87736503271f40b0f948967d8eae3ca7e04f173b6e333ed08"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 820,
+          "sha256": "db876461a4c33cb86ffa71aa52dc7057155ca7f7f8f86fea78b2fccc7dbdd558"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1897,
+          "sha256": "dc8f8ac22fd63ac19835918ddd07a3525270c9900b778531f7497a23d3da5ce8"
+        },
+        {
+          "path": "references/controls.md",
+          "bytes": 5089,
+          "sha256": "0f5f2d2070a69d4d30e603d4706575d0106f1e3569d173e597b597f5b45585c1"
+        },
+        {
+          "path": "references/gradients.md",
+          "bytes": 2717,
+          "sha256": "63ced0392f67c41bf90e726613d139a389db609799bfcb91124e6e69b9a66e70"
+        },
+        {
+          "path": "references/guide-behavior.md",
+          "bytes": 2299,
+          "sha256": "f00879fddb348633ff77f72e17c8a06f41221737787b0f613d16e86d0503ba18"
+        },
+        {
+          "path": "references/guide-code-style.md",
+          "bytes": 413,
+          "sha256": "f361c1ee325dae7b9b4006c1e27cd9b8c66aa189fbd491451b590cbb10f1ee24"
+        },
+        {
+          "path": "references/guide-colors.md",
+          "bytes": 2586,
+          "sha256": "cc200f6b524f40b3fced116091c5faa1e51b8cf920f0293916f6d3ff582e7a6d"
+        },
+        {
+          "path": "references/guide-general-styling-rules.md",
+          "bytes": 886,
+          "sha256": "2ecb122b283a88a012baf86aab0bfe2363ee72d31aedb0a046d1efff3af3a946"
+        },
+        {
+          "path": "references/guide-library-preferences.md",
+          "bytes": 1220,
+          "sha256": "2ef1dbc512fe58bf9762da9d98ee041ecadd674ba47ac647cca59c2c2caaf6f6"
+        },
+        {
+          "path": "references/guide-responsiveness.md",
+          "bytes": 595,
+          "sha256": "2e1938eae5d9b4c7b83b807f53f5cdcf2005e964f188413b73f327ff37efe4e6"
+        },
+        {
+          "path": "references/guide-running-the-app.md",
+          "bytes": 1397,
+          "sha256": "18179658536243ecb4cd6afa2ae68bec9fd091b96f7753dd329311491e51d23b"
+        },
+        {
+          "path": "references/guide-shadows.md",
+          "bytes": 211,
+          "sha256": "c47c48b281a5b25c1a77fdefd9987b5ff0cd456601e6f8f434d22074f31f2a5e"
+        },
+        {
+          "path": "references/guide-text-styling.md",
+          "bytes": 187,
+          "sha256": "b5372c2003b786e9271b5475db859766d71212c79a7eb55cfef041e379162839"
+        },
+        {
+          "path": "references/icons.md",
+          "bytes": 5849,
+          "sha256": "2c0622d8a3f61626a72fa7829d3044f3391cbd8ca91806f4752926cf4e66be59"
+        },
+        {
+          "path": "references/media.md",
+          "bytes": 6229,
+          "sha256": "c964182dfbcaa5eef00b947e0425f5a39ee2cfc1b2a4e251ba51fc823e87b0dc"
+        },
+        {
+          "path": "references/storage.md",
+          "bytes": 2935,
+          "sha256": "265e8bc21adcd698062f18fa442e0e07e99e67868576f18aac2112e5381ffbf1"
+        },
+        {
+          "path": "references/visual-effects.md",
+          "bytes": 5201,
+          "sha256": "dcdcaa5e0bf5c20341455e39d91312ca5f3034391908f77eb2e577044283adcc"
+        },
+        {
+          "path": "references/webgpu-three.md",
+          "bytes": 14466,
+          "sha256": "3a247a7740e4bab4aea5dec8b81c7782a5918bb221838a05f6a94c669f145679"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "LICENSE",
+          "gitBlob": "548fbcb6e0cc27e99b2cd341feb421a67eafdd2f",
+          "mode": "100644",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/agents/openai.yaml",
+          "gitBlob": "b41117eac0d64ecd7da917e692d62eb127b18ebc",
+          "mode": "100644",
+          "bytes": 408,
+          "sha256": "90bf5d66b1038913fea37bd6d57292eb6ecd0e0ee3b2bc3e283facc033f4b2b0"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/controls.md",
+          "gitBlob": "05865bde831d647faae39fb3a8960bdc119f1b4f",
+          "mode": "100644",
+          "bytes": 5018,
+          "sha256": "6ec427731a65ffd66b745733665bb2c00992750c7d3710893d1bbf70b427d541"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/gradients.md",
+          "gitBlob": "329600dc1d3c683dcc15b29ee7bc61e112acb6a6",
+          "mode": "100644",
+          "bytes": 2717,
+          "sha256": "63ced0392f67c41bf90e726613d139a389db609799bfcb91124e6e69b9a66e70"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/icons.md",
+          "gitBlob": "d23ac8f14586a2539993b645561e37e39393de3e",
+          "mode": "100644",
+          "bytes": 5849,
+          "sha256": "2c0622d8a3f61626a72fa7829d3044f3391cbd8ca91806f4752926cf4e66be59"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/media.md",
+          "gitBlob": "65813b4e20c6f532cd55c93a411471b887d7be24",
+          "mode": "100644",
+          "bytes": 6229,
+          "sha256": "c964182dfbcaa5eef00b947e0425f5a39ee2cfc1b2a4e251ba51fc823e87b0dc"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/storage.md",
+          "gitBlob": "c084f121367b6e9a6393af7f8c10b9247ccde108",
+          "mode": "100644",
+          "bytes": 2935,
+          "sha256": "265e8bc21adcd698062f18fa442e0e07e99e67868576f18aac2112e5381ffbf1"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/visual-effects.md",
+          "gitBlob": "fdf312a6c81979df0e9cd14df88c3f22d2e4e3c7",
+          "mode": "100644",
+          "bytes": 5201,
+          "sha256": "dcdcaa5e0bf5c20341455e39d91312ca5f3034391908f77eb2e577044283adcc"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/references/webgpu-three.md",
+          "gitBlob": "58b5ce8046255f2c729b338da837a7e18804c356",
+          "mode": "100644",
+          "bytes": 14466,
+          "sha256": "3a247a7740e4bab4aea5dec8b81c7782a5918bb221838a05f6a94c669f145679"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-native-ui/SKILL.md",
+          "gitBlob": "6e79ecc3481f0396155dba52db642452612054bb",
+          "mode": "100644",
+          "bytes": 12557,
+          "sha256": "f6f92e12c7ba5e6cd7e731734286ae707adda873227c563ceb2d0f9ac5037107"
+        }
+      ],
+      "adaptedTreeSha256": "048b96cde6782a8ff21a95348b9e9ce1227171df4696924f4bbb5f4c3f2a369f",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "f6f92e12c7ba5e6cd7e731734286ae707adda873227c563ceb2d0f9ac5037107",
+      "adaptedEntrySha256": "dc8f8ac22fd63ac19835918ddd07a3525270c9900b778531f7497a23d3da5ce8"
+    },
+    {
+      "id": "expo-data-fetching",
+      "repo": "expo/skills",
+      "source": "plugins/expo/skills/expo-data-fetching",
+      "profiles": [
+        "mobile"
+      ],
+      "selected": false,
+      "condition": "api-planned",
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "additionalLicensePath": null,
+      "adaptations": [
+        "Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.",
+        "Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.",
+        "NativeWind conservé, respecter les conventions et composants présents.",
+        "Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme."
+      ],
+      "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+      "commitDate": "2026-10-02T10:45:26Z",
+      "upstreamVersion": "1.0.0",
+      "upstreamUrl": "https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-data-fetching",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 909,
+          "sha256": "2c002e710329990e13f11f794589584096ab65135c3f87420e8407072fb58812"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 832,
+          "sha256": "a6a998fbbd2e9817208e61e19aa396250044888d803ddb0ad08d1531a2155389"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1881,
+          "sha256": "4d0065760e21441cacec58a15c4a2a02647eafad66977896b25b82e7191cfb36"
+        },
+        {
+          "path": "references/expo-router-loaders.md",
+          "bytes": 9839,
+          "sha256": "60690a3eec6deb2caf3763842e95472d576ab7b01bb18bb1abac10fb80ac18fb"
+        },
+        {
+          "path": "references/guide-common-issues-solutions.md",
+          "bytes": 7460,
+          "sha256": "b6f03eb7990ae620fbfe9c76535d63101d52edcb3359e64334e099709b117b59"
+        },
+        {
+          "path": "references/guide-common-mistakes.md",
+          "bytes": 515,
+          "sha256": "b9cbaa958b152bb78d343a815b84137e79b00eadde94ede5b69de0dffa8ba245"
+        },
+        {
+          "path": "references/guide-decision-tree.md",
+          "bytes": 1205,
+          "sha256": "f466e60083c67d104f4cb9a7b999e4757d58ff06544f61720809046f782e617e"
+        },
+        {
+          "path": "references/guide-every-screen-has-four-states.md",
+          "bytes": 1775,
+          "sha256": "43a6a023b58953d1f61058f3a04d4a10be2281d9d3880d864e59cbaa5a041068"
+        },
+        {
+          "path": "references/guide-example-invocations.md",
+          "bytes": 949,
+          "sha256": "9cd48ed985deeb8bf43d6aba342ff1b6d3e3fc48b9eeeaa73cfe0d41640fdc11"
+        },
+        {
+          "path": "references/guide-preferences.md",
+          "bytes": 50,
+          "sha256": "7c3fd8e414ccf5cf326af2e0c014a3502c007be8917e7efae956d0ea92b51b7a"
+        },
+        {
+          "path": "references/guide-when-to-use.md",
+          "bytes": 352,
+          "sha256": "ac94d6da859a7004905dd6a920e2e8fc7c6599ba02f31a37338cf6e2d84425b9"
+        },
+        {
+          "path": "references/offline-and-cancellation.md",
+          "bytes": 1400,
+          "sha256": "750f7f25acc4e6143a6ff4daacffbcd5daf64370540a75e7b3a4f3b4b1aa462c"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "LICENSE",
+          "gitBlob": "548fbcb6e0cc27e99b2cd341feb421a67eafdd2f",
+          "mode": "100644",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-data-fetching/agents/openai.yaml",
+          "gitBlob": "8e942bcb6aeb4bf8f65ec3cee999409e51396a62",
+          "mode": "100644",
+          "bytes": 421,
+          "sha256": "50254d420a1db8e631ee24aaf8463708a525049059ac391b0d219dce8ce82e0a"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-data-fetching/references/expo-router-loaders.md",
+          "gitBlob": "ca3942c4e1291f1cf9c65dc1a1762fef71280056",
+          "mode": "100644",
+          "bytes": 9838,
+          "sha256": "f842c86483a15380c44a4b49db27bf3d41e17b48b1f44b9a2bbacc563a9dcbe6"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-data-fetching/references/offline-and-cancellation.md",
+          "gitBlob": "596bbed6853e31fa0fbb777542bbd3463a45a9c8",
+          "mode": "100644",
+          "bytes": 1400,
+          "sha256": "750f7f25acc4e6143a6ff4daacffbcd5daf64370540a75e7b3a4f3b4b1aa462c"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-data-fetching/SKILL.md",
+          "gitBlob": "f677911a7edf2cb6f4e2a0bc373842b5760092dd",
+          "mode": "100644",
+          "bytes": 13615,
+          "sha256": "30cbf20ce56f4acf3adb5ff44d94509174b40d1612481c94a48f874d5d2bdd21"
+        }
+      ],
+      "adaptedTreeSha256": "04b89b48d911777dee590039e2326890e0ec2a9dfcaaf698a1d7fc2cae88e648",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "30cbf20ce56f4acf3adb5ff44d94509174b40d1612481c94a48f874d5d2bdd21",
+      "adaptedEntrySha256": "4d0065760e21441cacec58a15c4a2a02647eafad66977896b25b82e7191cfb36"
+    },
+    {
+      "id": "expo-animation",
+      "repo": "expo/skills",
+      "source": "plugins/expo/skills/expo-animation",
+      "profiles": [
+        "mobile"
+      ],
+      "selected": false,
+      "condition": "advanced-animations",
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "additionalLicensePath": "plugins/expo/skills/expo-animation/LICENSE",
+      "adaptations": [
+        "Entrée courte et chapitres ciblés, versions Expo SDK 57 uniquement.",
+        "Supprimer le feedback automatique, les skills obligatoires non installés et les ajouts forcés de bibliothèques.",
+        "NativeWind conservé, respecter les conventions et composants présents.",
+        "Exemples de service payant remplacés par endpoints fictifs neutres ; recommandations selon besoin et plateforme."
+      ],
+      "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+      "commitDate": "2026-10-02T10:45:26Z",
+      "upstreamVersion": "1.0.0",
+      "upstreamUrl": "https://github.com/expo/skills/tree/13ad8e05874195633b5c185f6947bb6400e228fc/plugins/expo/skills/expo-animation",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1070,
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+        },
+        {
+          "path": "LICENSE.upstream-repository",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 905,
+          "sha256": "b31caf389ad0fd6721e036cc5c9920a5e8eca93aa0154832bf8d57a0acb825d7"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 820,
+          "sha256": "0c44cee04200a49ed748747cd44b3599e170c4d1336266f1fe014390cd89f7ae"
+        },
+        {
+          "path": "RECIPES.md",
+          "bytes": 16822,
+          "sha256": "4db141cb346d49231c94a95aaa50844b85a71c47ec543e9f9f5a1f453abc9883"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1913,
+          "sha256": "5a728922110524d09fa4db3986433ae987be07297048414a23f58459d1ecd72f"
+        },
+        {
+          "path": "references/guide-120fps.md",
+          "bytes": 433,
+          "sha256": "5bcf2e309e7881f3ff932156a610acc872acfa158b042675f5e4ab79f044a758"
+        },
+        {
+          "path": "references/guide-hard-rules.md",
+          "bytes": 606,
+          "sha256": "f5d12b9b688844d8e1c7d86140a91bbddc634b0a27ea5ee5b514945e74ca2a7c"
+        },
+        {
+          "path": "references/guide-never-ship.md",
+          "bytes": 1493,
+          "sha256": "6d7b5265f7ae65e2a712a95f61e4e1e533c3c73058dee113d239485f246d6db7"
+        },
+        {
+          "path": "references/guide-operating-posture.md",
+          "bytes": 556,
+          "sha256": "15e612facc352f0db0f4b85caec5a07a88869fa321bdec5e5fd5b2ce5641ff94"
+        },
+        {
+          "path": "references/guide-output.md",
+          "bytes": 505,
+          "sha256": "f1cf845cca13f84bb4ffd68b7570cd90b9e291272f86aa3a2353ec73b96263c2"
+        },
+        {
+          "path": "references/guide-recipes.md",
+          "bytes": 329,
+          "sha256": "81842fc0eae0f438178e7781bb6dd820dcb7746ef459608c30b821e30bef5bb0"
+        },
+        {
+          "path": "references/guide-setup-that-silently-breaks-motion.md",
+          "bytes": 860,
+          "sha256": "949b714a550e7aa03dca789ace3a82e8cb4ef8a9ab1e740f64b5c15be42da160"
+        },
+        {
+          "path": "references/guide-the-build-sequence.md",
+          "bytes": 11653,
+          "sha256": "93e3a286bc4aa184cec2072eea2db97536c5a16d22666cfc25f5af0e1d3d1bfc"
+        },
+        {
+          "path": "references/guide-tone.md",
+          "bytes": 161,
+          "sha256": "165a606928f50a9f5daaa35731f404fd2da04eaa99e07f264cb2a2fc34466beb"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "LICENSE",
+          "gitBlob": "548fbcb6e0cc27e99b2cd341feb421a67eafdd2f",
+          "mode": "100644",
+          "bytes": 1106,
+          "sha256": "49c5f9c7097c9a940ff663a54c27a4c60e379df6cc2b3052df0d37a09a85df93"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-animation/agents/openai.yaml",
+          "gitBlob": "312c925934e07a3781d1d0c9e196efe2f96f0603",
+          "mode": "100644",
+          "bytes": 216,
+          "sha256": "7667e1a159300ee640ffb6ed4f81281dfdc0e3a789d4f3e5179c32ab3565795a"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-animation/LICENSE",
+          "gitBlob": "57b46f1fd11dc62351ea548104a88aa3f659c11b",
+          "mode": "100644",
+          "bytes": 1070,
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-animation/RECIPES.md",
+          "gitBlob": "92c64f12cd118df764499466eb0315b233a52c76",
+          "mode": "100644",
+          "bytes": 16822,
+          "sha256": "4db141cb346d49231c94a95aaa50844b85a71c47ec543e9f9f5a1f453abc9883"
+        },
+        {
+          "repo": "expo/skills",
+          "revision": "13ad8e05874195633b5c185f6947bb6400e228fc",
+          "path": "plugins/expo/skills/expo-animation/SKILL.md",
+          "gitBlob": "aa7a5d395f8326040adcbe69211307c6700fe28f",
+          "mode": "100644",
+          "bytes": 18967,
+          "sha256": "915279236d5ff74ad1ca6004d13917ba9792853c28e5e10cfec4e0884bcc3ebf"
+        }
+      ],
+      "adaptedTreeSha256": "c77f2e631812dddf085c2c9f5550accbc63b0192fc8f786a72b8a5f082b5982e",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "915279236d5ff74ad1ca6004d13917ba9792853c28e5e10cfec4e0884bcc3ebf",
+      "adaptedEntrySha256": "5a728922110524d09fa4db3986433ae987be07297048414a23f58459d1ecd72f"
+    },
+    {
+      "id": "security-best-practices",
+      "repo": "openai/skills",
+      "source": "skills/.curated/security-best-practices",
+      "profiles": [
+        "web-api",
+        "desktop",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "Apache-2.0",
+      "licensePath": "skills/.curated/security-best-practices/LICENSE.txt",
+      "adaptations": [
+        "Conserver le déclenchement sécurité explicite et les langages supportés.",
+        "Clarifier limite : aucune référence spécialisée NestJS, PHP, Electron ou React Native.",
+        "Charger seulement les références applicables ; aucune promesse d’audit exhaustif."
+      ],
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
+      "commitDate": "2026-06-24T02:36:12Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10776,
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 799,
+          "sha256": "a717f353a9b05595fda0b6e655345bf06cb0152a8511e2dfa8b6e44f7f50ea5e"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 725,
+          "sha256": "98e0534df555006f789060eec01d0e5a4f855cb8c7e8197beaa541a9a7d2e07b"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 8690,
+          "sha256": "6b846414ae959304be148912c8c54195afca62ea9945cba79de9988fbaec8c38"
+        },
+        {
+          "path": "references/golang-general-backend-security.md",
+          "bytes": 38659,
+          "sha256": "a73c47c34497b120672d48411fe51dc90d426a571801a0b3f649e2ce4ec658b4"
+        },
+        {
+          "path": "references/javascript-express-web-server-security.md",
+          "bytes": 49357,
+          "sha256": "427835cbb5be7ba96172ea6ca9af80ddd4419c833e9ebf870996740c80d8406c"
+        },
+        {
+          "path": "references/javascript-general-web-frontend-security.md",
+          "bytes": 38638,
+          "sha256": "3a7bc7b3f6e7ff043db9dbaa8933894d7a19d987d0607e4ddae5d70184a63d63"
+        },
+        {
+          "path": "references/javascript-jquery-web-frontend-security.md",
+          "bytes": 33581,
+          "sha256": "bcbad2fa6c2a02709e47e889e70102c76886bf36bc798624d27db570eccf40da"
+        },
+        {
+          "path": "references/javascript-typescript-nextjs-web-server-security.md",
+          "bytes": 43423,
+          "sha256": "71c773f7a97ce60c853adfa100b3d88b3b7bc4c6b8acaef1432ffabd923ee182"
+        },
+        {
+          "path": "references/javascript-typescript-react-web-frontend-security.md",
+          "bytes": 41686,
+          "sha256": "d3030c0f24bddb56b9bbb91bbec1ee49eb7778bce4d3e0297b2641b2fc6b0d9c"
+        },
+        {
+          "path": "references/javascript-typescript-vue-web-frontend-security.md",
+          "bytes": 31445,
+          "sha256": "77c6a747f9f17e3df03aad0fcb20d99ac7898001b81aef8b80908e45ac14a688"
+        },
+        {
+          "path": "references/python-django-web-server-security.md",
+          "bytes": 38661,
+          "sha256": "4fb69b5d45f10e588d1a8c35cdc5f59e18910f6b46a93e2d342d90f286f8dfd2"
+        },
+        {
+          "path": "references/python-fastapi-web-server-security.md",
+          "bytes": 44926,
+          "sha256": "7383c7f4fc271190b05e562ada7e825982a2c76b6c79a9f95a1da7687b65a616"
+        },
+        {
+          "path": "references/python-flask-web-server-security.md",
+          "bytes": 31748,
+          "sha256": "9606d69190c04c167fdeac57e61297547a57b0542fd89dede36f355970446929"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/agents/openai.yaml",
+          "gitBlob": "1721736a914e6ce41da2e0e005f6a8e782f2e642",
+          "mode": "100644",
+          "bytes": 237,
+          "sha256": "6e9c6f2edce448eb2b589f81ad6e3f722665021785513bcbfd0bf7b86b529171"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/LICENSE.txt",
+          "gitBlob": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352",
+          "mode": "100644",
+          "bytes": 10776,
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/golang-general-backend-security.md",
+          "gitBlob": "85e9c6a1669e0d04af56c9a0bce113dd35e0248d",
+          "mode": "100644",
+          "bytes": 38659,
+          "sha256": "a73c47c34497b120672d48411fe51dc90d426a571801a0b3f649e2ce4ec658b4"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/javascript-express-web-server-security.md",
+          "gitBlob": "98d79067ffb784ce426394193e744ddc7f3c93be",
+          "mode": "100644",
+          "bytes": 49357,
+          "sha256": "427835cbb5be7ba96172ea6ca9af80ddd4419c833e9ebf870996740c80d8406c"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/javascript-general-web-frontend-security.md",
+          "gitBlob": "d8b696f363ea54661791c048ba19a57933d20825",
+          "mode": "100644",
+          "bytes": 38638,
+          "sha256": "3a7bc7b3f6e7ff043db9dbaa8933894d7a19d987d0607e4ddae5d70184a63d63"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/javascript-jquery-web-frontend-security.md",
+          "gitBlob": "3fd00db430ed55fafe50112b8d8b751fe82deec1",
+          "mode": "100644",
+          "bytes": 33581,
+          "sha256": "bcbad2fa6c2a02709e47e889e70102c76886bf36bc798624d27db570eccf40da"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/javascript-typescript-nextjs-web-server-security.md",
+          "gitBlob": "44cc8213b11feda2eac8283dfd6a11fe93a68965",
+          "mode": "100644",
+          "bytes": 43423,
+          "sha256": "71c773f7a97ce60c853adfa100b3d88b3b7bc4c6b8acaef1432ffabd923ee182"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/javascript-typescript-react-web-frontend-security.md",
+          "gitBlob": "33fb693282a40754a081a499cda3d471aa23da28",
+          "mode": "100644",
+          "bytes": 41686,
+          "sha256": "d3030c0f24bddb56b9bbb91bbec1ee49eb7778bce4d3e0297b2641b2fc6b0d9c"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/javascript-typescript-vue-web-frontend-security.md",
+          "gitBlob": "be326548bf953b6d1918727d228449ab4cb5110d",
+          "mode": "100644",
+          "bytes": 31445,
+          "sha256": "77c6a747f9f17e3df03aad0fcb20d99ac7898001b81aef8b80908e45ac14a688"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/python-django-web-server-security.md",
+          "gitBlob": "0b9a89a73e0ff3a88ccb7837b56ad1a5f15259e0",
+          "mode": "100644",
+          "bytes": 38661,
+          "sha256": "4fb69b5d45f10e588d1a8c35cdc5f59e18910f6b46a93e2d342d90f286f8dfd2"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/python-fastapi-web-server-security.md",
+          "gitBlob": "d394a55bb86b3b2e5c2b73e65cb115a2a0ce1c05",
+          "mode": "100644",
+          "bytes": 44926,
+          "sha256": "7383c7f4fc271190b05e562ada7e825982a2c76b6c79a9f95a1da7687b65a616"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/references/python-flask-web-server-security.md",
+          "gitBlob": "adbc599aad8688a3446f5b595a1f4f0c1eac942f",
+          "mode": "100644",
+          "bytes": 31748,
+          "sha256": "9606d69190c04c167fdeac57e61297547a57b0542fd89dede36f355970446929"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-best-practices/SKILL.md",
+          "gitBlob": "45ccbd8d671c4c4cc3e7e0645a16a3f80ec50de7",
+          "mode": "100644",
+          "bytes": 8612,
+          "sha256": "7b3dae1ffc5434d890f3c65c8f552af52d0307fab3b35dec13013c9ca3844c4f"
+        }
+      ],
+      "adaptedTreeSha256": "f893431e7f518179c5ba66a40c19df4bf8ac4491d4ca751a99413b9a90767834",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "7b3dae1ffc5434d890f3c65c8f552af52d0307fab3b35dec13013c9ca3844c4f",
+      "adaptedEntrySha256": "6b846414ae959304be148912c8c54195afca62ea9945cba79de9988fbaec8c38"
+    },
+    {
+      "id": "security-threat-model",
+      "repo": "openai/skills",
+      "source": "skills/.curated/security-threat-model",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": false,
+      "license": "Apache-2.0",
+      "licensePath": "skills/.curated/security-threat-model/LICENSE.txt",
+      "adaptations": [
+        "Conserver workflow et validation des hypothèses avec utilisateur.",
+        "Description courte ; déclenchement sur demande explicite."
+      ],
+      "revision": "49f948faa9258a0c61caceaf225e179651397431",
+      "commitDate": "2026-06-24T02:36:12Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model",
+      "preparedAt": "2026-10-04",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10776,
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 667,
+          "sha256": "1172c82d551dcd1bcbe0693a12cec32a3d80e56c7fccda9c34081f0051f5147c"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 584,
+          "sha256": "a0548c515276fa2b49b57364230b3b69032200982819d8a462491f51df1c5945"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 5659,
+          "sha256": "a72cdf71d88a1cbb5a4328a50de8cef71fc7983c7bcae8a70f813a55ec91bcca"
+        },
+        {
+          "path": "references/prompt-template.md",
+          "bytes": 12642,
+          "sha256": "81a59aa3fb3ac3a739d6a26ab38e4015965f215581ee54becef21a2b121ec29b"
+        },
+        {
+          "path": "references/security-controls-and-assets.md",
+          "bytes": 1680,
+          "sha256": "d536cfa9acad2523dc39134bcf33b9566c29dd9a57b407cbc9901637230c6b98"
+        }
+      ],
+      "upstreamFiles": [
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-threat-model/agents/openai.yaml",
+          "gitBlob": "d8b04e20a62688188f19bd396ae6b923841ddf8e",
+          "mode": "100644",
+          "bytes": 254,
+          "sha256": "3319b59736312abceca614e341c0e59cae47263e3b58a22b2b5ddf1e5fc8c227"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-threat-model/LICENSE.txt",
+          "gitBlob": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352",
+          "mode": "100644",
+          "bytes": 10776,
+          "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-threat-model/references/prompt-template.md",
+          "gitBlob": "b6affb0d2f873ffe398f7a8df00095dc0ff01f59",
+          "mode": "100644",
+          "bytes": 12642,
+          "sha256": "81a59aa3fb3ac3a739d6a26ab38e4015965f215581ee54becef21a2b121ec29b"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-threat-model/references/security-controls-and-assets.md",
+          "gitBlob": "63d1455aeacfc97eaca4e371040dbadfbd791635",
+          "mode": "100644",
+          "bytes": 1680,
+          "sha256": "d536cfa9acad2523dc39134bcf33b9566c29dd9a57b407cbc9901637230c6b98"
+        },
+        {
+          "repo": "openai/skills",
+          "revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "path": "skills/.curated/security-threat-model/SKILL.md",
+          "gitBlob": "abd3c1c95d49c4e0e0664f198f4bf168c6291aec",
+          "mode": "100644",
+          "bytes": 5561,
+          "sha256": "1283c0dd62a8104d9edda4583569b5d8510b4ddaa45120687c999250fd96bad2"
+        }
+      ],
+      "adaptedTreeSha256": "4e6ba9c935512cabcdd3b57403a4414c1b4d3767c1bc993ef6bad483dbea5e56",
+      "executionStatus": "frontmatter/static review passed; Codex scenarios pending",
+      "adaptationVersion": 1,
+      "upstreamEntrySha256": "1283c0dd62a8104d9edda4583569b5d8510b4ddaa45120687c999250fd96bad2",
+      "adaptedEntrySha256": "a72cdf71d88a1cbb5a4328a50de8cef71fc7983c7bcae8a70f813a55ec91bcca"
+    },
+    {
+      "id": "motion",
+      "repo": "motiondivision/ai-kit",
+      "source": "plugins/motion/skills/motion",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop"
+      ],
+      "selected": false,
+      "condition": "advanced-animations",
+      "license": "MIT-declared",
+      "blocked": true,
+      "adaptations": [
+        "Distribuer seulement best-practices gratuits, sans Motion+ ni MCP payant.",
+        "Router React ou JavaScript/Blade selon le profil ; bibliothèques déjà choisies."
+      ],
+      "reason": "MIT annoncé dans la documentation et package.json, mais LICENSE/NOTICE complet absent à la révision. Redistribution suspendue.",
+      "revision": "d1c5c26f424adfd47c112d894e9d424b57338c7e",
+      "commitDate": "2026-09-25T08:55:41Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/motiondivision/ai-kit/tree/d1c5c26f424adfd47c112d894e9d424b57338c7e/plugins/motion/skills/motion",
+      "entrySha256": "dd5f8b02216bc52b073d02d718100a44d04b76d99465579c8e3e6ae6288057d9",
+      "preparedAt": "2026-10-04",
+      "status": "blocked-redistribution",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "files": []
+    },
+    {
+      "id": "frontend-a11y",
+      "repo": "affaan-m/ECC",
+      "source": "skills/frontend-a11y",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "commitDate": "2026-10-02T02:01:14Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/affaan-m/ECC/tree/ef648e01899ba3e8dc6371642deaaf64b4477775/skills/frontend-a11y",
+      "preparedAt": "2026-10-05",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "adaptationVersion": 1,
+      "adaptations": [
+        "Entrée web concise, React/Blade/renderer ; aucun déclencheur natif.",
+        "Référence ciblée par interaction ; retrait des exemples incomplets de combobox et de modal.",
+        "Validation statique, clavier, lecteur et navigateur distinguée ; aucun abonnement ni suite ECC imposés."
+      ],
+      "upstreamEntrySha256": "e00991a3f4d47fcf1529dd74a080afcf46137dc5061e70dc6e3da7b27f2ae3f3",
+      "executionStatus": "frontmatter/reference/resource checks passed; real Codex behavior pending",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1071,
+          "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 754,
+          "sha256": "87d7cde9d72220e01b952466be469b053dc3b936e0e596d290c769d4bdbfcae3"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 778,
+          "sha256": "a331747974d0a4286c22cc1d1127ad0c98c874811661af32127526b5a5a0f1c7"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1519,
+          "sha256": "67d72e948fc68f5eed1e0d9c0e4244d0fc207d6669a518e9a632d8114600af1e"
+        },
+        {
+          "path": "references/interactions.md",
+          "bytes": 1463,
+          "sha256": "0fdfc1ebee7b9e8844b62c2dc90c2213e6ccb361c42d14489867e347f6a30633"
+        }
+      ],
+      "adaptedEntrySha256": "67d72e948fc68f5eed1e0d9c0e4244d0fc207d6669a518e9a632d8114600af1e",
+      "adaptedTreeSha256": "b276c6d982408eb36d65ce2d355ca66aae29b5cadd21713a16157fe2efb0c723"
+    },
+    {
+      "id": "humanizer",
+      "repo": "blader/humanizer",
+      "source": "",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": true,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "revision": "225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "commitDate": "2026-09-28T05:54:38Z",
+      "upstreamVersion": "3.1.0",
+      "upstreamUrl": "https://github.com/blader/humanizer/tree/225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8",
+      "preparedAt": "2026-10-05",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "adaptationVersion": 1,
+      "adaptations": [
+        "Entrée de révision des textes du projet ; aucune transformation du code ou de ses identifiants.",
+        "Voix, faits, liens et placeholders protégés ; pas de démonstration brouillon/final obligatoire.",
+        "Suppression des prescriptions de style universelles et des promesses de détection IA."
+      ],
+      "upstreamEntrySha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+      "executionStatus": "frontmatter/reference/resource checks passed; real Codex behavior pending",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1066,
+          "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 750,
+          "sha256": "f38f3f37b02d9b8cf0e8dcd7c8099929dd5398229939d040380e7f119ee53d75"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 754,
+          "sha256": "46564fbeaccb5903bf13b13a8654e621bec54b39207444c7311b74cd5809c9ec"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1523,
+          "sha256": "02d66ad204251131c39eb384273547cb197c48d6ead049ae03df5e88cd482311"
+        },
+        {
+          "path": "references/prose.md",
+          "bytes": 1120,
+          "sha256": "429006a480d0dadec9994cd8dbb094bf68d20c1d7798b6c699694ec69ffed017"
+        }
+      ],
+      "adaptedEntrySha256": "02d66ad204251131c39eb384273547cb197c48d6ead049ae03df5e88cd482311",
+      "adaptedTreeSha256": "aba314109218ec1911e797a86eb8f772dc9aa39765e232739eb7619779b30c52"
+    },
+    {
+      "id": "diagram-design",
+      "repo": "cathrynlavery/diagram-design",
+      "source": "skills/diagram-design",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": false,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "revision": "cb80b0d299a5c0674e0d133d33f91f19af8cda0f",
+      "commitDate": "2026-10-05T04:11:13Z",
+      "upstreamVersion": "2.6",
+      "upstreamUrl": "https://github.com/cathrynlavery/diagram-design/tree/cb80b0d299a5c0674e0d133d33f91f19af8cda0f/skills/diagram-design",
+      "preparedAt": "2026-10-05",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "adaptationVersion": 1,
+      "adaptations": [
+        "Périmètre réduit et annoncé : architecture, flux, séquence, états et modèle de données.",
+        "Références de conception condensées ; pas de scripts, exporteurs, icônes, polices ou profils globaux amont embarqués.",
+        "Tokens du projet ; Mermaid pour diagramme simple, HTML/SVG local pour composition justifiée ; aucune obligation de personnalisation préalable."
+      ],
+      "upstreamEntrySha256": "a7f05d4349b1747c7c01044ba168307dc77a2c693f174449589a0b434fad9e84",
+      "executionStatus": "frontmatter/reference/resource checks passed; real Codex behavior pending",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1071,
+          "sha256": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 864,
+          "sha256": "b0132b58dadf253e0fdc61a9a249191e87227749638844337385bc68bb79d9a4"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 906,
+          "sha256": "392a300de03e9b18d624e931dcc604f2d4581e1ab15338000de365cd8685b3af"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1479,
+          "sha256": "3b1e0bcc0201283e7e10469ebfac26831627e15c2b24060e8935f0ed7132b2bb"
+        },
+        {
+          "path": "references/diagrams.md",
+          "bytes": 1423,
+          "sha256": "d1b2fb2d4b90311302878de528a9db9d1db84c709c11b19767631b387b600f2e"
+        }
+      ],
+      "adaptedEntrySha256": "3b1e0bcc0201283e7e10469ebfac26831627e15c2b24060e8935f0ed7132b2bb",
+      "adaptedTreeSha256": "f0335756e2c98738c61891ad0f3352f344ba5db0f97cf592c36486bfd4807a9c"
+    },
+    {
+      "id": "impeccable",
+      "repo": "pbakaus/impeccable",
+      "source": ".agents/skills/impeccable",
+      "profiles": [
+        "web-api",
+        "php",
+        "desktop",
+        "mobile"
+      ],
+      "selected": false,
+      "license": "Apache-2.0",
+      "licensePath": "LICENSE",
+      "revision": "ece38d9904b8a619b3f77cab476eacad09c4fb11",
+      "commitDate": "2026-10-05T02:51:24Z",
+      "upstreamVersion": "4.5.0",
+      "upstreamUrl": "https://github.com/pbakaus/impeccable/tree/ece38d9904b8a619b3f77cab476eacad09c4fb11/.agents/skills/impeccable",
+      "preparedAt": "2026-10-05",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "adaptationVersion": 1,
+      "adaptations": [
+        "Spécialisation en critique UI ciblée sur quatre profils, sans remplacer le pilote visuel.",
+        "Entrée et référence audit web amont examinées ; références de critique web/native rédigées pour Prométhée.",
+        "Moteur, hooks, génération payante, contexte PRODUCT/DESIGN concurrent et orchestration amont exclus.",
+        "Fichiers ios/android dérivés et leurs assets non copiés ; NOTICE.md amont conservé pour provenance."
+      ],
+      "upstreamEntrySha256": "e1a965737ca8255934bad358d5cfb8788ce013867910efd97d1daac68375e941",
+      "executionStatus": "frontmatter/reference/resource checks passed; real Codex behavior pending",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 10766,
+          "sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812"
+        },
+        {
+          "path": "NOTICE.md",
+          "bytes": 503,
+          "sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 919,
+          "sha256": "79be8756412df1f0d0d5c9c5a1f1b13bd47c7fc9182d1d7b9a8161b4d7f28cc7"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 956,
+          "sha256": "a34ec25bbd131a8db37d0314bbfe1ec7466a9f211b5e399715f962ea73d57963"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1753,
+          "sha256": "f2a61fb70cecc47682f08cf44f8dfd751d363d761e06b195f5f06dfd3857c6a2"
+        },
+        {
+          "path": "references/native.md",
+          "bytes": 1095,
+          "sha256": "73879dc06d0514da8dff9e4a403cf16a49dcb034e6d5016580612d12a8f4c088"
+        },
+        {
+          "path": "references/web.md",
+          "bytes": 905,
+          "sha256": "40c80b5a9e36639f463fe0907cf964d0755371244f2482449cd413b8963beddc"
+        }
+      ],
+      "adaptedEntrySha256": "f2a61fb70cecc47682f08cf44f8dfd751d363d761e06b195f5f06dfd3857c6a2",
+      "adaptedTreeSha256": "4eecccde7bb62bddd53e316d660eb67a38db0dc376d31edae00eb612be814ca5"
+    },
+    {
+      "id": "gpt-taste",
+      "repo": "Leonxlnx/taste-skill",
+      "source": "skills/gpt-tasteskill",
+      "profiles": [
+        "web-api",
+        "php"
+      ],
+      "selected": false,
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "revision": "ce26fc25c0e5e8cab638f883de62d9a86ee5e45b",
+      "commitDate": "2026-09-26T09:01:50Z",
+      "upstreamVersion": null,
+      "upstreamUrl": "https://github.com/Leonxlnx/taste-skill/tree/ce26fc25c0e5e8cab638f883de62d9a86ee5e45b/skills/gpt-tasteskill",
+      "preparedAt": "2026-10-05",
+      "status": "adapted-static-qualified",
+      "paidDependencyRequired": false,
+      "runtimeDependencies": [],
+      "adaptationVersion": 1,
+      "adaptations": [
+        "Adaptation importante : direction éditoriale avancée limitée aux zones web choisies.",
+        "Suppression du faux Python/randomisation, de AIDA et GSAP universels, de l’interdiction du statique et des photos distantes imposées.",
+        "GSAP seulement avec option éditoriale et bibliothèque qualifiée ; Motion garde les interactions ordinaires.",
+        "Typographie, séquences et contraste adaptés au brief ; contenu statique utilisable et reduced motion préservés."
+      ],
+      "upstreamEntrySha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+      "executionStatus": "frontmatter/reference/resource checks passed; real Codex behavior pending",
+      "files": [
+        {
+          "path": "LICENSE",
+          "bytes": 1065,
+          "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+        },
+        {
+          "path": "NOTICE.promethee",
+          "bytes": 946,
+          "sha256": "a9652a1320479fbd43177e04a23ee13a303a3f635add25c041e11ee655638471"
+        },
+        {
+          "path": "PROMETHEE-SOURCE.json",
+          "bytes": 980,
+          "sha256": "61150ce2b020b44f7d0c09de105e64addfd2e0937d2933be96f22a69c497b60d"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 1569,
+          "sha256": "669868bbe3bd7f47767069bd1d810483382b12c2c46da02bde86e81088daf8ea"
+        },
+        {
+          "path": "references/editorial-motion.md",
+          "bytes": 1361,
+          "sha256": "487402bff496af3455497c8090187872cd63a5a191e3184b51132c1a8a071426"
+        }
+      ],
+      "adaptedEntrySha256": "669868bbe3bd7f47767069bd1d810483382b12c2c46da02bde86e81088daf8ea",
+      "adaptedTreeSha256": "aa28e1691510d6d4808bc0be03156338ae73b4e57beb294c2c4182c34bd7370d"
+    }
+  ],
+  "finalizedAt": "2026-10-05",
+  "preparationVersion": "0.2.0"
+}

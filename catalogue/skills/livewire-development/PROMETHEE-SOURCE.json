@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "livewire-development",
+  "repository": "laravel/boost",
+  "revision": "97b8da0cb8c2c1da75531a36e34adaa313a64afc",
+  "source": ".ai/livewire/4/skill/livewire-development",
+  "upstreamUrl": "https://github.com/laravel/boost/tree/97b8da0cb8c2c1da75531a36e34adaa313a64afc/.ai/livewire/4/skill/livewire-development",
+  "license": "MIT",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Rendre les variables GuidelineAssist pour php artisan et app/ ; snippets convertis en clôtures Markdown.",
+    "Documentation officielle Livewire 4, pas de MCP Boost requis.",
+    "Alpine fourni par Livewire : pas de double instance."
+  ]
+}

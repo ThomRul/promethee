@@ -1,0 +1,12 @@
+Adaptation Prométhée V0.2, révision 1 — 2026-10-05
+
+Source : https://github.com/cathrynlavery/diagram-design/tree/cb80b0d299a5c0674e0d133d33f91f19af8cda0f/skills/diagram-design
+Révision : cb80b0d299a5c0674e0d133d33f91f19af8cda0f
+Licence amont : MIT, licence complète conservée.
+
+Modifications :
+- Périmètre réduit et annoncé : architecture, flux, séquence, états et modèle de données.
+- Références de conception condensées ; pas de scripts, exporteurs, icônes, polices ou profils globaux amont embarqués.
+- Tokens du projet ; Mermaid pour diagramme simple, HTML/SVG local pour composition justifiée ; aucune obligation de personnalisation préalable.
+
+Références condensées/rédigées pour Prométhée ; outils et assets amont non distribués. Adaptation indépendante, pas une release officielle amont. Aucun appel externe payant requis.

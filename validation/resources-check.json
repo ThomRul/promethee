@@ -1,0 +1,1476 @@
+{
+  "json": [
+    {
+      "path": "branding/promethee-main-feu-console-compacte-v1.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/frameworks.lock.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/initial-selection.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/laravel-skeleton-files.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/livewire-development/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/security-best-practices/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/security-threat-model/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/stop-design-slop/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/supabase-postgres-best-practices/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/systematic-debugging/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/data/catalog-summary.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/data/data-provenance.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/data/google-font-licenses.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/verification-before-completion/PROMETHEE-SOURCE.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills.lock.json",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/manifest.example.json",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/manifest.example.json",
+      "passed": true
+    },
+    {
+      "path": "examples/php/manifest.example.json",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/manifest.example.json",
+      "passed": true
+    },
+    {
+      "path": "templates/manifest.schema.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/desktop/.prettierrc.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/desktop/components.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/desktop/package-lock.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/desktop/package.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/desktop/tsconfig.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/mobile/.prettierrc.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/mobile/app.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/mobile/package-lock.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/mobile/package.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/mobile/tsconfig.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/php/.prettierrc.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/php/composer.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/php/package-lock.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/php/package.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/php/pint.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/backend/.prettierrc.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/backend/package-lock.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/backend/package.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/backend/tsconfig.build.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/backend/tsconfig.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/frontend/.prettierrc.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/frontend/components.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/frontend/package-lock.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/frontend/package.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles/web-api/frontend/tsconfig.json",
+      "passed": true
+    },
+    {
+      "path": "templates/profiles.json",
+      "passed": true
+    },
+    {
+      "path": "validation/anti-slop-qualification.json",
+      "passed": true
+    },
+    {
+      "path": "validation/api-compiled-http.json",
+      "passed": true
+    },
+    {
+      "path": "validation/final-quality.json",
+      "passed": true
+    },
+    {
+      "path": "validation/fixture-checks-web-api-frontend-web-api-backend-desktop-php.json",
+      "passed": true
+    },
+    {
+      "path": "validation/mobile-checks.json",
+      "passed": true
+    },
+    {
+      "path": "validation/mobile-install-corrected.json",
+      "passed": true
+    },
+    {
+      "path": "validation/mobile-types.json",
+      "passed": true
+    },
+    {
+      "path": "validation/npm-fixtures.json",
+      "passed": true
+    },
+    {
+      "path": "validation/npm-resolution.json",
+      "passed": true
+    },
+    {
+      "path": "validation/options-resolution.json",
+      "passed": true
+    },
+    {
+      "path": "validation/php-checks.json",
+      "passed": true
+    },
+    {
+      "path": "validation/rendered-documents.json",
+      "passed": true
+    },
+    {
+      "path": "validation/resources-check.json",
+      "passed": true
+    },
+    {
+      "path": "validation/skills-check.json",
+      "passed": true
+    },
+    {
+      "path": "validation/template-format.json",
+      "passed": true
+    },
+    {
+      "path": "validation/template-smoke.json",
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "path": "BOOTSTRAP.md",
+      "target": "SERVICES.md",
+      "passed": true
+    },
+    {
+      "path": "BOOTSTRAP.md",
+      "target": "validation/SCENARIOS.md",
+      "passed": true
+    },
+    {
+      "path": "BOOTSTRAP.md",
+      "target": "validation/RESULTATS.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/COMPATIBILITY.md",
+      "target": "initial-selection.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/COMPATIBILITY.md",
+      "target": "skills.lock.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/COMPATIBILITY.md",
+      "target": "QUALIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/QUALIFICATION.md",
+      "target": "COMPATIBILITY.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/QUALIFICATION.md",
+      "target": "initial-selection.json",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/references/guide-recipes.md",
+      "target": "../RECIPES.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-operating-posture.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-hard-rules.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-the-build-sequence.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-setup-that-silently-breaks-motion.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-120fps.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-recipes.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-never-ship.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-output.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-animation/SKILL.md",
+      "target": "references/guide-tone.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/references/guide-common-issues-solutions.md",
+      "target": "offline-and-cancellation.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/references/guide-common-issues-solutions.md",
+      "target": "offline-and-cancellation.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-when-to-use.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-preferences.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-every-screen-has-four-states.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-common-issues-solutions.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-decision-tree.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-common-mistakes.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-data-fetching/SKILL.md",
+      "target": "references/guide-example-invocations.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-adopt-before-you-build.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-the-theme.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-reusable-components.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-where-decisions-live.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-self-critique-pass.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-named-failures-native-slop.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-design-system/SKILL.md",
+      "target": "references/guide-auditing-an-existing-app.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-running-the-app.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-code-style.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-library-preferences.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-responsiveness.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-behavior.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-general-styling-rules.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-colors.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-text-styling.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-native-ui/SKILL.md",
+      "target": "references/guide-shadows.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-code-style.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-routes.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-library-preferences.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-behavior.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-link.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-stack.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-context-menus.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-link-previews.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-modal.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-sheet.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/expo-router/SKILL.md",
+      "target": "references/guide-common-route-structure.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/db-performance.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/advanced-queries.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/eloquent.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/security.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/validation.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/routing.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/migrations.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/queue-jobs.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/caching.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/http-client.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/error-handling.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/events-notifications.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/mail.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/scheduling.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/collections.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/blade-views.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/config.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/style.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/laravel-best-practices/SKILL.md",
+      "target": "rules/architecture.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/livewire-development/references/guide.md",
+      "target": "../reference/javascript-hooks.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/livewire-development/SKILL.md",
+      "target": "references/guide.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/livewire-development/SKILL.md",
+      "target": "reference/javascript-hooks.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/stop-design-slop/SKILL.md",
+      "target": "references/direction.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/stop-design-slop/SKILL.md",
+      "target": "references/clean.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/supabase-postgres-best-practices/SKILL.md",
+      "target": "references/_sections.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/systematic-debugging/SKILL.md",
+      "target": "references/root-cause-tracing.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/systematic-debugging/SKILL.md",
+      "target": "references/defense-in-depth.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/systematic-debugging/SKILL.md",
+      "target": "references/condition-based-waiting.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/SKILL.md",
+      "target": "references/quick-reference.md",
+      "passed": true
+    },
+    {
+      "path": "catalogue/skills/ui-ux-pro-max/SKILL.md",
+      "target": "references/pro-rules.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/AGENTS.md",
+      "target": "PROJECT.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/AGENTS.md",
+      "target": "docs/agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/AGENTS.md",
+      "target": "docs/agent-guides/skill-routing.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/AGENTS.md",
+      "target": "docs/agent-guides/services.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/AGENTS.md",
+      "target": "docs/agent-guides/desktop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/AGENTS.md",
+      "target": "docs/agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-guides/skill-routing.md",
+      "target": "../agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/INDEX.md",
+      "target": "ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/INDEX.md",
+      "target": "main.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/INDEX.md",
+      "target": "preload.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/INDEX.md",
+      "target": "renderer.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/ROUTING.md",
+      "target": "../agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/ROUTING.md",
+      "target": "main.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/ROUTING.md",
+      "target": "preload.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/ROUTING.md",
+      "target": "renderer.md",
+      "passed": true
+    },
+    {
+      "path": "examples/desktop/docs/agent-map/ROUTING.md",
+      "target": "renderer.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/AGENTS.md",
+      "target": "PROJECT.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/AGENTS.md",
+      "target": "docs/agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/AGENTS.md",
+      "target": "docs/agent-guides/skill-routing.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/AGENTS.md",
+      "target": "docs/agent-guides/services.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/AGENTS.md",
+      "target": "docs/agent-guides/mobile.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/AGENTS.md",
+      "target": "docs/agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/docs/agent-guides/skill-routing.md",
+      "target": "../agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/docs/agent-map/INDEX.md",
+      "target": "ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/docs/agent-map/INDEX.md",
+      "target": "mobile.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/docs/agent-map/ROUTING.md",
+      "target": "../agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/docs/agent-map/ROUTING.md",
+      "target": "mobile.md",
+      "passed": true
+    },
+    {
+      "path": "examples/mobile/docs/agent-map/ROUTING.md",
+      "target": "mobile.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/AGENTS.md",
+      "target": "PROJECT.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/AGENTS.md",
+      "target": "docs/agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/AGENTS.md",
+      "target": "docs/agent-guides/skill-routing.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/AGENTS.md",
+      "target": "docs/agent-guides/services.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/AGENTS.md",
+      "target": "docs/agent-guides/php.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/AGENTS.md",
+      "target": "docs/agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-guides/skill-routing.md",
+      "target": "../agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/INDEX.md",
+      "target": "ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/INDEX.md",
+      "target": "php.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/INDEX.md",
+      "target": "interface.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/ROUTING.md",
+      "target": "../agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/ROUTING.md",
+      "target": "php.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/ROUTING.md",
+      "target": "interface.md",
+      "passed": true
+    },
+    {
+      "path": "examples/php/docs/agent-map/ROUTING.md",
+      "target": "interface.md",
+      "passed": true
+    },
+    {
+      "path": "examples/README.md",
+      "target": "web-api/AGENTS.md",
+      "passed": true
+    },
+    {
+      "path": "examples/README.md",
+      "target": "php/AGENTS.md",
+      "passed": true
+    },
+    {
+      "path": "examples/README.md",
+      "target": "desktop/AGENTS.md",
+      "passed": true
+    },
+    {
+      "path": "examples/README.md",
+      "target": "mobile/AGENTS.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/AGENTS.md",
+      "target": "PROJECT.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/AGENTS.md",
+      "target": "docs/agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/AGENTS.md",
+      "target": "docs/agent-guides/skill-routing.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/AGENTS.md",
+      "target": "docs/agent-guides/services.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/AGENTS.md",
+      "target": "docs/agent-guides/web-api.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/AGENTS.md",
+      "target": "docs/agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-guides/skill-routing.md",
+      "target": "../agent-map/ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/INDEX.md",
+      "target": "ROUTING.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/INDEX.md",
+      "target": "frontend.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/INDEX.md",
+      "target": "backend.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/ROUTING.md",
+      "target": "../agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/ROUTING.md",
+      "target": "frontend.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/ROUTING.md",
+      "target": "backend.md",
+      "passed": true
+    },
+    {
+      "path": "examples/web-api/docs/agent-map/ROUTING.md",
+      "target": "frontend.md",
+      "passed": true
+    },
+    {
+      "path": "NAVIGATION.md",
+      "target": "validation/SCENARIOS.md",
+      "passed": true
+    },
+    {
+      "path": "NAVIGATION.md",
+      "target": "validation/RESULTATS.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "SPECIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "NAVIGATION.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "SERVICES.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "VERSIONS.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "catalogue/frameworks.lock.json",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "catalogue/QUALIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "catalogue/skills.lock.json",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "catalogue/COMPATIBILITY.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "catalogue/initial-selection.json",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "templates/README.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "examples/README.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "validation/SCENARIOS.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "validation/RESULTATS.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "branding/README.md",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "target": "promethee-main-feu.png",
+      "passed": true
+    },
+    {
+      "path": "SERVICES.md",
+      "target": "NAVIGATION.md",
+      "passed": true
+    },
+    {
+      "path": "SERVICES.md",
+      "target": "validation/SCENARIOS.md",
+      "passed": true
+    },
+    {
+      "path": "SERVICES.md",
+      "target": "validation/RESULTATS.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "NAVIGATION.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "SERVICES.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "NAVIGATION.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "templates/common/docs/agent-guides/anti-slop.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "catalogue/COMPATIBILITY.md",
+      "passed": true
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "target": "BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "templates/README.md",
+      "target": "../BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "templates/README.md",
+      "target": "../SERVICES.md",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "RESULTATS.md",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "SCENARIOS.md",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "final-quality.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "fixture-checks-web-api-frontend-web-api-backend-desktop-php.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "api-compiled-http.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "php-checks.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "mobile-checks.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "mobile-types.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "options-resolution.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "skills-check.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "anti-slop-qualification.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "rendered-documents.json",
+      "passed": true
+    },
+    {
+      "path": "validation/INDEX.md",
+      "target": "resources-check.json",
+      "passed": true
+    },
+    {
+      "path": "validation/RESULTATS.md",
+      "target": "../BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "validation/RESULTATS.md",
+      "target": "SCENARIOS.md",
+      "passed": true
+    },
+    {
+      "path": "validation/SCENARIOS.md",
+      "target": "../NAVIGATION.md",
+      "passed": true
+    },
+    {
+      "path": "validation/SCENARIOS.md",
+      "target": "../BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "validation/SCENARIOS.md",
+      "target": "../SERVICES.md",
+      "passed": true
+    },
+    {
+      "path": "VERSIONS.md",
+      "target": "BOOTSTRAP.md",
+      "passed": true
+    },
+    {
+      "path": "VERSIONS.md",
+      "target": "validation/RESULTATS.md",
+      "passed": true
+    }
+  ],
+  "hashes": [
+    {
+      "skill": "ui-ux-pro-max",
+      "passed": true,
+      "fileCount": 50
+    },
+    {
+      "skill": "stop-design-slop",
+      "passed": true,
+      "fileCount": 6
+    },
+    {
+      "skill": "verification-before-completion",
+      "passed": true,
+      "fileCount": 4
+    },
+    {
+      "skill": "systematic-debugging",
+      "passed": true,
+      "fileCount": 7
+    },
+    {
+      "skill": "vercel-react-best-practices",
+      "passed": true,
+      "blockedSourceAbsent": true
+    },
+    {
+      "skill": "vercel-composition-patterns",
+      "passed": true,
+      "blockedSourceAbsent": true
+    },
+    {
+      "skill": "supabase-postgres-best-practices",
+      "passed": true,
+      "fileCount": 40
+    },
+    {
+      "skill": "laravel-best-practices",
+      "passed": true,
+      "fileCount": 23
+    },
+    {
+      "skill": "livewire-development",
+      "passed": true,
+      "fileCount": 6
+    },
+    {
+      "skill": "expo-router",
+      "passed": true,
+      "fileCount": 21
+    },
+    {
+      "skill": "expo-design-system",
+      "passed": true,
+      "fileCount": 13
+    },
+    {
+      "skill": "expo-native-ui",
+      "passed": true,
+      "fileCount": 20
+    },
+    {
+      "skill": "expo-data-fetching",
+      "passed": true,
+      "fileCount": 13
+    },
+    {
+      "skill": "expo-animation",
+      "passed": true,
+      "fileCount": 15
+    },
+    {
+      "skill": "security-best-practices",
+      "passed": true,
+      "fileCount": 14
+    },
+    {
+      "skill": "security-threat-model",
+      "passed": true,
+      "fileCount": 6
+    },
+    {
+      "skill": "motion",
+      "passed": true,
+      "blockedSourceAbsent": true
+    }
+  ],
+  "manifestCases": [
+    {
+      "case": "web-api valid",
+      "passed": true,
+      "errors": null
+    },
+    {
+      "case": "web-api rejects ../escape",
+      "passed": true
+    },
+    {
+      "case": "web-api rejects folder/../escape",
+      "passed": true
+    },
+    {
+      "case": "web-api rejects C:/outside",
+      "passed": true
+    },
+    {
+      "case": "web-api rejects /outside",
+      "passed": true
+    },
+    {
+      "case": "web-api rejects folder\\outside",
+      "passed": true
+    },
+    {
+      "case": "web-api requires adapted baseline",
+      "passed": true
+    },
+    {
+      "case": "php valid",
+      "passed": true,
+      "errors": null
+    },
+    {
+      "case": "php rejects ../escape",
+      "passed": true
+    },
+    {
+      "case": "php rejects folder/../escape",
+      "passed": true
+    },
+    {
+      "case": "php rejects C:/outside",
+      "passed": true
+    },
+    {
+      "case": "php rejects /outside",
+      "passed": true
+    },
+    {
+      "case": "php rejects folder\\outside",
+      "passed": true
+    },
+    {
+      "case": "php requires adapted baseline",
+      "passed": true
+    },
+    {
+      "case": "desktop valid",
+      "passed": true,
+      "errors": null
+    },
+    {
+      "case": "desktop rejects ../escape",
+      "passed": true
+    },
+    {
+      "case": "desktop rejects folder/../escape",
+      "passed": true
+    },
+    {
+      "case": "desktop rejects C:/outside",
+      "passed": true
+    },
+    {
+      "case": "desktop rejects /outside",
+      "passed": true
+    },
+    {
+      "case": "desktop rejects folder\\outside",
+      "passed": true
+    },
+    {
+      "case": "desktop requires adapted baseline",
+      "passed": true
+    },
+    {
+      "case": "mobile valid",
+      "passed": true,
+      "errors": null
+    },
+    {
+      "case": "mobile rejects ../escape",
+      "passed": true
+    },
+    {
+      "case": "mobile rejects folder/../escape",
+      "passed": true
+    },
+    {
+      "case": "mobile rejects C:/outside",
+      "passed": true
+    },
+    {
+      "case": "mobile rejects /outside",
+      "passed": true
+    },
+    {
+      "case": "mobile rejects folder\\outside",
+      "passed": true
+    },
+    {
+      "case": "mobile requires adapted baseline",
+      "passed": true
+    }
+  ],
+  "unexpectedFiles": [],
+  "branding": {
+    "metadataDimensions": [
+      24,
+      16
+    ],
+    "pixelRows": 32,
+    "pixelColumns": 24,
+    "asciiLines": 16,
+    "asciiMaxWidth": 24,
+    "asciiOnly": true,
+    "ansiHasReset": true,
+    "nativeTerminalAppearance": "pending"
+  },
+  "passed": true
+}

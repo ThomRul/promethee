@@ -1,0 +1,56 @@
+[
+  {
+    "profile": "web-api",
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "zoneCount": 2,
+    "selectedQualifiedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "supabase-postgres-best-practices",
+      "security-best-practices"
+    ]
+  },
+  {
+    "profile": "php",
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "zoneCount": 2,
+    "selectedQualifiedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "laravel-best-practices"
+    ]
+  },
+  {
+    "profile": "desktop",
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "zoneCount": 3,
+    "selectedQualifiedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging"
+    ]
+  },
+  {
+    "profile": "mobile",
+    "documentTokensResolved": true,
+    "zonePathsExist": true,
+    "zoneCount": 1,
+    "selectedQualifiedSkills": [
+      "ui-ux-pro-max",
+      "stop-design-slop",
+      "verification-before-completion",
+      "systematic-debugging",
+      "expo-router",
+      "expo-design-system",
+      "expo-native-ui"
+    ]
+  }
+]

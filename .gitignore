@@ -1,0 +1,19 @@
+node_modules/
+dist/
+releases/
+runtime/
+.cache/
+.env
+.env.*
+!.env.example
+*.log
+.promethee/local-services.json
+.promethee/local-tools.json
+
+.promethee/local-checks.json
+
+# Reçu local : chemins et versions propres à la machine de préparation.
+docs/VALIDATION-WINDOWS.json
+validation/logs/
+.promethee/backups/
+.promethee/tmp/

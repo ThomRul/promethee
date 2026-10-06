@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "security-threat-model",
+  "repository": "openai/skills",
+  "revision": "49f948faa9258a0c61caceaf225e179651397431",
+  "source": "skills/.curated/security-threat-model",
+  "upstreamUrl": "https://github.com/openai/skills/tree/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model",
+  "license": "Apache-2.0",
+  "adaptationVersion": 1,
+  "adaptedAt": "2026-10-05",
+  "adaptations": [
+    "Conserver workflow et validation des hypothèses avec utilisateur.",
+    "Description courte ; déclenchement sur demande explicite."
+  ]
+}
